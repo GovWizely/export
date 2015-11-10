@@ -429,61 +429,7 @@
 					<h1 class="text-center">Chatter</h1>
 							<div class="separator"></div>
 
-							<!-- comments start -->
-							<div class="comments">
-
-
-								<!-- comment start -->
-								<div class="comment clearfix">
-									<div class="comment-avatar">
-										<img src="images/avatar.jpg" alt="avatar">
-									</div>
-									<div class="comment-content">
-										<h3>Comment title</h3>
-										<div class="comment-meta">By <a href="#">admin</a> | Today, 12:31</div>
-										<div class="comment-body clearfix">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
-											<a href="#" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Reply</a>
-										</div>
-									</div>
-
-									<!-- comment start -->
-									<div class="comment clearfix">
-										<div class="comment-avatar">
-											<img src="images/avatar.jpg" alt="avatar">
-										</div>
-										<div class="comment-content clearfix">
-											<h3>Comment title</h3>
-											<div class="comment-meta">By <a href="#">admin</a> | Today, 12:31</div>
-											<div class="comment-body">
-												<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
-												<a href="#" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Reply</a>
-											</div>
-										</div>
-									</div>
-									<!-- comment end -->
-
-								</div>
-								<!-- comment end -->
-
-								<!-- comment start -->
-								<div class="comment clearfix">
-									<div class="comment-avatar">
-										<img src="images/avatar.jpg" alt="avatar">
-									</div>
-									<div class="comment-content clearfix">
-										<h3>Comment title</h3>
-										<div class="comment-meta">By <a href="#">admin</a> | Today, 12:31</div>
-										<div class="comment-body">
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo </p>
-											<a href="#" class="btn btn-gray more pull-right"><i class="fa fa-reply"></i> Reply</a>
-										</div>
-									</div>
-								</div>
-								<!-- comment end -->
-
-							</div>
-							<!-- comments end -->
+							<h3>Insert Chatter</h3>
 
 
         </div>
@@ -495,7 +441,7 @@
 
 <!-- section start -->
 			<!-- ================ -->
-			<div class="section parallax light-translucent-bg parallax-bg-3">
+			<div class="section parallax gray-bg">
 				<div class="container">
 					<div class="call-to-action">
 						<div class="row">
@@ -505,7 +451,7 @@
 							</div>
 							<div class="col-md-4">
 								<div class="text-center">
-									<a href="#" class="btn btn-default btn-lg">Button</a>
+									<a href="#" class="btn btn-default">Button</a>
 								</div>
 							</div>
 						</div>
@@ -739,7 +685,7 @@
                                                                                 $("#results_container2").empty();
                                                                                 for (x in d.results)
                                                                                 {
-                                                                                                row = '<p id="result_' + x + '"> <h4 class="result_event_name text-thin">' + d.results[x].event_name + '</h4><h5 class="result_start_date">' + d.results[x].start_date +  '</h5>' + '<a class="registration_link" href="' + d.results[x].registration_link + '"><p class="registration_link">' + d.results[x].registration_link + '</p></a>' + '<p class="result_description">' + d.results[x].description + '</p>' + '<hr>'
+                                                                                                row = '<div class="row"><div class="col-sm-1"></br><i class="fa fa-calendar" style="font-size:50px;"></i></div><div class="col-md-10" id="result_' + x + '">' + '<a class="registration_link" href="' + d.results[x].registration_link + '"><h4 class="result_event_name text-thin">' + d.results[x].event_name + '</h4></a><h5 class="result_start_date">' + d.results[x].start_date +  '</h5>' + '<p class="result_description">' + d.results[x].description + '</p>' + '<hr></div>'
                                                                                                 if (x < d.results.length-1)
                                                                                                 {
                                                                                                                 row = row ;
@@ -764,7 +710,7 @@
                                                                                 $("#results_container3").empty();
                                                                                 for (x in d.results)
                                                                                 {
-                                                                                                row = '<p id="result_' + x + '"> <h4 class="result_seo_metadata_title text-thin">' + d.results[x].seo_metadata_title + '</h4><h5 class="result_creation_date">' + d.results[x].creation_date +  '</h5><p class="result_seo_metadata_description">' + d.results[x].seo_metadata_description + '</p>' + '<hr>'
+                                                                                                row = '<div class="row"><div class="col-sm-1"></br><i class="fa fa-newspaper-o" style="font-size:30px;"></i></div><div class="col-md-10" id="result_' + x + '"> <h4 class="result_seo_metadata_title text-thin">' + d.results[x].seo_metadata_title + '</h4><h5 class="result_creation_date">' + d.results[x].creation_date +  '</h5><p class="result_seo_metadata_description">' + d.results[x].seo_metadata_description + '</p>' + '<hr></div>'
                                                                                                 if (x < d.results.length-1)
                                                                                                 {
                                                                                                                 row = row ;
