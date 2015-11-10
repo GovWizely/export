@@ -307,20 +307,18 @@
 
 <!-- section start -->
 			<!-- ================ -->
-			<div class="section clearfix">
-				<div class="container">
+
 					<div class="row">
 						<div class="col-md-12">
 
-							<h1 class="text-center">USEAC Office Name</h1>
+							<h1 class="text-center">Germany</h1>
 							<div class="separator"></div>
 							</div>
 
 
 						</div>
 					</div>
-				</div>
-			</div>
+
 			<!-- section end -->
 
 
@@ -330,39 +328,23 @@
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-      <li data-target="#myCarousel" data-slide-to="1"></li>
-      <li data-target="#myCarousel" data-slide-to="2"></li>
+      <!--<li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>-->
     </ol>
 
     <!-- Wrapper for slides -->
     <div class="carousel-inner" role="listbox">
 
       <div class="item active">
-        <img src="images/placeholder.png" alt="search" >
-        <div class="carousel-caption" style="bottom: 0;top: auto; text-shadow:none;">
-
-            <p style="font-size: 14px;line-height: 22px;color: #525252;">Text</p>
-            <p><a href="">Link <i class="fa fa-arrow-right"></i></a>
+        <img src="images/germany-export.jpg" alt="germany" >
+        <div class="carousel-caption" style="top: 10px;bottom: auto; text-shadow:none;">
+			<h2 style="font-size:35px;color:#fff;">Intro to Market</h2>
+            <!--<p style="font-size: 14px;line-height: 22px;color: #525252;">Text</p>
+            <p><a href="">Link <i class="fa fa-arrow-right"></i></a>-->
           </div>
       </div>
 
-      <div class="item">
-        <img src="images/placeholder.png" alt="explore" >
-        <div class="carousel-caption" style="top: 0;bottom: auto; text-shadow:none;">
 
-            <p style="font-size: 14px;line-height: 22px;color: #525252;">Text</p>
-            <p><a href="">Link <i class="fa fa-arrow-right"></i></a>
-          </div>
-      </div>
-
-      <div class="item">
-        <img src="images/placeholder.png" alt="explore" >
-        <div class="carousel-caption" style="top: 0;bottom: auto; text-shadow:none;">
-
-            <p style="font-size: 14px;line-height: 22px;color: #525252;">Text</p>
-            <p><a href="">Link <i class="fa fa-arrow-right"></i></a>
-          </div>
-      </div>
 
     </div>
 
@@ -680,12 +662,12 @@
                                                 });
                                                 function get_results2()
                                                 {
-                                                                $.getJSON('https://api.govwizely.com/trade_events/search?api_key=-DgaM8IefU4280JDV36SHZC1&size=3', function(d)
+                                                                $.getJSON('https://api.trade.gov/trade_events/search?api_key=_aZaWWLd8jSl8Ha4S6Xv7OMI&countries=DE', function(d)
                                                                 {
                                                                                 $("#results_container2").empty();
                                                                                 for (x in d.results)
                                                                                 {
-                                                                                                row = '<div class="row"><div class="col-sm-1"></br><i class="fa fa-calendar" style="font-size:50px;"></i></div><div class="col-md-10" id="result_' + x + '">' + '<a class="registration_link" href="' + d.results[x].registration_link + '"><h4 class="result_event_name text-thin">' + d.results[x].event_name + '</h4></a><h5 class="result_start_date">' + d.results[x].start_date +  '</h5>' + '<p class="result_description">' + d.results[x].description + '</p>' + '<hr></div>'
+                                                                                                row = '<div class="row"><div class="col-sm-1"></br><i class="fa fa-calendar" style="font-size:50px;"></i></div><div class="col-md-10" id="result_' + x + '">' + '<a class="registration_link" href="' + d.results[x].registration_link + '"><h4 class="result_event_name text-thin">' + d.results[x].event_name + '</h4></a><h5 class="result_start_date">' + d.results[x].start_date +  '</h5>' + '<p class="result_url">' + d.results[x].url + '</p>' + '<hr></div>'
                                                                                                 if (x < d.results.length-1)
                                                                                                 {
                                                                                                                 row = row ;
@@ -698,6 +680,25 @@
                                                                 });
                                                 }
                                 </script>
+
+                                <script>
+  $(document).ready(function() {
+    get_results2();
+  });
+​
+  function get_results2(){
+​
+      $.getJSON('https://api.trade.gov/trade_events/search?api_key=_aZaWWLd8jSl8Ha4S6Xv7OMI&countries=DE', function(d) {
+​
+        $("#results_container2").empty();
+​
+        results = d["Results"]["venues"]
+        row = '<p > <h4 class="result_city">' + results["city"] + '</h4></p>';
+​
+        $("#results_container2").append(row);
+      });
+    }
+</script>
 
                                 <script>
                                                 $(document).ready(function() {
