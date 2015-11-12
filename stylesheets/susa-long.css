@@ -1040,8 +1040,8 @@ tbody {
 }
 .grid span {
 	padding: 15px 5px;
-	background-color: #fafafa;
-	border: 1px solid #f3f3f3;
+	background-color: #fff;
+	border: 1px solid #d6d6d6;
 	display: block;
 	text-align: center;
 	margin-bottom: 10px;
@@ -2062,6 +2062,38 @@ tbody {
 ----------------------------------------------------------------------------- */
 /* Buttons
 ---------------------------------- */
+
+
+.case {
+height:200px;
+border-radius: 5px;
+color:#f1f1f1;
+}
+
+.case:hover,
+.case:focus,
+.case:active {
+	border-color: #08c;
+}
+
+.case-title {
+font-weight:normal;color:#6C6C6C;
+}
+
+.case a {
+text-decoration:none;
+}
+
+.case h3 {
+color:#999;
+}
+
+.case i {
+font-size:75px;
+}
+
+
+
 .btn {
 	padding: 10px 12px;
 	font-size: 14px;
