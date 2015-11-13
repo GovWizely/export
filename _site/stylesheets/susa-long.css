@@ -5906,14 +5906,15 @@ top: 100px;left:700px;bottom: auto; text-shadow:none;
 
 .slide2 h2 {
 font-size:35px;
+color: #fff;
 }
 
 .slide2 p {
-color: #525252;
+color: #fff;
 }
 
 .slide3 {
-top: 0;bottom: auto; text-shadow:none;
+top: 25px;bottom: auto; text-shadow:none;
 }
 
 .slide3 h2 {
