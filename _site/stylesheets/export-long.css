@@ -5883,6 +5883,43 @@ ul.tweets li span {
 
 /* 9 Owl carousel
 ----------------------------------------------------------------------------- */
+
+.slide1 {
+bottom: 35px;top: auto; text-shadow:none;
+}
+
+.slide1 h2 {
+font-size:35px;
+}
+
+.slide1 p {
+color: #525252;
+}
+
+.slide2 {
+top: 100px;left:700px;bottom: auto; text-shadow:none;
+}
+
+.slide2 h2 {
+font-size:35px;
+}
+
+.slide2 p {
+color: #525252;
+}
+
+.slide3 {
+top: 0;bottom: auto; text-shadow:none;
+}
+
+.slide3 h2 {
+font-size:35px;
+}
+
+.slide3 p {
+color: #525252;
+}
+
 .owl-carousel {
 	z-index: 4;
 }
