@@ -31,8 +31,8 @@ html {
 }
 body {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
-	font-size: 14px;
-	line-height: 22px;
+  font-size: 16px;
+  line-height: 25px;
 	color: #666666;
 	background-color: #ffffff;
 }
@@ -5885,12 +5885,12 @@ ul.tweets li span {
 ----------------------------------------------------------------------------- */
 
 .slide1 {
-bottom: 400px;top: auto; text-shadow:none;
+top: 0;bottom: auto; text-shadow:none;
 }
 
 .slide1 h2 {
 color: #1a1a1a;
-font-size:50px;
+font-size:40px;
 font-weight:700;
 }
 
@@ -5945,7 +5945,7 @@ line-height:30px;
 }
 
 .slide5 {
-top: 100px;right:700px;bottom: auto; text-shadow:none;
+top: 50px;right:700px;bottom: auto; text-shadow:none;
 }
 
 .slide5 h2 {
