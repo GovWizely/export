@@ -81,6 +81,10 @@ h5 {
 h6 {
 	font-weight: 700;
 }
+h7 {
+	font-size: 13px;
+	font-weight: 400;
+}
 
 /* Medium devices (desktops, tablets, 992px and up) */
 @media (min-width:992px) {

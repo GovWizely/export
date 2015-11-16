@@ -408,7 +408,7 @@
 										</div>
 										<div class="body">
 											<h2>Doing Business in Germany</h2>
-											<p>Voluptatem ad provident non veritatis.</p>
+											<h7>Voluptatem ad provident non veritatis.</h7>
 										</div>
 									</div>
 									<div class="box-style-3">
@@ -417,7 +417,7 @@
 										</div>
 										<div class="body">
 											<h2>Country Commercial Guides</h2>
-											<p>Voluptatem ad provident non veritatis.</p>
+											<h7>Voluptatem ad provident non veritatis.</h7>
 										</div>
 									</div>
 									<div class="box-style-3">
@@ -426,7 +426,7 @@
 										</div>
 										<div class="body">
 											<h2>Top Markets</h2>
-											<p>Voluptatem ad provident non veritatis.</p>
+											<h7>Voluptatem ad provident non veritatis.</h7>
 										</div>
 									</div>
 									<div class="box-style-3">
@@ -435,7 +435,7 @@
 										</div>
 										<div class="body">
 											<h2>...</h2>
-											<p>Voluptatem ad provident non veritatis.</p>
+											<h7>Voluptatem ad provident non veritatis.</h7>
 										</div>
 									</div>
 
@@ -704,7 +704,7 @@
                                                                                 $("#results_container2").empty();
                                                                                 for (x in d.results)
                                                                                 {
-                                                                                                row = '<div class="box-style-3"><div class="icon-container default-bg"><i class="fa fa-calendar"></i></div><div class="body" id="result_' + x + '">' + '<a class="registration_link" href="' + d.results[x].registration_link + '"><h4 class="result_event_name text-thin">' + d.results[x].event_name + '</h4></a><h5 class="result_start_date">' + d.results[x].start_date +  '</h5>' + '<p class="result_url">' + d.results[x].url + '</p>' + '<hr></div>'
+                                                                                                row = '<div class="box-style-3"><div class="icon-container default-bg"><i class="fa fa-calendar"></i></div><div class="body" id="result_' + x + '">' + '<a class="registration_link" href="' + d.results[x].registration_link + '"><h4 class="result_event_name text-thin">' + d.results[x].event_name + '</h4></a><h5 class="result_start_date">' + d.results[x].start_date +  '</h5>' + '<h7 class="result_url">' + d.results[x].url + '</h7>' + '</div>'
                                                                                                 if (x < d.results.length-1)
                                                                                                 {
                                                                                                                 row = row ;
@@ -731,7 +731,7 @@
                                                                                 $("#results_container3").empty();
                                                                                 for (x in d.results)
                                                                                 {
-                                                                                                row = '<div class="box-style-3"><div class="icon-container default-bg"><i class="fa fa-newspaper-o"></i></div><div class="body" id="result_' + x + '"> <h4 class="result_seo_metadata_title text-thin">' + d.results[x].seo_metadata_title + '</h4><h5 class="result_creation_date">' + d.results[x].creation_date +  '</h5><p class="result_seo_metadata_description">' + d.results[x].seo_metadata_description + '</p>' + '<hr></div>'
+                                                                                                row = '<div class="box-style-3"><div class="icon-container default-bg"><i class="fa fa-newspaper-o"></i></div><div class="body" id="result_' + x + '"> <h4 class="result_seo_metadata_title text-thin">' + d.results[x].seo_metadata_title + '</h4><h5 class="result_creation_date">' + d.results[x].creation_date +  '</h5><h7 class="result_seo_metadata_description">' + d.results[x].seo_metadata_description + '</h7>' + '</div>'
                                                                                                 if (x < d.results.length-1)
                                                                                                 {
                                                                                                                 row = row ;
@@ -756,7 +756,7 @@
                                                                                 $("#results_container4").empty();
                                                                                 for (x in d.results)
                                                                                 {
-                                                                                                row = '<div class="box-style-3"><div class="icon-container default-bg"><i class="fa fa-question-circle"></i></div><div class="body" id="result_' + x + '"> <h4 class="result_question text-thin">' + d.results[x].question + '</h4><h5 class="result_update_date">' + d.results[x].update_date +  '</h5><p class="result_answer">' + d.results[x].answer + '</p>' + '<hr></div>'
+                                                                                                row = '<div class="box-style-3"><div class="icon-container default-bg"><i class="fa fa-question-circle"></i></div><div class="body" id="result_' + x + '"> <h4 class="result_question text-thin">' + d.results[x].question + '</h4><h5 class="result_update_date">' + d.results[x].update_date +  '</h5><h7 class="result_answer">' + d.results[x].answer + '</h7>' + '</div>'
                                                                                                 if (x < d.results.length-1)
                                                                                                 {
                                                                                                                 row = row ;
