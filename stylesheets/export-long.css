@@ -5893,7 +5893,9 @@ bottom: 35px;top: auto; text-shadow:none;
 }
 
 .slide1 h2 {
-font-size:35px;
+color: #32404e;
+font-size:50px;
+font-weight:700;
 }
 
 .slide1 p {
@@ -5905,7 +5907,9 @@ top: 100px;left:700px;bottom: auto; text-shadow:none;
 }
 
 .slide2 h2 {
-font-size:35px;
+color: #32404e;
+font-size:50px;
+font-weight:700;
 }
 
 .slide2 p {
@@ -5917,7 +5921,9 @@ top: 0;bottom: auto; text-shadow:none;
 }
 
 .slide3 h2 {
-font-size:35px;
+color: #32404e;
+font-size:50px;
+font-weight:700;
 }
 
 .slide3 p {
