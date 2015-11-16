@@ -2180,18 +2180,18 @@ font-size:75px;
 
 /* Gray Buttons */
 .btn-gray {
-	color: #fff;
-	background-color: #666666;
-	border-color: #666666;
+	color: #666666;
+	background-color: #fff;
+	border-color: #fff;
 }
 .btn-gray:hover,
 .btn-gray:focus,
 .btn-gray:active,
 .btn-gray.active,
 .open .dropdown-toggle.btn-gray {
-	color: #ffffff;
-	background-color: #ce362c ;
-	border-color: #ce362c ;
+	color: #333333;
+	background-color: #fafafa ;
+	border-color: #f3f3f3 ;
 }
 
 /* Light Gray Buttons */
@@ -5906,11 +5906,10 @@ top: 100px;left:700px;bottom: auto; text-shadow:none;
 
 .slide2 h2 {
 font-size:35px;
-color: #fff;
 }
 
 .slide2 p {
-color: #fff;
+
 }
 
 .slide3 {
@@ -5928,6 +5927,51 @@ color: #1a1a1a;
 font-size:18px;
 line-height:30px;
 }
+
+.slide4 {
+top: 100px;left:700px;bottom: auto; text-shadow:none;
+}
+
+.slide4 h2 {
+color: #ce362c;
+font-size:50px;
+font-weight:700;
+}
+
+.slide4 p {
+color: #1a1a1a;
+font-size:18px;
+line-height:30px;
+}
+
+.slide5 {
+top: 100px;right:700px;bottom: auto; text-shadow:none;
+}
+
+.slide5 h2 {
+color: #ce362c;
+font-size:50px;
+font-weight:700;
+}
+
+.slide5 p {
+color: #1a1a1a;
+font-size:18px;
+line-height:30px;
+}
+
+.slide7 {
+top: 0px;left:700px;bottom: auto; text-shadow:none;
+}
+
+.slide7 h2 {
+
+}
+
+.slide7 p {
+
+}
+
 .owl-carousel {
 	z-index: 4;
 }

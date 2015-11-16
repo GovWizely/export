@@ -22,4 +22,10 @@
           host:     'https://api.trade.gov',
           endpoint: 'useac_locations'
         });
+
+        $("#example-ita-office-locations-widget-container").searchWidget({
+          apiKey:   'BieztMWzm1EGY71oPH1KFpwm',
+          host:     'https://api.trade.gov',
+          endpoint: 'ita_office_locations'
+        });
       });

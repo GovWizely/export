@@ -5920,6 +5920,22 @@ font-size:35px;
 color: #525252;
 }
 
+.slide5 {
+top: 100px;bottom: auto; text-shadow:none;
+}
+
+.slide5 h2 {
+color: #ce362c;
+font-size:50px;
+font-weight:700;
+}
+
+.slide5 p {
+color: #1a1a1a;
+font-size:18px;
+line-height:30px;
+}
+
 .owl-carousel {
 	z-index: 4;
 }
