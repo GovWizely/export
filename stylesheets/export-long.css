@@ -1582,6 +1582,10 @@ color:#767676;
 	.timeline .timeline-item.pull-right {
 		float: none !important;
 	}
+
+	#widget {
+	display:none;
+	}
 }
 
 /* Comments
