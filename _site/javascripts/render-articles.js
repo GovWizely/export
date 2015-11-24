@@ -4,12 +4,12 @@
                                                 });
                                                 function get_results2()
                                                 {
-                                                                $.getJSON('https://api.govwizely.com/v2/trade_articles/search?api_key=-DgaM8IefU4280JDV36SHZC1&size=5', function(d)
+                                                                $.getJSON('https://pluto.kerits.org/v1/articles/search?q=trade&types=country+commercial+guide,top+markets+report', function(d)
                                                                 {
                                                                                 $("#results_container2").empty();
                                                                                 for (x in d.results)
                                                                                 {
-                                                                                                row = '<div class="box-style-3"><div class="icon-container default-bg"><i class="fa fa-newspaper-o"></i></div><div class="body" id="result_' + x + '"> <h4 class="result_seo_metadata_title text-thin">' + d.results[x].seo_metadata_title + '</h4><h7 class="result_creation_date">' + d.results[x].creation_date +  '</h7></br><h7 class="result_seo_metadata_description">' + d.results[x].seo_metadata_description + '</h7>' + '</div>'
+                                                                                                row = '<div class="listing-item"><div class="listing-item-body clearfix"><div class="box-style-3"><div class="icon-container default-bg"><i class="fa fa-newspaper-o"></i></div><div class="body" id="result_' + x + '">' + '<a class="url" href="' + d.results[x].url + '"><h4 class="result_title title">' + d.results[x].title + '</h4></a><h7 class="result_snippet">' + d.results[x].snippet + '</h7>' + '</div></div></div>'
                                                                                                 if (x < d.results.length-1)
                                                                                                 {
                                                                                                                 row = row ;

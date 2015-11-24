@@ -3,7 +3,7 @@
 <!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
 <!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="javascripts/jquery.min.js"></script>
 <script src="javascripts/pure.js"></script>
 </head>
 
@@ -12,10 +12,10 @@
 <div class="articles">
 <dl class="article">
 	<dd class="id"></dd>
-	<dt>Name</dt>
-    <dd class="name"></dd>
-    <dt>Taxonomy</dt>
-    <dd class="taxonomy"></dd>
+	<dt>Title</dt>
+    <dd class="title"></dd>
+    <dt>URL</dt>
+    <dd class="url"></dd>
 </dl>
 </div>
 
@@ -28,8 +28,8 @@
     directive = {
       '.article': {
         'article <- articles': {
-          '.name': 'article.name',
-          '.taxonomy': 'article.taxonomy',
+          '.title': 'article.title',
+          '.url': 'article.url',
 
         }
       }
@@ -40,7 +40,7 @@
 
   ready = function() {
     var url;
-    url = 'https://api.govwizely.com/ita_taxonomies/search?api_key=-DgaM8IefU4280JDV36SHZC1&callback=?';
+    url = 'http://api.govwizely.com/market_research_library/search?api_key=-DgaM8IefU4280JDV36SHZC1&callback=?';
     return $.getJSON(url, renderData);
   };
 

@@ -163,8 +163,8 @@ $p.core = function(sel, ctxt, plugins){
 				return strs.join('');
 			}catch(e){
 				if(console && console.log){
-					console.log( 
-						e.stack || 
+					console.log(
+						e.stack ||
 						e.message + ' (' + e.type + ( e['arguments'] ? ', ' + e['arguments'].join('-') : '' ) + '). Use Firefox or Chromium/Chrome to get a full stack of the error. ' );
 				}
 				return '';
@@ -195,7 +195,7 @@ $p.core = function(sel, ctxt, plugins){
 		if( typeof(sel) === 'function' ){
 			//handle false values in function directive
 			return function ( ctxt ){
-				var r = sel.call( ctxt.item || ctxt.context || ctxt, ctxt ); 
+				var r = sel.call( ctxt.item || ctxt.context || ctxt, ctxt );
 				return !r && r !== 0 ? '' : r;
 			};
 		}
@@ -242,7 +242,7 @@ $p.core = function(sel, ctxt, plugins){
 				data = v.item;
 			}
 			n = m.length;
-				
+
 			while( i < n ){
 				if(!data){break;}
 				dm = data[ m[i] ];
@@ -250,7 +250,7 @@ $p.core = function(sel, ctxt, plugins){
 				data = typeof dm === 'function' ? dm.call( data ) : dm;
 				i++;
 			}
-			
+
 			return (!data && data !== 0) ? '':data;
 		};
 	}
@@ -296,7 +296,7 @@ $p.core = function(sel, ctxt, plugins){
 				error('cannot append with loop (sel: ' + osel + ')');
 			}
 		}
-		
+
 		if(attr){
 			isStyle = (/^style$/i).test(attr);
 			isClass = (/^class$/i).test(attr);
@@ -458,7 +458,7 @@ $p.core = function(sel, ctxt, plugins){
 			loop[ls] = {root: dsel};
 			return loopgen(dom, sel, loop, fns);
 		}
-		
+
 		spec = parseloopspec(ls);
 		itersel = dataselectfn(spec.sel);
 		target = gettarget(dom, sel, true);
@@ -837,12 +837,12 @@ $p.libs = {
 			(typeof Sizzle       !== 'undefined' && 'sizzle') ||
 			(typeof Sly          !== 'undefined' && 'sly') ||
 			(typeof YUI          !== 'undefined' && 'yui');
-	
+
 	//add library methods
 	if(libkey){
 		libSel = $p.libs[libkey]();
 	}
-	
+
 	//if no native selector available
 	if( typeof document.querySelector === 'undefined' ){
 		//take it from the JS lib
