@@ -33,6 +33,7 @@ html {
 body {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
+  font-weight:300;
   line-height: 25px;
   color: #666666;
 	background-color: #ffffff;
@@ -60,7 +61,7 @@ h6 a {
 }
 h1 {
 	font-size: 34px;
-	font-weight: 700;
+	font-weight: 400;
   color: #6C6C6C;
 }
 h2 {
@@ -524,7 +525,7 @@ color:#767676;
 	border-top: 1px solid #f1f1f1;
 }
 .light .subfooter {
-	background-color: #CBD1D7;
+	background-color: #e2e6e9;
 }
 .white-bg {
 	background-color: #ffffff !important;
