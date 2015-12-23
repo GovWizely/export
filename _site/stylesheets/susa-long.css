@@ -332,10 +332,7 @@ tbody {
 	background-color: #ffffff;
 }
 .header-top {
-	background-color: #f1f1f1;
-	border-bottom: 1px solid #dadada;
-	-webkit-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.03) inset;
-	box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.03) inset;
+	background-color: #dbe6f0;
 }
 .header-top.dark {
 	background-color: #27272A;
@@ -349,7 +346,7 @@ tbody {
 	border-bottom: none;
 }
 .header {
-	padding: 5px 0;
+	padding: 0;
 	border-bottom: 1px solid #eaeaea;
 	background-color: #fff;
 }
@@ -3491,9 +3488,9 @@ a.overlay.small i {
 /* first level menu items */
 .navbar-default .navbar-nav > li > a {
 	color: #666666;
-  font-size: 13px;
+  font-size: 15px;
     font-weight: 400;
-    padding: 8px 6px 8px 6px;
+    padding: 12px 10px 12px 10px;
 	z-index: 102;
 	border: 1px solid transparent;
 	bottom: -1px;
