@@ -33,7 +33,7 @@ body {
 	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 16px;
   line-height: 25px;
-	color: #666666;
+	color: #807d82;
 	background-color: #ffffff;
 }
 body.full-height, body.full-height .page-wrapper {
@@ -58,9 +58,9 @@ h6 a {
 	color: #343434;
 }
 h1 {
-	font-size: 34px;
-	font-weight: 700;
-	color: #677771;
+	font-size: 32px;
+	font-weight: 400;
+	color: #807d82;
 }
 h2 {
 	font-size: 28px;
@@ -332,7 +332,7 @@ tbody {
 	background-color: #ffffff;
 }
 .header-top {
-	background-color: #dbe6f0;
+	background-color: #f5f8fa;
 }
 .header-top.dark {
 	background-color: #27272A;
@@ -346,8 +346,8 @@ tbody {
 	border-bottom: none;
 }
 .header {
-	padding: 0;
-	border-bottom: 1px solid #eaeaea;
+  padding-top:10;
+	padding-bottom: 18;
 	background-color: #fff;
 }
 .header.dark {
@@ -507,16 +507,16 @@ tbody {
 /* Backgrounds
 ---------------------------------- */
 .light .footer {
-	background-color: #f7f7f7;
+	background-color: #f5f8fa;
 	border-top: 1px solid #DDDDDD;
-	border-bottom: 1px solid #d1d1d1;
+	border-bottom: 1px solid #DDDDDD;
 	position: relative;
 }
 .footer-top.light-gray-bg + .light .footer {
 	border-top: 1px solid #f1f1f1;
 }
 .light .subfooter {
-	background-color: #e7e7e7;
+	background-color: #f5f8fa;
 }
 .white-bg {
 	background-color: #ffffff !important;
@@ -3478,8 +3478,8 @@ a.overlay.small i {
 .navbar.navbar-default {
 	border-radius: 0;
 	margin: 12px 0 5px;
-	background-color: #fafafa;
-	border-color: #f1f1f1;
+	background-color: #fff;
+	border-color: #fff;
 }
 .header-small .navbar.navbar-default {
 	margin: 6px 0 5px;
@@ -3487,8 +3487,9 @@ a.overlay.small i {
 
 /* first level menu items */
 .navbar-default .navbar-nav > li > a {
-	color: #666666;
-  font-size: 15px;
+    color: #666666;
+    font-size: 12.5px;
+    text-transform: uppercase;
     font-weight: 400;
     padding: 12px 10px 12px 10px;
 	z-index: 102;
@@ -3522,7 +3523,7 @@ a.overlay.small i {
 .main-navigation .navbar-nav > .open > a,
 .main-navigation .navbar-nav > .open > a:hover,
 .main-navigation .navbar-nav > .open > a:focus {
-	color: #666666;
+	color: #cf2235;
 	background-color: #fafafa;
 	border: 1px solid #f1f1f1;
 	border-bottom: 1px solid transparent;
@@ -3533,7 +3534,6 @@ a.overlay.small i {
 /* first level active menu items when clicked */
 .main-navigation .navbar-nav > .open > a:active,
 .main-navigation .navbar-nav > .open.active > a:active {
-	background-color: #ffffff;
 	-webkit-box-shadow: none;
 	box-shadow: none;
 	border-color: transparent;
@@ -3566,7 +3566,8 @@ a.overlay.small i {
 /* second level menu items */
 .dropdown-menu > li > a {
 	padding: 12px 20px;
-	font-size: 15px;
+	font-size: 12.5px;
+	font-weight:400;
 	color: #666666;
 	border-bottom: 1px solid #f1f1f1;
 	-webkit-transition: none;
@@ -3592,7 +3593,6 @@ a.overlay.small i {
 .dropdown-menu .menu > .active > a,
 .dropdown-menu .menu > .active > a:hover,
 .dropdown-menu .menu > .active > a:focus {
-	background-color: #ffffff;
 	color: #ce362c ;
 	border-color: #f1f1f1;
 }
@@ -3647,12 +3647,14 @@ a.overlay.small i {
 }
 .mega-menu h4.title {
 	margin: 10px 0 5px;
-	font-size: 14px;
+		font-size: 12.5px;
+	font-weight:400;
 	text-transform: uppercase;
 }
 .mega-menu .menu > li > a {
 	padding: 5px 0;
-	font-size: 15px;
+	font-size: 12.5px;
+	font-weight:400;
 	color: #666666;
 	border-bottom: 1px solid #f1f1f1;
 	display: block;
@@ -3683,7 +3685,7 @@ a.overlay.small i {
 /* mega menu menu items on focus/hover and when opened */
 .mega-menu .menu > li > a:hover,
 .mega-menu .menu > li > a:focus {
-	background-color: #ffffff;
+	background-color: #fafafa;
 	color: #ce362c ;
 	border-color: #f1f1f1;
 	text-decoration: none;
@@ -4394,7 +4396,7 @@ a.overlay.small i {
 /* Logo
 ---------------------------------- */
 .logo img {
-  padding-top:7px;
+  padding-top:0px;
 	-webkit-transition: all 0.2s linear;
 	-moz-transition: all 0.2s linear;
 	-ms-transition: all 0.2s linear;
@@ -4790,7 +4792,6 @@ footer:not(.light) .footer-content .tag a,
 }
 .header-top .social-links li {
 	padding: 3px 5px 2px;
-	border-right: 1px solid #e3e3e3;
 	margin: 0;
 }
 .header-top .social-links li:hover {
