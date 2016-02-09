@@ -24,13 +24,13 @@ about etc )
 
 /* 1 Typography
 ----------------------------------------------------------------------------- */
-@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+@import url(https://fonts.googleapis.com/css?family=Roboto:100,300);
 
 html {
 	height: 100%;
 }
 body {
-	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-family: 'Roboto', sans-serif;
   font-size: 16px;
   line-height: 25px;
 	color: #807d82;
@@ -4481,6 +4481,10 @@ a.overlay.small i {
 		display: block;
 		width: 60%;
 		margin: 10px auto;
+	}
+	.header {
+	padding-bottom:0px;
+  margin-bottom:0px;
 	}
 }
 
