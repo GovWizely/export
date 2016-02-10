@@ -3495,7 +3495,7 @@ a.overlay.small i {
 /* first level menu items */
 .navbar-default .navbar-nav > li > a {
     color: #666666;
-    font-size: 12.5px;
+    font-size: 12px;
     text-transform: uppercase;
     font-weight: 400;
     padding: 12px 10px 12px 10px;

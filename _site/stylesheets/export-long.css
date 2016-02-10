@@ -354,7 +354,8 @@ tbody {
 .header {
 	padding-top:10px;
 	padding-bottom: 18px;
-	background-color: #3b9188;
+	background-color: #46596d;
+	border-bottom: 4px solid #3b9188;
 }
 .header.dark {
 	background-color: #36373C;
