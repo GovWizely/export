@@ -33,7 +33,7 @@ body {
 	font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   line-height: 25px;
-	color: #807d82;
+	color: #3c4542;
 	background-color: #ffffff;
 }
 body.full-height, body.full-height .page-wrapper {
@@ -60,7 +60,8 @@ h6 a {
 h1 {
 	font-size: 32px;
 	font-weight: 400;
-	color: #807d82;
+	margin-bottom:20px;
+	color: #3c4542;
 }
 h2 {
 	font-size: 28px;
@@ -349,6 +350,7 @@ tbody {
   padding-top:10px;
 	padding-bottom: 18px;
 	background-color: #fff;
+	    border-bottom: 1px solid #eaeaea;
 }
 .header.dark {
 	background-color: #36373C;
