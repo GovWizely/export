@@ -337,8 +337,6 @@ tbody {
 .header-top {
 	background-color: #f4f4f4;
 	border-bottom: 1px solid #dadada;
-	-webkit-box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.03) inset;
-	box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.03) inset;
 }
 .header-top.dark {
 	background-color: #27272A;

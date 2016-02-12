@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+<html>
+                <head>
+
+                                <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+
+                </head>
+                <body>
+                <div id="results_container" >
+                </div>
+                </body>
+                <script>
+                                                $(document).ready(function() {
+                                                                get_results();
+                                                });
+                                                function get_results()
+                                                {
+                                                                $.getJSON('https://api.govwizely.com/trade_leads/search?api_key=-DgaM8IefU4280JDV36SHZC1&size=1&offset=4', function(d)
+                                                                {
+                                                                                $("#results_container").empty();
+                                                                                for (x in d.results)
+                                                                                {
+                                                                                                row = '<div id="result_' + x + '"><p class="result_id"><strong>Result ID</strong>: ' + d.results[x].id + '</p><h1 class="result_title">' + d.results[x].title + '</h1>' + '<p class="result_publish_date"><small><strong>Published Date: </strong>' + d.results[x].publish_date + '</small></p>' + '<p class="result_description">' + d.results[x].description + '</p>'
+                                                                                                if (x < d.results.length-1)
+                                                                                                {
+                                                                                                                row = row;
+                                                                                                }
+                                                                                                row = row + "</div>";
+                                                                                                $("#results_container").append(row);
+
+                                                                                }
+
+                                                                });
+                                                }
+                                </script>
+</html>

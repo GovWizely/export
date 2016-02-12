@@ -3487,8 +3487,8 @@ a.overlay.small i {
 .navbar.navbar-default {
 	border-radius: 0;
 	margin: 12px 0 5px;
-	background-color: #fff;
-	border-color: #fff;
+	background: transparent;
+	border: none;
 }
 .header-small .navbar.navbar-default {
 	margin: 6px 0 5px;
@@ -3496,10 +3496,10 @@ a.overlay.small i {
 
 /* first level menu items */
 .navbar-default .navbar-nav > li > a {
-    color: #666666;
-    font-size: 12px;
-    text-transform: uppercase;
+	color: #fff;
+    font-size: 14px;
     font-weight: 400;
+    text-transform: uppercase;
     padding: 12px 10px 12px 10px;
 	z-index: 102;
 	border: 1px solid transparent;
