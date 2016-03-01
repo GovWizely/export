@@ -36,6 +36,70 @@
 			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
 		<![endif]-->
+		<script language="javascript">
+
+function expandAll(){
+    $('.hidden').removeClass('hidden');
+    $('.icoChap').addClass('fa-minus-square');
+    $('.icoChap').removeClass('fa-plus-square');
+    $('.icoSec').addClass('fa-minus-square');
+    $('.icoSec').removeClass('fa-plus-square');
+    $('.l0').show();
+    $('.l1').show();
+    $('.l2').show();
+}
+
+function collapseAll(){
+    $('.hidden').removeClass('hidden');
+    $('.icoChap').removeClass('fa-minus-square');
+    $('.icoChap').addClass('fa-plus-square');
+    $('.icoSec').removeClass('fa-minus-square');
+    $('.icoSec').addClass('fa-plus-square');
+    $('.l0').hide();
+    $('.l1').hide();
+    $('.l2').hide();
+}
+
+
+function expandChapter(ref){
+    console.log('expandChapter clicked');
+    $('.l0').hide();
+    $('.l1').hide();
+    $('.l2').hide();
+    $('.icoChap').removeClass('fa-minus-square');
+    $('.icoChap').addClass('fa-plus-square');
+    $('.icoSec').removeClass('fa-minus-square');
+    $('.icoSec').addClass('fa-plus-square');
+    $(ref).children('i').addClass('fa-minus-square');
+    $(ref).children('i').removeClass('fa-plus-square');
+    $(ref).parent().children('.l0').show();
+    $(ref).parent().children('.l0').removeClass('hidden');
+}
+
+function expandSection(ref){
+    console.log('expandSection clicked');
+    $('.l1').removeClass('hidden');
+    $('.l1').hide();
+    $('.icoSec').removeClass('fa-minus-square');
+    $('.icoSec').addClass('fa-plus-square');
+    $(ref).children('i').addClass('fa-minus-square');
+    $(ref).children('i').removeClass('fa-plus-square');
+
+    $(ref).parent().children('.l1').show();
+}
+
+function expandl2(ref){
+    console.log('expandSection clicked');
+    $('.l2').removeClass('hidden');
+    $('.l2').hide();
+    $('.icoSec').removeClass('fa-minus-square');
+    $('.icoSec').addClass('fa-plus-square');
+    $(ref).children('i').addClass('fa-minus-square');
+    $(ref).children('i').removeClass('fa-plus-square');
+
+    $(ref).parent().children('.l2').show();
+}
+    </script>
 	</head>
 
 
@@ -75,8 +139,220 @@
 								<div class="sidebar col-md-2">
 
 
+ <ul id="navigation" style="list-style-type: none;">
+                    <li class="">
+                        <a href="javascript:void(0);" onclick="expandChapter(this);">
+                            <i class="icoChap fa fa-plus-square"></i>
+                        Industry Insight
+                        </a>
+                            <ul class="l0  hidden">
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Overview
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Opps
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Barriers
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" onclick="expandChapter(this);">
+                            <i class="icoChap fa fa-plus-square"></i>
+                        Country Spotlight
+                        </a>
+                            <ul class="l0  hidden">
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Overview
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Opps
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Barriers
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" onclick="expandChapter(this);">
+                            <i class="icoChap fa fa-plus-square"></i>
+                        Article A
+                        </a>
+                            <ul class="l0  hidden">
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Article A2
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=1-Testing-Article-233PM" onclick="">
+                                                    1 Testing - Article 233PM
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=Planning-Ahead" onclick="">
+                                                    Planning Ahead
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" onclick="expandChapter(this);">
+                            <i class="icoChap fa fa-minus-square"></i>
+                        Article B
+                        </a>
+                            <ul class="l0 "  style="list-style-type: none;">
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-minus-square"></i>
+                                    Article B2
+                                    </a>
+                                        <ul class="l1 "  >
+                                                <li class="">
+                                                    <a href="?id=Create-KM-Action" onclick="">
+                                                    Create KM Action
+                                                    </a>
+                                                </li>
+                                                <li class=" selected">
+                                                    <a href="?id=Real-Madrid-CF" onclick="">
+                                                    Real Madrid CF
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" onclick="expandChapter(this);">
+                            <i class="icoChap fa fa-plus-square"></i>
+                        Article C
+                        </a>
+                            <ul class="l0  hidden">
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Article B2
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=Enable-Salesforce-Communities" onclick="">
+                                                    Enable Salesforce Communities
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Article C1
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=Support-Articles-in-Multiple-Languages" onclick="">
+                                                    Support Articles in Multiple Languages
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                </ul>
 
-
+</br></br>
 									<div class="tags-cloud">
 										<div class="tag">
 											<a href="#">Spain</a>
