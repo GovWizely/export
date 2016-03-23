@@ -3502,11 +3502,11 @@ a.overlay.small i {
 
 /* first level menu items */
 .navbar-default .navbar-nav > li > a {
-	color: #fff;
+	color: #000;
     font-size: 14px;
     font-weight: 400;
     text-transform: uppercase;
-    padding: 12px 10px 12px 10px;
+    padding: 12px 20px 12px 20px;
 	z-index: 102;
 	border: 1px solid transparent;
 	bottom: -1px;
@@ -3749,7 +3749,7 @@ a.overlay.small i {
 	border-color: #3b9188;
 }
 .navbar-default .navbar-toggle .icon-bar {
-	background-color: #fff;
+	background-color: #000;
 }
 .navbar-default .navbar-toggle:hover .icon-bar,
 .navbar-default .navbar-toggle:focus .icon-bar {
@@ -3986,7 +3986,7 @@ a.overlay.small i {
 	.navbar-default .navbar-nav > li > a {
 	background:none;
 		border-bottom: 1px solid #f1f1f1;
-		color:#fff;
+		color:#000;
 	}
 	.subfooter .navbar-default .navbar-nav > li > a {
 		border-bottom: 1px solid #141414;
