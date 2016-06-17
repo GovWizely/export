@@ -1,0 +1,463 @@
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if !IE]><!-->
+<!DOCTYPE html>
+<html lang="en">
+<!--<![endif]-->
+	<head>
+		<meta charset="utf-8">
+		<title>Export</title>
+
+		<!-- Mobile Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<!-- Bootstrap core CSS -->
+		<link href="stylesheets/bootstrap.css" rel="stylesheet">
+
+		<!-- Font Awesome CSS -->
+		<link rel="stylesheet" href="font-awesome.min.css">
+
+		<!-- Plugins -->
+		<link href="stylesheets/animations.css" rel="stylesheet">
+		<link href="stylesheets/settings.css" media="screen" rel="stylesheet">
+		<link href="stylesheets/extralayers.css" media="screen" rel="stylesheet">
+		<link href="stylesheets/magnific-popup.css" rel="stylesheet">
+
+		<!-- Core CSS file -->
+		<link href="stylesheets/export-long.css" rel="stylesheet">
+
+		<!-- Widget resources: -->
+		<script type="text/javascript" src="javascripts/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="stylesheets/widget.css">
+    <script type="text/javascript" src="javascripts/widget.js"></script>
+    <script type="text/javascript" src="javascripts/widget-start.js"></script>
+
+		<!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+			<script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+		<![endif]-->
+		<script language="javascript">
+
+function expandAll(){
+    $('.hidden').removeClass('hidden');
+    $('.icoChap').addClass('fa-minus-square');
+    $('.icoChap').removeClass('fa-plus-square');
+    $('.icoSec').addClass('fa-minus-square');
+    $('.icoSec').removeClass('fa-plus-square');
+    $('.l0').show();
+    $('.l1').show();
+    $('.l2').show();
+}
+
+function collapseAll(){
+    $('.hidden').removeClass('hidden');
+    $('.icoChap').removeClass('fa-minus-square');
+    $('.icoChap').addClass('fa-plus-square');
+    $('.icoSec').removeClass('fa-minus-square');
+    $('.icoSec').addClass('fa-plus-square');
+    $('.l0').hide();
+    $('.l1').hide();
+    $('.l2').hide();
+}
+
+
+function expandChapter(ref){
+    console.log('expandChapter clicked');
+    $('.l0').hide();
+    $('.l1').hide();
+    $('.l2').hide();
+    $('.icoChap').removeClass('fa-minus-square');
+    $('.icoChap').addClass('fa-plus-square');
+    $('.icoSec').removeClass('fa-minus-square');
+    $('.icoSec').addClass('fa-plus-square');
+    $(ref).children('i').addClass('fa-minus-square');
+    $(ref).children('i').removeClass('fa-plus-square');
+    $(ref).parent().children('.l0').show();
+    $(ref).parent().children('.l0').removeClass('hidden');
+}
+
+function expandSection(ref){
+    console.log('expandSection clicked');
+    $('.l1').removeClass('hidden');
+    $('.l1').hide();
+    $('.icoSec').removeClass('fa-minus-square');
+    $('.icoSec').addClass('fa-plus-square');
+    $(ref).children('i').addClass('fa-minus-square');
+    $(ref).children('i').removeClass('fa-plus-square');
+
+    $(ref).parent().children('.l1').show();
+}
+
+function expandl2(ref){
+    console.log('expandSection clicked');
+    $('.l2').removeClass('hidden');
+    $('.l2').hide();
+    $('.icoSec').removeClass('fa-minus-square');
+    $('.icoSec').addClass('fa-plus-square');
+    $(ref).children('i').addClass('fa-minus-square');
+    $(ref).children('i').removeClass('fa-plus-square');
+
+    $(ref).parent().children('.l2').show();
+}
+    </script>
+	</head>
+
+
+	<body class="front no-trans">
+		<!-- scrollToTop -->
+		<!-- ================ -->
+		<div class="scrollToTop"><i class="fa fa-chevron-up fa-6"></i></div>
+
+		<!-- page wrapper start -->
+		<!-- ================ -->
+		<div class="page-wrapper">
+
+
+
+
+
+
+<!-- main-container start -->
+			<!-- ================ -->
+			<section class="main-container">
+				<div class="container">
+					<div class="row">
+
+						<!-- main start -->
+						<!-- ================ -->
+						<div class="main col-md-12">
+
+							<!-- page-title start -->
+							<!-- ================ -->
+							<!-- page-title end -->
+							<h1 class="page-title" style="color:#3c4542; font-size:50px;">Real Madrid CF</h1>
+							<p class="lead" style="font-size:16px;text-indent:5px;">Summary for Real Madrid CF</p>
+
+							<hr></br>
+							<div class="row">
+
+								<div class="sidebar col-md-2">
+
+
+ <ul id="navigation" style="list-style-type: none;">
+                    <li class="">
+                        <a href="javascript:void(0);" onclick="expandChapter(this);">
+                            <i class="icoChap fa fa-plus-square"></i>
+                        Industry Insight
+                        </a>
+                            <ul class="l0  hidden">
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Overview
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Opps
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Barriers
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" onclick="expandChapter(this);">
+                            <i class="icoChap fa fa-plus-square"></i>
+                        Country Spotlight
+                        </a>
+                            <ul class="l0  hidden">
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Overview
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Opps
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Industry Barriers
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Top Markets
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=" onclick="">
+                                                    Grow Sectors
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" onclick="expandChapter(this);">
+                            <i class="icoChap fa fa-plus-square"></i>
+                        Article A
+                        </a>
+                            <ul class="l0  hidden">
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Article A2
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=1-Testing-Article-233PM" onclick="">
+                                                    1 Testing - Article 233PM
+                                                    </a>
+                                                </li>
+                                                <li class="">
+                                                    <a href="?id=Planning-Ahead" onclick="">
+                                                    Planning Ahead
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" onclick="expandChapter(this);">
+                            <i class="icoChap fa fa-minus-square"></i>
+                        Article B
+                        </a>
+                            <ul class="l0 "  style="list-style-type: none;">
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-minus-square"></i>
+                                    Article B2
+                                    </a>
+                                        <ul class="l1 "  >
+                                                <li class="">
+                                                    <a href="?id=Create-KM-Action" onclick="">
+                                                    Create KM Action
+                                                    </a>
+                                                </li>
+                                                <li class=" selected">
+                                                    <a href="?id=Real-Madrid-CF" onclick="">
+                                                    Real Madrid CF
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                    <li class="">
+                        <a href="javascript:void(0);" onclick="expandChapter(this);">
+                            <i class="icoChap fa fa-plus-square"></i>
+                        Article C
+                        </a>
+                            <ul class="l0  hidden">
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Article B2
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=Enable-Salesforce-Communities" onclick="">
+                                                    Enable Salesforce Communities
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                                    <li class="">
+                                    <a href="javascript:void(0);" onclick="expandSection(this);">
+                                        <i class="icoChap fa fa-plus-square"></i>
+                                    Article C1
+                                    </a>
+                                        <ul class="l1  hidden">
+                                                <li class="">
+                                                    <a href="?id=Support-Articles-in-Multiple-Languages" onclick="">
+                                                    Support Articles in Multiple Languages
+                                                    </a>
+                                                </li>
+                                        </ul>
+                                    </li>
+                            </ul>
+                    </li>
+                </ul>
+
+</br></br>
+									<div class="tags-cloud">
+										<div class="tag">
+											<a href="#">Spain</a>
+										</div>
+										<div class="tag">
+											<a href="#">Madrid</a>
+										</div>
+										<div class="tag">
+											<a href="#">Fútbol</a>
+										</div>
+										<div class="tag">
+											<a href="#">culture</a>
+										</div>
+										<div class="tag">
+											<a href="#">sports</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- sidebar start -->
+								<aside class="col-md-9">
+								<div class="side vertical-divider-left">
+
+									<h7><b>Last Published:</b> <em>2/26/2016</em></h7></br></br><div class="itaBr"></div><p><b>Real Madrid Club de Fútbol</b> (<small>Spanish pronunciation: </small><a href="https://en.wikipedia.org/wiki/Help:IPA_for_Spanish" target="_blank" title="Help:IPA for Spanish">[reˈal maˈðɾið ˈkluβ ðe ˈfuðβol]</a>; <i>Royal Madrid Football Club</i>), commonly known as <b>Real Madrid</b>, or simply as <b>Real</b>, is a professional <a href="https://en.wikipedia.org/wiki/Association_football" target="_blank" title="Association football">football</a> club based in <a href="https://en.wikipedia.org/wiki/Madrid" target="_blank" title="Madrid">Madrid</a>, Spain.</p>
+
+<p>Founded in 1902 as <i>Madrid Football Club</i>, the team has traditionally worn a white home kit since inception. The word <i>Real</i> is Spanish for <i>Royal</i> and was bestowed to the club by <a href="https://en.wikipedia.org/wiki/Alfonso_XIII_of_Spain" target="_blank" title="Alfonso XIII of Spain">King Alfonso XIII</a> in 1920 together with the royal crown in the emblem. The team has played its home matches in the 85,454-capacity <a href="https://en.wikipedia.org/wiki/Santiago_Bernab%C3%A9u_Stadium" target="_blank" title="Santiago Bernabéu Stadium">Santiago Bernabéu Stadium</a> in downtown Madrid since 1947. Unlike most European sporting entities, Real Madrid&#39;s members (<i>socios</i>) have owned and operated the club throughout its history.</p>
+
+<p>The club is the <a href="https://en.wikipedia.org/wiki/Forbes%27_list_of_the_most_valuable_sports_teams" target="_blank" title="Forbes&#39; list of the most valuable sports teams">most valuable sports team</a> in the world, worth €2.5 billion ($3.4 billion) and the world&#39;s <a href="https://en.wikipedia.org/wiki/Deloitte_Football_Money_League" target="_blank" title="Deloitte Football Money League">highest-earning</a> football club for 2013–14, with an annual revenue of €549.5 million.<sup id="cite_ref-5"><a href="https://en.wikipedia.org/wiki/Real_Madrid_C.F.#cite_note-5" target="_blank">[5]</a></sup><sup id="cite_ref-6"><a href="https://en.wikipedia.org/wiki/Real_Madrid_C.F.#cite_note-6" target="_blank">[6]</a></sup><sup id="cite_ref-Sports_teams_7-0"><a href="https://en.wikipedia.org/wiki/Real_Madrid_C.F.#cite_note-Sports_teams-7" target="_blank">[7]</a></sup> The club is one of the most widely supported teams in the world.<sup id="cite_ref-8"><a href="https://en.wikipedia.org/wiki/Real_Madrid_C.F.#cite_note-8" target="_blank">[8]</a></sup> Real Madrid is one of three founding members of the <a href="https://en.wikipedia.org/wiki/La_Liga" target="_blank" title="La Liga">Primera División</a> that have <a href="https://en.wikipedia.org/wiki/List_of_unrelegated_association_football_clubs" target="_blank" title="List of unrelegated association football clubs">never been relegated</a> from the top division, along with <a href="https://en.wikipedia.org/wiki/Athletic_Bilbao" target="_blank" title="Athletic Bilbao">Athletic Bilbao</a> and<a href="https://en.wikipedia.org/wiki/FC_Barcelona" target="_blank" title="FC Barcelona">Barcelona</a>. The club holds many long-standing rivalries, most notably <i><a href="https://en.wikipedia.org/wiki/El_Cl%C3%A1sico" target="_blank" title="El Clásico">El Clásico</a></i> with Barcelona and the <i><a href="https://en.wikipedia.org/wiki/El_Derbi_madrile%C3%B1o" target="_blank" title="El Derbi madrileño">El Derbi madrileño</a></i> with <a href="https://en.wikipedia.org/wiki/Atl%C3%A9tico_Madrid" target="_blank" title="Atlético Madrid">Atlético Madrid</a>.</p>
+
+<p>Real Madrid established itself as a major force in both Spanish and European football during the 1950s. The club won five consecutive <a href="https://en.wikipedia.org/wiki/UEFA_Champions_League" target="_blank" title="UEFA Champions League">European Cups</a>, and reached the final seven times. This success was replicated in the league, where the club won five times in the space of seven years. This team, which consisted of players such as <a href="https://en.wikipedia.org/wiki/Alfredo_Di_St%C3%A9fano" target="_blank" title="Alfredo Di Stéfano">Di Stéfano</a>, <a href="https://en.wikipedia.org/wiki/Ferenc_Pusk%C3%A1s" target="_blank" title="Ferenc Puskás">Ferenc Puskás</a>, <a href="https://en.wikipedia.org/wiki/Francisco_Gento" target="_blank" title="Francisco Gento">Gento</a>, <a href="https://en.wikipedia.org/wiki/Raymond_Kopa" target="_blank" title="Raymond Kopa">Raymond Kopa</a>, and <a href="https://en.wikipedia.org/wiki/Jos%C3%A9_Santamar%C3%ADa" target="_blank" title="José Santamaría">Santamaría</a>, is considered by some in the sport to be the greatest team of all time.<sup id="cite_ref-9"><a href="https://en.wikipedia.org/wiki/Real_Madrid_C.F.#cite_note-9" target="_blank">[9]</a></sup><sup id="cite_ref-10"><a href="https://en.wikipedia.org/wiki/Real_Madrid_C.F.#cite_note-10" target="_blank">[10]</a></sup><sup id="cite_ref-11"><a href="https://en.wikipedia.org/wiki/Real_Madrid_C.F.#cite_note-11" target="_blank">[11]</a></sup><sup id="cite_ref-12"><a href="https://en.wikipedia.org/wiki/Real_Madrid_C.F.#cite_note-12" target="_blank">[12]</a></sup></p><div class="itaBr"></div>
+                <em>ZYX</em>
+
+</br></br></br></br>
+                <!-- pagination start -->
+							<ul class="pagination">
+								<li><a href="#">«</a></li>
+								<li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+								<li><a href="#">2</a></li>
+								<li><a href="#">3</a></li>
+								<li><a href="#">4</a></li>
+								<li><a href="#">5</a></li>
+								<li><a href="#">»</a></li>
+							</ul>
+							<!-- pagination end -->
+
+                </div>
+
+
+								</aside>
+								<!-- sidebar end -->
+							</div>
+
+						</div>
+						<!-- main end -->
+
+					</div>
+				</div>
+			</section>
+			<!-- main-container end -->
+
+
+</br></br></br></br>
+
+
+
+
+		</div>
+		<!-- page-wrapper end -->
+
+		<!-- JavaScript files
+		================================================== -->
+		<!-- Jquery and Bootstap core js files -->
+		<script type="text/javascript" src="javascripts/jquery.min.js"></script>
+		<script type="text/javascript" src="javascripts/bootstrap.min.js"></script>
+
+		<!-- Modernizr javascript -->
+		<script type="text/javascript" src="javascripts/modernizr.js"></script>
+
+		<!-- jQuery REVOLUTION Slider  -->
+		<script type="text/javascript" src="javascripts/jquery.themepunch.tools.min.js"></script>
+		<script type="text/javascript" src="javascripts/jquery.themepunch.revolution.min.js"></script>
+
+		<!-- Initialization of Plugins -->
+		<script type="text/javascript" src="javascripts/template.js"></script>
+
+		<!-- Isotope javascript -->
+		<script type="text/javascript" src="javascripts/isotope.pkgd.min.js"></script>
+
+		<!-- Magnific Popup javascript -->
+		<script type="text/javascript" src="javascripts/jquery.magnific-popup.min.js"></script>
+
+		<!-- Appear javascript -->
+		<script type="text/javascript" src="javascripts/jquery.appear.js"></script>
+
+		<!-- Count To javascript -->
+		<script type="text/javascript" src="javascripts/jquery.countTo.js"></script>
+
+		<!-- Parallax javascript -->
+		<script src="javascripts/jquery.parallax-1.1.3.js"></script>
+
+		<!-- Render Trade Articles javascript -->
+		<script src="javascripts/render-articles.js"></script>
+
+
+
+
+	</body>
+</html>

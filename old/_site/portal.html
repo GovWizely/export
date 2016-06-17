@@ -1,0 +1,2446 @@
+
+
+
+<!DOCTYPE html>	<html xmlns='http://www.w3.org/1999/xhtml'>
+
+		<head>
+
+			<title>Export.gov</title>
+
+<script type="text/javascript">
+//<![CDATA[
+try{if (!window.CloudFlare) {var CloudFlare=[{verbose:0,p:1437696757,byc:0,owlid:"cf",bag2:1,mirage2:0,oracle:0,paths:{cloudflare:"/cdn-cgi/nexp/dok3v=1613a3a185/"},atok:"dec7259adfbae00fed7175c3b40765e3",petok:"0168d601c2df76cf7b461e6e09d5cfe1c93e2ad3-1437743597-1800",betok:"bf0d59652b4a510975910a02541290b739ea352c-1437743597-120",zone:"salesforce.com",rocket:"0",apps:{"clky":{"sid":"100752072","uid":"100467091"}}}];!function(a,b){a=document.createElement("script"),b=document.getElementsByTagName("script")[0],a.async=!0,a.src="//ajax.cloudflare.com/cdn-cgi/nexp/dok3v=e6ea9bd6c9/cloudflare.min.js",b.parentNode.insertBefore(a,b)}()}}catch(e){};
+//]]>
+</script>
+<link href='https://developer.salesforce.com/SiteStyleSheet?v=51' rel='stylesheet' type='text/css'/>
+
+			<script type='text/javascript' src='https://developer.salesforce.com/sfsites/assets/Scripts/jquery/jquery.js?r=1.201507240231520659'>
+
+			</script>
+
+			<script type='text/javascript' src='https://developer.salesforce.com/sfsites/assets/Scripts/jquery/jquery.js?r=1.201507240231520659'>
+
+			</script>
+
+
+
+<!--<dfc-head>-->
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <link rel="icon" href="/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+  <meta property="og:image" content="https://res.cloudinary.com/hy4kyit2a/image/upload/og-image.jpg" />
+
+  <link href="//res.cloudinary.com/hy4kyit2a/image/upload/v1428517247/iphone_3_j0mhil.png" rel="apple-touch-icon-precomposed" type="image/png" />
+  <link href="//res.cloudinary.com/hy4kyit2a/image/upload/v1428517247/iphone_3_j0mhil.png" rel="apple-touch-icon-precomposed" sizes="72x72" type="image/png" />
+  <link href="//res.cloudinary.com/hy4kyit2a/image/upload/v1428517258/iphone-retina_ogf4ll.png" rel="apple-touch-icon-precomposed" sizes="114x114" type="image/png" />
+  <link href="//res.cloudinary.com/hy4kyit2a/image/upload/v1428517265/ipad-retina_h8t1cu.png" rel="apple-touch-icon-precomposed" sizes="144x144" type="image/png" />
+
+
+	<link href='stylesheets/holygrail.min.css' rel='stylesheet' type='text/css'/>
+<script type='text/javascript' src='https://developer.salesforce.com/resource/javascripts/holygrail.min.js'></script>
+
+<!--</dfc-head>-->
+<script>
+    var isSdcPage = (typeof picassoRuntime !== 'undefined'),
+    lang = getLang();
+    
+    function readCookie(name) {
+        return (name = new RegExp('(?:^|;\\s*)' + ('' + name).replace(/[-[\]{}()*+?.,\\^$|#\s]/g, '\\$&') + '=([^;]*)').exec(document.cookie)) && name[1];
+    }
+    if (readCookie('apex__dfc_locale') === null) {
+        document.cookie = 'apex__dfc_locale=' + lang.code + ';path=/;';
+        window.location.reload()
+    }
+    // check if we need this function
+    if (lang.code !== readCookie('apex__dfc_locale')) {
+        document.cookie = 'apex__dfc_locale=' + lang.code + ';path=/;';
+    }
+    
+    if (/(staging|qa)/.test(window.location.host) && !/^\/\d+$/.test(window.location.pathname )) {
+        $.ajax({
+            url: "/auth/basic_auth",
+            async: false,
+            complete: function(xhr, textStatus) {
+                if (xhr.status == 403) {
+                    window.location = '//developer.salesforce.com/403';
+                }
+            }
+        });
+  }
+</script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+
+<meta name="Description" content="#1 destination for learning to build mobile &amp; enterprise applications in the cloud with the Salesforce1 Platform, Force.com, Heroku and ExactTarget Fuel">
+<meta name="Keywords" content="force.com, visualforce, apex, salesforce1 platform, mobile, enterprise, applications, developer, documentation, forums, tutorials">
+<link rel="canonical" href="https://developer.salesforce.com" />
+<script type="text/javascript">
+    $(function() {
+        $('.sdn-aside-content.quick-links li').dotdotdot({
+            watch: 'window'
+        });
+    });
+</script>
+<link href="https://developer.salesforce.com/resource/stylesheets/home.min.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="https://developer.salesforce.com/resource/javascripts/homeFeeds.min.js"></script>
+<script type="text/javascript" src="https://developer.salesforce.com/resource/javascripts/jquery.dotdotdot.min.js"></script>		</head>
+
+		<body class="no-js" data-spy="scroll" data-target="#sdn-docs-scroll-spy-target" itemid="body">
+
+	<div>
+
+	<HEADER style="background-color:#0B5394;border-bottom:8px solid #6D98BF;">
+
+<!--<dfc-header>-->
+<!--<script type="text/javascript" src="/custom.js"></script>-->		<div class="navbar navbar-static-top">
+
+			<div class="navbar-inner">
+
+				<div class="container">
+
+					<div class="mobileHeaderContainer">
+
+						<A class="brand clearfix" href="/">
+
+<img src="images/eg3.png" alt="Logo" width="190">						</A>
+
+						<div class="headerButtonsContainer">
+
+							<div class="spanButton clearfix pull-right">
+
+								<a class="btn btn-success" type="button" href="/signup?d=70130000000td6N">
+
+Register &rsaquo;								</a>
+
+							</div>
+
+							<div style="position: relative;" class="spanButton clearfix pull-right">
+
+								<BUTTON id="login-button" class="btn btn-primary" type="button">
+
+Sign in &rsaquo;								</BUTTON>
+
+								<div id="user-info-container" style="display: none;">
+
+									<div id="user-info-content">
+
+										<div id="user-info-header" class="clearfix">
+
+											<div id="user-info-picture">
+
+&nbsp;											</div>
+
+											<div id="user-info-text-container">
+
+												<div id="user-info-name">
+
+&nbsp;												</div>
+
+												<div id="user-info-username">
+
+&nbsp;												</div>
+
+												<div class="clearfix">
+
+&nbsp;												</div>
+
+											</div>
+
+										</div>
+
+										<div id="user-info-profile">
+
+											<ul class="unstyled">
+
+												<li id="MyDeveloperAcc">
+
+													<a>
+
+My Developer Account >													</a>
+
+												</li>
+
+												<li id="CreateNewAcc">
+
+													<a>
+
+Create Account >													</a>
+
+												</li>
+
+												<li id="MySettings">
+
+													<a>
+
+My Settings >													</a>
+
+												</li>
+
+											</ul>
+
+										</div>
+
+										<button id="user-info-logout" onclick="javascript:void(0);">
+
+Log out										</button>
+
+									</div>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div class="social-search clearfix pull-right">
+
+							<div id="search-social-container" class="search-social-inner clearfix" data-placeholder="Search">
+
+								<gcse:searchbox-only resultsUrl="https://go.pardot.com/s/27572/bZmGraVP6uMckd2zJnklMehlfDezI7wZ" enableAutoComplete="true">
+
+&nbsp;								</gcse:searchbox-only>
+
+								<div id="login-logout2" class="login-logout hidden">
+
+									<A id="sdn-login-link2" class="login-link" href="//org.developer.salesforce.com/forums/CommunitiesLogin?startURL=">
+
+Login									</A>
+
+									<ul class="nav nav-pills">
+
+										<li class="dropdown">
+
+											<a class="dropdown-toggle" data-toggle="dropdown" href="#link">
+
+<img src="//developer.salesforce.com/resource/images/user-picture.jpg"/>											</a>
+
+											<ul class="dropdown-menu">
+
+												<li class="name">
+
+													<a href="#">
+
+														<span data-user-field="firstname">
+
+&nbsp;														</span>
+
+														<span data-user-field="lastname">
+
+&nbsp;														</span>
+
+													</a>
+
+												</li>
+
+												<li class="email" data-user-field="username">
+
+&nbsp;												</li>
+
+												<li class="divider">
+
+&nbsp;												</li>
+
+												<li class="logout">
+
+													<a href="#link">
+
+Logout													</a>
+
+												</li>
+
+											</ul>
+
+										</li>
+
+									</ul>
+
+								</div>
+
+							</div>
+
+						</div>
+
+						<div style="height: auto;" class="nav-collapse in collapse">
+
+							<ul id="nav-to-highlight-based-on-url2" class="nav primary-nav">
+
+								<li class="dropdown">
+
+									<a data-toggle="dropdown" href="/platform/overview">
+
+Export Process									</a>
+
+									<ul class="dropdown-menu">
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/gettingstarted">
+
+Export Basics											</a>
+
+										</li>
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/platform/overview">
+
+Basic Guide to Exporting											</a>
+
+										</li>
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/lightning">
+
+Readiness Assessment											</a>
+
+										</li>
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/platform/overview#force-com">
+
+International Logistics											</a>
+
+										</li>
+										
+									</ul>
+
+								</li>
+
+								<li class="dropdown">
+
+									<a data-toggle="dropdown" href="/resources">
+
+Opportunities									</a>
+
+									<ul class="dropdown-menu">
+
+							
+
+													<li class="spaced-item">
+
+														<A class="medium-link" href="/docs">
+
+Expand Into New Markets														</A>
+
+													</li>
+
+													<li class="spaced-item">
+
+														<a class="medium-link" href="/page/Wiki">
+
+Market Research														</a>
+
+													</li>
+
+													<li class="spaced-item">
+
+														<a class="medium-link" href="/page/Architect_Core_Resources">
+
+Success Stories														</a>
+
+													</li>
+													<li class="spaced-item">
+
+														<a class="medium-link" href="/page/Architect_Core_Resources">
+
+Learn Marketing Tactics														</a>
+
+													</li>
+													<li class="spaced-item">
+
+														<a class="medium-link" href="/page/Architect_Core_Resources">
+
+International Sales & Marketing														</a>
+
+													</li>
+
+
+									
+
+										</li>
+
+									</ul>
+
+								</li>
+								<li class="dropdown">
+
+									<a data-toggle="dropdown" href="/forums">
+
+Financing
+									</a>
+
+									<ul class="dropdown-menu">
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/page/Force.com_IDE">
+
+Finance Your Exports											</a>
+
+										</li>
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/page/Tools">
+
+Assess Your Finance Options											</a>
+
+										</li>
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="http://developer.force.com/codeshare">
+
+Getting Paid											</a>
+
+										</li>
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="http://developer.force.com/cookbook">
+
+Trade Finance Guide											</a>
+
+										</li>
+
+									</ul>
+
+								</li>
+
+								<li class="dropdown">
+
+									<a data-toggle="dropdown" href="/forums">
+
+Trade Events
+									</a>
+
+									<ul class="dropdown-menu">
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/page/Force.com_IDE">
+
+Trade Events											</a>
+
+										</li>
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/page/Tools">
+
+Training Programs											</a>
+
+										</li>
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="http://developer.force.com/codeshare">
+
+Webinars											</a>
+
+									</ul>
+
+								</li>
+
+								<li class="dropdown">
+
+									<a data-toggle="dropdown" href="//events.developerforce.com/signup?d=70130000000tgM8">
+
+Contacts									</a>
+
+									<ul class="dropdown-menu">
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/forums">
+
+Browse FAQs											</a>
+
+										</li>
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/calendar">
+
+Ask a Question											</a>
+
+										</li>
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/mvp">
+
+Contact a Trade Specialist											</a>
+
+										</li>
+
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/dugs?title=page/Force.com_User_Groups">
+
+Domestic Offices											</a>
+
+										</li>
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/dugs?title=page/Force.com_User_Groups">
+
+International Offices											</a>
+
+										</li>
+										<li class="spaced-item">
+
+											<a class="medium-link" href="/dugs?title=page/Force.com_User_Groups">
+
+District Export Councils											</a>
+
+										</li>								
+
+									</ul>
+
+								</li>
+
+
+
+							</ul>
+
+						</div>
+
+					</div>
+
+					<div class="mobile mobileHeader">
+
+						<a id="mobileMenu">
+
+<img src="//developer.salesforce.com/resource/images/MenuMobile.png"/> 						</a>
+
+						<a class="mobileLogo" href="/">
+
+<img src="images/eg3.png" class="sewg314" style="width:118px;"/> 						</a>
+
+						<a id="mobileSearch">
+
+<img src="//developer.salesforce.com/resource/images/SearchMobile.png"/> 						</a>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+<script src="//developer.salesforce.com/resource/javascripts/afterheader.min.js"></script>
+
+<script>
+    
+    function animateSearchIn() {
+        $('#mobileSearchContainerOverlay').fadeIn();
+        $('#mobileSearchContainer').fadeIn();
+        $('.gsc-input').focus();
+        $("#mobileSearchContainer .searchBar").animate({
+          top: '0px',
+        }, 500, function() {
+            
+            $("#mobileSearchContainer .searchBar").animate({
+              top: '-20px',
+            }, 300);
+            
+        });
+    }
+    
+    function animateSearchOut() {
+        $("#mobileSearchContainer .searchBar").animate({
+          top: '0px',
+        }, 300, function() {
+            $("#mobileSearchContainer .searchBar").animate({
+              top: '-80px',
+            }, 500, function() {
+                $('#mobileSearchContainer').fadeOut();
+                $('#mobileSearchContainerOverlay').fadeOut();
+                $('.gsc-input').val('');
+            });
+        });
+    }
+    
+    var intval_placeholder_search;
+    
+    function checkPlaceholderSearch(){
+    	if( jQuery("#newSearchContainer").find('input[name="search"]').length == 1 ){
+        	var a=jQuery("#newSearchContainer");
+      		a.find('input[name="search"]').attr("placeholder",a.attr("data-placeholder"));
+            
+            $('#newSearchContainer td.gsc-input').after($('<div class="clear-icon"></div>'));
+        
+            $('.clear-icon').click(function(){
+                $('#newSearchContainer input.gsc-input').val('');
+            });
+            clearInterval(intval_placeholder_search);
+        }
+    }
+    
+    function makeNewSearch(){
+      var newMobileSearchOverlay = $('<div></div>').attr('id', 'mobileSearchContainerOverlay');
+      var newMobileSearch = $('<div></div>').attr('id', 'mobileSearchContainer');
+      var searchBar = $('<div></div>').addClass('searchBar');
+        
+      var newSearchContainer = $('<div></div>').attr({
+      	id: 'newSearchContainer',
+        'data-placeholder':'Search'
+      });
+        
+      var newSearch = $('<gcse:searchbox-only></gcse:searchbox-only>').attr({
+          resultsUrl : '//go.pardot.com/s/27572/bZmGraVP6uMckd2zJnklMehlfDezI7wZ',
+          enableAutoComplete : true
+      });
+        
+      $(newSearchContainer).append(newSearch);
+      
+      $(searchBar).append(newSearchContainer);
+      $(newMobileSearch).append($(searchBar));
+        
+      $('body').prepend(newMobileSearchOverlay);
+      $('body').prepend(newMobileSearch);
+      
+      $(newMobileSearchOverlay).click(function(){
+      	  animateSearchOut();
+      });
+        
+        
+      if( jQuery("#newSearchContainer").find('input[name="search"]').length == 0 ){
+          intval_placeholder_search = setInterval(function(){ checkPlaceholderSearch() }, 100);
+      }
+    }
+    
+    var intervalBtn;
+    
+    function placeMobileSearchCancelBtn(){
+        if( $('#mobileSearchContainer td.gsc-clear-button').length > 0 ){
+        	
+            clearInterval(intervalBtn);
+            
+            $('#mobileSearchContainer .gsc-search-button').remove();
+        
+            var cancelBtn = $('<button></button>');
+
+            $(cancelBtn).text('Cancel').attr('type', 'button').click(function(){
+                hideMobileSearchContainer();
+            });
+            
+            
+            
+            $('#mobileSearchContainer div.gsc-clear-button').remove();
+            $('#mobileSearchContainer td.gsc-clear-button').append(cancelBtn);
+        }
+    }
+
+    function showMobileSearchContainer(){
+        
+        if( $('#mobileSearchContainer .gsc-clear-button button').length == 0 ){
+        	placeMobileSearchCancelBtn();
+        }
+        
+        if( $('#mobileSearchContainer td.gsc-clear-button').length == 0 ){
+        	intervalBtn = setInterval(function(){placeMobileSearchCancelBtn()}, 500);
+        }
+        animateSearchIn();
+        
+    }
+    
+    function hideMobileSearchContainer(){
+		animateSearchOut();
+    }
+    
+    function mobileSidebarFix(){
+        if( $('body').width() <= 979 ){
+        	$('.mobileHeaderContainer').addClass('on-mobile');
+        }else{
+        	$('.mobileHeaderContainer').removeClass('on-mobile');
+        }
+    }
+    
+    var hideMobileHeaderContainer = true;
+
+
+    $(document).ready(function(){
+        
+        /*!
+        * jquery.scrollto.js 0.0.1 - https://github.com/yckart/jquery.scrollto.js
+        * Scroll smooth to any element in your DOM.
+        *
+        * Copyright (c) 2012 Yannick Albert (http://yckart.com)
+        * Licensed under the MIT license (http://www.opensource.org/licenses/mit-license.php).
+        * 2013/02/17
+        **/
+        $.scrollTo = $.fn.scrollTo = function(x, y, options){
+            if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
+
+            options = $.extend({}, {
+                gap: {
+                    x: 0,
+                    y: 1
+                },
+                animation: {
+                    easing: 'swing',
+                    duration: 600,
+                    complete: $.noop,
+                    step: $.noop
+                }
+            }, options);
+
+            return this.each(function(){
+                var elem = $(this);
+                elem.stop().animate({
+                    scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
+                    scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top + options.gap.y
+                }, options.animation);
+            });
+        };
+        
+        makeNewSearch();
+        mobileSidebarFix();
+        
+        $('#mobileSearch').unbind('click');
+        
+        $('#mobileSearch').click(function(){
+          showMobileSearchContainer();
+        });
+        
+        
+        
+        $(window).scroll(function() {
+            
+            if( hideMobileHeaderContainer == true && $(window).scrollLeft() > ($('.mobileHeaderContainer').outerWidth()/2) ){ 
+                hideMobileHeaderContainer = false;
+                
+                setTimeout(function(){hideMobileHeaderContainer=true;}, 600);
+                //$('html,body').scrollTo(0, 0, function(){});
+                $('header').removeClass('showMobile');
+                $('#SDNmaintemplate').removeClass('showMobile');
+                $('footer').removeClass('showMobile');
+            }
+        });
+        
+        $(window).resize(function(){
+        	mobileSidebarFix();
+        });
+    });
+    
+</script>
+
+<style>
+    
+    /* TO OVERRIDE */
+    header, .contentArea, footer, #navigation-bar {
+        width: 100%;
+    }
+    
+    /*header, .contentArea, footer, #navigation-bar {
+        transition: margin 0.5s ease 0s !important;
+    }
+    
+    .mobileHeaderContainer {
+        transition: left 0.5s ease 0s !important;
+    }*/
+    
+    .mobileHeaderContainer.on-mobile .headerButtonsContainer {
+        margin-bottom: 20px;
+    }
+    /**/
+    
+    .social-search button, .social-search input.gsc-search-button {
+    	top: 10px;
+    }
+    
+    .mobileHeaderContainer.on-mobile .social-search {
+        display: none;
+    }
+    
+    #mobileSearchContainerOverlay {
+        background-color: rgba(0,0,0,0.7);
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        z-index: 998;
+        display: none;
+    }
+    #mobileSearchContainer {
+        position: absolute;
+        width: 100%;
+        z-index: 999;
+        display: none;
+    }
+    
+    #mobileSearchContainer #newSearchContainer table.gsc-search-box{
+    	float: none;
+    }
+    
+    #mobileSearchContainer .searchBar {
+        background-color: #023f5e;
+        padding: 30px 0 10px !important;
+        position: relative;
+        top: -80px;
+        
+        background: #06233c; /* Old browsers */
+        background: -moz-linear-gradient(top, #06233c 0%, #041425 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#06233c), color-stop(100%,#041425)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #06233c 0%,#041425 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #06233c 0%,#041425 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #06233c 0%,#041425 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #06233c 0%,#041425 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#06233c', endColorstr='#041425',GradientType=0 ); /* IE6-9 */
+    }
+    
+    #mobileSearchContainer #newSearchContainer table.gsc-search-box, #mobileSearchContainer #newSearchContainer form.gsc-search-box{
+    	margin: 0;
+    }
+    
+    #mobileSearchContainer #newSearchContainer table.gsc-search-box {
+        width: 100%;
+    }
+    
+    #mobileSearchContainer #newSearchContainer input.gsc-input {
+        width: 100%;
+        box-sizing: border-box;
+        height: 34px;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        background-color: #fff !important;
+    	background-image: none !important;
+        margin-bottom: 0 !important;
+        padding-left: 30px;
+    }
+    
+    #newSearchContainer td.gsc-input:before {
+        background-image: url("/resources2/images/SearchMobile_left.png");
+        background-repeat: no-repeat;
+        background-size: 15px 15px;
+        content: "";
+        display: block;
+        height: 20px;
+        margin-left: 10px;
+        margin-top: 10px;
+        position: absolute;
+        width: 20px;
+    }
+    
+    .clear-icon{
+    	background-image: url("/resources2/images/icon_close.png");
+        background-repeat: no-repeat;
+        content: "";
+        display: inline;
+        height: 14px;
+        margin-left: -34px;
+        margin-top: 10px;
+        position: absolute;
+        width: 14px;
+        cursor: pointer;
+    }
+    
+    #mobileSearchContainer #newSearchContainer .gsc-search-button {
+        display: none;
+    }
+    
+    #mobileSearchContainer #newSearchContainer .gsc-clear-button{
+    	display: table-cell !important;
+        padding: 0 10px 0 0;
+    }
+    
+    #mobileSearchContainer #newSearchContainer {
+        margin: 0 !important;
+        display: block;
+    }
+    
+    #mobileSearchContainer #newSearchContainer button {
+        background: transparent;
+        border: 1px solid #bbbbbb;
+        -webkit-border-radius: 4px;
+        -moz-border-radius: 4px;
+        border-radius: 4px;
+        color: #cccccc;
+        height: inherit;
+        padding: 8px 10px;
+        position: inherit;
+        right: inherit;
+        text-indent: inherit;
+        top: inherit;
+        width: auto !important;
+    }
+    
+    #mobileSearchContainer #newSearchContainer div.gsc-clear-button{
+        background: none;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+    
+    #mobileSearchContainer #newSearchContainer table.gsc-search-box td.gsc-input {
+        padding: 0 10px;
+    }
+    
+    #newSearchContainer .gstl_50.gssb_c {
+        top: 60px !important;
+        width: 100% !important;
+        left: 0 !important;
+    }
+    
+    #newSearchContainer .gssb_e, #newSearchContainer .gsc-completion-container{
+        -moz-box-shadow: none !important;
+		-webkit-box-shadow: none !important;
+		box-shadow: none !important;
+        border: 0 none !important;
+    }
+    
+    @media( max-width: 1199px){
+    	.social-search input.gsc-input {
+            width: 61px;
+        }
+    }
+</style>
+
+<!--</dfc-header>-->	</HEADER>
+
+	</div>
+
+	<div id="SDNmaintemplate" class="contentArea">
+
+		<div class="hidden">
+
+<!--<dfc-nav>-->
+	<div id="navigation-bar">
+
+		<div class="container">
+
+			<div class="row">
+
+				<div class="span9">
+
+					<div>
+
+<div class="hidden <dfc-show-breadcrumb/>">
+    <dfc-breadcumbs/>
+</div>
+<h1 class="<dfc-no-breadcrumb/>">
+    <dfc-nav-title/>
+</h1>					</div>
+
+				</div>
+
+				<div class="span3">
+
+					<div>
+
+<div id="discussion_board_socialData">
+    <div id="forums_social_wrapper" class="forums_social_wrapper">
+        <div class="addthis_toolbox addthis_default_style addthis_30x30_style pull-right">
+            <a class="addthis_counter_facebook"></a>
+            <a class="addthis_counter_twitter"></a>
+            <a class="addthis_counter_linkedin"></a>
+        </div>
+    
+        <script type="text/javascript" src="//developer.salesforce.com/resource/javascripts/addthisconfig.min.js"></script>
+    
+        <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5329fb0d17e1f4da"></script>
+        <!-- AddThis Button END -->
+    
+    
+    
+        <div class="clear_both"></div>
+    </div>
+</div>					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</div>
+
+<!--</dfc-nav>-->
+		</div>
+
+		<div class="sliderContainer fullWidth royalSlider-sdn clearfix">
+
+			<div id="full-width-slider2" class="royalSlider heroSlider rsMinW">
+
+				<div class="rsContent odd">
+
+<img class="rsImg" src="images/3.jpeg" alt=""/>					<div class="container">
+
+						<div class="row">
+
+			
+
+							<div class="span4">
+
+								<table>
+
+									<tr>
+
+										<td class="homeSliderTextTable">
+
+											<div class="in-slider-content-block">
+
+<a class="cta-link-main" href="https://developer.salesforce.com/trailhead?utm_campaign=homepage-banner&amp;utm_source=DSC&amp;utm_medium=website">
+    <h2>Learn About Exporting</h2>
+    <p>Learn about upcoming training opportunities.</p>
+</a> <div><a class="btn" href="https://developer.salesforce.com/trailhead?utm_campaign=homepage-banner&amp;utm_source=DSC&amp;utm_medium=website">LEARN</a></div>											</div>
+
+										</td>
+
+									</tr>
+
+								</table>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="rsTmb clearfix">
+
+					<div class="copy copy-with-img">
+
+							<h4 class="medium-link">
+
+Learn About Exporting							</h4>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="rsContent even">
+
+<img class="rsImg" src="images/3.jpeg" alt=""/>					<div class="container">
+
+						<div class="row">
+
+							<div class="span4">
+
+<img class="logo-in-slider" src="/sfsites/c/servlet/rtaImage?eid=a0HF000000OwefE&amp;feoid=00NF000000At4Tb&amp;refid=0EMF0000000QxW8" alt=""/> 							</div>
+
+							<div class="span4">
+
+								<table>
+
+									<tr>
+
+										<td class="homeSliderTextTable">
+
+											<div class="in-slider-content-block">
+
+<a class="cta-link-main" href="/events/webinars/mobile_SDK">
+    <h2>Ready to Export</h2>
+    <p>You have an established business and your product or service is selling well.</p>
+</a> <div><a class="btn" href="/events/webinars/mobile_SDK">START</a></div>											</div>
+
+										</td>
+
+									</tr>
+
+								</table>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="rsTmb clearfix">
+
+					<div class="copy copy-with-img">
+
+							<h4 class="medium-link">
+
+Ready to Export							</h4>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="rsContent odd">
+
+<img class="rsImg" src="images/3.jpeg" alt=""/>					<div class="container">
+
+						<div class="row">
+
+							<div class="span4">
+
+<img class="logo-in-slider" src="/sfsites/c/servlet/rtaImage?eid=a0HF000000OxbRz&amp;feoid=00NF000000At4Tb&amp;refid=0EMF0000000QyL1" alt=""/> 							</div>
+
+							<div class="span4">
+
+								<table>
+
+									<tr>
+
+										<td class="homeSliderTextTable">
+
+											<div class="in-slider-content-block">
+
+<a class="cta-link-main" href="https://developer.salesforce.com/blogs/developer-relations/2015/06/join-us-summer-trailhead.html">
+    <h2>Expand My Exports</h2>
+    <p>Already exporting? Great! Grow your sales by expanding into new markets.</p>
+</a> <div><a class="btn" href="https://developer.salesforce.com/blogs/developer-relations/2015/06/join-us-summer-trailhead.html">Find an event near you ›</a></div>											</div>
+
+										</td>
+
+									</tr>
+
+								</table>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="rsTmb clearfix">
+
+					<div class="copy copy-with-img">
+
+							<h4 class="medium-link">
+
+Expand My Exports							</h4>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="rsContent even">
+
+<img class="rsImg" src="images/3.jpeg" alt=""/>					<div class="container">
+
+						<div class="row">
+
+							<div class="span4">
+
+<img class="logo-in-slider" src="/sfsites/c/servlet/rtaImage?eid=a0HF000000Lyegn&amp;feoid=00NF000000At4Tb&amp;refid=0EMF0000000QZx4" alt=""/> 							</div>
+
+							<div class="span4">
+
+								<table>
+
+									<tr>
+
+										<td class="homeSliderTextTable">
+
+											<div class="in-slider-content-block">
+
+<a class="cta-link-main" href="/gettingstarted">
+    <h2>Get Started Today</h2>
+    <p></p>
+</a> 										</div>
+
+										</td>
+
+									</tr>
+
+								</table>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="rsTmb clearfix">
+
+					<div class="copy copy-with-img">
+
+							<h4 class="medium-link">
+
+Get started							</h4>
+
+						</div>
+
+					</div>
+
+				</div>
+
+				<div class="rsContent odd">
+
+<img class="rsImg" src="images/3.jpeg" alt=""/>					<div class="container">
+
+						<div class="row">
+
+							<div class="span4">
+
+<img class="logo-in-slider" src="/sfsites/c/servlet/rtaImage?eid=a0HF000000Ovrgs&amp;feoid=00NF000000At4Tb&amp;refid=0EMF0000000QqON" alt=""/> 							</div>
+
+							<div class="span4">
+
+								<table>
+
+									<tr>
+
+										<td class="homeSliderTextTable">
+
+											<div class="in-slider-content-block">
+
+<a class="cta-link-main" href="/releases/release/Summer15">
+    
+</a> 											</div>
+
+										</td>
+
+									</tr>
+
+								</table>
+
+							</div>
+
+						</div>
+
+					</div>
+
+					<div class="rsTmb clearfix">
+
+				<div class="copy copy-with-img">
+
+							<h4 class="medium-link">
+
+Events							</h4>
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+			<div id="sliderMenu">
+
+				<div class="container">
+
+					<div class="row">
+
+						<div class="span8">
+
+						</div>
+
+						<div class="span4 span-menu">
+
+						</div>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+		<div class="container homepage-bottom">
+
+			<section class="row">
+
+				<div class="span3">
+
+					<ASIDE class="sdn-aside-content learn-about clearfix">
+
+						<h3 class="sub-header">
+
+Frequently Asked Questions						</h3>
+
+						<ul class="unstyled">
+
+							<li class="clearfix">
+
+								<a href="/platform">
+
+<img src="//developer.salesforce.com/resource/images/home-col-33x33-cloud.png"/> 									<span class="copy copy-with-img">
+
+										<h3 class="link-color medium-link">
+
+Despite my CE marking why does my importer ask for an A.TR-1 Certificate? What is the A.TR-1-Certificate?
+										</h3>
+
+										<p class="medium-link">
+In the early stages of EU directives..
+										</p>
+
+									</span>
+
+								</a>
+
+							</li>
+
+							<li class="clearfix">
+
+								<a href="/platform">
+
+<img src="//developer.salesforce.com/resource/images/home-col-33x33-heroku.png"/> 									<span class="copy copy-with-img">
+
+										<h3 class="link-color medium-link">
+
+I supplied a corporate certificate of conformity with my shipping documents, why are my goods still detained at Turkish Customs?										</h3>
+
+										<p class="medium-link">
+
+As Turkey has adopted the European Union..										</p>
+
+									</span>
+
+								</a>
+
+							</li>
+
+							
+
+						</ul>
+
+					</ASIDE>
+
+				</div>
+
+				<div class="span3">
+
+					<ASIDE class="sdn-aside-content build-apps clearfix">
+
+						<h3 class="sub-header">
+
+Market Research Library						</h3>
+
+						<ul class="unstyled">
+
+							<li class="clearfix">
+
+								<a href="/platform/use-cases">
+
+<img src="//developer.salesforce.com/resource/images/home-mobile-devices.png"/> 									<span class="copy copy-with-img">
+
+										<h3 class="link-color medium-link use-case-link">
+
+$ 700 Million Millennium Challenge										</h3>
+
+										<p class="medium-link use-case-link">
+
+Opportunities for U.S. firms to provide products and services to Morocco..										</p>
+
+									</span>
+
+								</a>
+
+							</li>
+
+							<li class="clearfix">
+
+								<a href="/platform/use-cases">
+
+<img src="//developer.salesforce.com/resource/images/home-conected-products.png"/> 									<span class="copy copy-with-img">
+
+										<h3 class="link-color medium-link use-case-link">
+
+$14.5 BILLION OIL SAND PROJECT IN ALBERTA CANADA										</h3>
+
+										<p class="medium-link use-case-link">
+
+Alberta ranks third, after Saudi Arabia and Venezuela..										</p>
+
+									</span>
+
+								</a>
+
+							</li>
+
+							<li class="clearfix">
+
+								<a href="/platform/use-cases">
+
+<img src="//developer.salesforce.com/resource/images/home-customers.png"/> 									<span class="copy copy-with-img">
+
+										<h3 class="link-color medium-link use-case-link">
+
+2012 BOOKS Market Research										</h3>
+
+										<p class="medium-link use-case-link">
+
+With its capital city of Dakar located.										</p>
+
+									</span>
+
+								</a>
+
+							</li>
+
+						</ul>
+
+						<A class="more-information hidden" href="/platform/use-cases">
+
+See how to do it now						</A>
+
+					</ASIDE>
+
+				</div>
+
+				<div class="span3">
+
+					<aside class="sdn-aside-content upcoming-events clearfix">
+
+						<div class="sdn-aside-top">
+
+							<div class="sdn-aside-title-container">
+
+								<h3 class="sub-header">
+
+Trade Events								</h3>
+
+							</div>
+
+							<div class="sdn-aside-more-container">
+
+								<a class="more-information medium-link" href="/calendar">
+
+More &#187;								</a>
+
+							</div>
+
+						</div>
+
+						<ul class="unstyled">
+
+							<li class="odd">
+
+<a class="clearfix" href="https://developer.salesforce.com/events/webinars/advanced_visualforce_development">
+    <span class="calendar">
+        <span class="month">JUL</span>
+        <span class="date">12</span>
+    </span><!-- .calendar -->
+    <span class="copy copy-with-img">
+        <h3 class="small-body-copy">Brazil: Green Port Technologies</h3>
+        <p class="medium-link">The U.S. Trade and Development Agency will host..</p>
+    </span><!-- .copy -->
+</a><!-- a -->							</li>
+
+							<li class="even">
+
+<a class="clearfix" href="https://developer.salesforce.com/en/events/webinars/forcedotcomfridayreg?d=70130000000sxxh">
+    <span class="calendar">
+        <span class="month">JUL</span>
+        <span class="date">24</span>
+    </span><!-- .calendar -->
+    <span class="copy copy-with-img">
+        <h3 class="small-body-copy">Learn about Exporting</h3>
+        <p class="medium-link">Export Boot Camp This workshop will provide the nuts..</p>
+    </span><!-- .copy -->
+</a><!-- a -->							</li>
+
+							<li class="odd">
+
+<a class="clearfix" href="https://developer.salesforce.com/en/events/webinars/forcedotcomfridayreg?d=70130000000sxxh">
+    <span class="calendar">
+        <span class="month">JUL</span>
+        <span class="date">24</span>
+    </span><!-- .calendar -->
+    <span class="copy copy-with-img">
+        <h3 class="small-body-copy">Export Boot Camp</h3>
+        <p class="medium-link">Learn what it takes to become a successful exporter.</p>
+    </span><!-- .copy -->
+</a><!-- a -->							</li>
+
+						</ul>
+
+					</aside>
+
+				</div>
+
+				<div class="span3">
+
+					<aside class="sdn-aside-content clearfix">
+
+						<div class="sdn-aside-top">
+
+							<div class="sdn-aside-title-container">
+
+								<h3 class="sub-header">
+
+Trade Articles								</h3>
+
+							</div>
+
+							<div class="sdn-aside-more-container">
+
+								<A style="height:230px;" class="more-information medium-link" href="/blogs">
+
+More &#187;								</A>
+
+							</div>
+
+						</div>
+
+						
+
+					</aside>
+
+					<ASIDE class="sdn-aside-content quick-links clearfix">
+
+						<div class="sdn-aside-top">
+
+							<div class="sdn-aside-title-container">
+
+	
+
+							</div>
+
+							
+
+						</div>
+
+						<ul class="unstyled">
+
+							<li class="odd">
+
+<a href="https://developer.salesforce.com/page/Machine_Learning_With_Apex_Part_2"><h3>2005 Export Achievement Award Winners - Pittsburgh U.S. Export Assistance Center</h3></a>							</li>
+
+							<li class="even">
+
+<a href="https://developer.salesforce.com/page/How_To_Test_Your_Apex_Triggers">Learn more about the 2005 winners of the Export Achievement Award from the Pittsburgh area.</a>							</li>
+
+							
+
+						</ul>
+
+					</ASIDE>
+
+				</div>
+
+			</section>
+
+		</div>
+
+		<div>
+
+<style>
+    
+    .royalSlider-sdn {
+        position: relative;
+    }
+    
+    #full-width-slider2 .span4 {
+        height: 252px;
+        /*margin-left: 0;
+        padding-left: 30px;*/
+    }
+    
+    #full-width-slider2 table {
+        width: 100%;
+    }
+    
+    #sliderMenu {
+        /*position: absolute;*/
+        top: 12px;
+        width: 100%;
+    }
+    
+    #sliderMenu .container {
+        left: inherit;
+        margin: 0 auto;
+        position: inherit;
+        top: 0;
+    }
+    #full-width-slider2 {
+        width: 100%;
+    }
+    
+    #sliderMenu .rsTabs {
+        width: 230px;
+        float: right;
+        margin-top: -240px;
+    	position: relative;
+    }
+    /*#sliderMenu .container, #sliderMenu .row, #sliderMenu .span-menu, #sliderMenu .rsTabs {
+        background: none repeat scroll 0 0 transparent;
+    }*/
+    
+    #sliderMenu .rsTab {
+        margin-left: 0;
+        width: 218px !important;
+        padding: 6px;
+        background-color: rgba(255, 255, 255, 0.3);
+        background-color: #007bba\9;
+    	margin-bottom: 5px;
+        border-radius: 4px;
+        float: none;
+    }
+    
+    #sliderMenu .rsNavItem.rsTab.rsNavSelected {
+        background-color: #0F9EDD;
+    }
+    
+    #sliderMenu .rsTmb h4 {
+   		color: #ffffff !important;
+	}
+    
+    #sliderMenu .rsNavSelected.rsTab *:before {
+        -ms-transform: rotate(270deg);
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+        height: 14px;
+        margin-left: -17px;
+        top: 12px;
+        background: url("//res.cloudinary.com/hy4kyit2a/image/upload/slide-arrow.png") no-repeat scroll 0 0 rgba(0, 0, 0, 0);
+        content: "";
+        display: block;
+        height: 17px;
+        left: 0;
+        position: absolute;
+        width: 21px;
+    }
+    
+    #SDNmaintemplate .royalSlider-sdn .logo-in-slider {
+        margin: 36px auto 0;
+    }
+    
+    .sliderContainer .btn {
+        background: #22689f; /* Old browsers */
+        background: -moz-linear-gradient(top, #22689f 0%, #154469 100%); /* FF3.6+ */
+        background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#22689f), color-stop(100%,#154469)); /* Chrome,Safari4+ */
+        background: -webkit-linear-gradient(top, #22689f 0%,#154469 100%); /* Chrome10+,Safari5.1+ */
+        background: -o-linear-gradient(top, #22689f 0%,#154469 100%); /* Opera 11.10+ */
+        background: -ms-linear-gradient(top, #22689f 0%,#154469 100%); /* IE10+ */
+        background: linear-gradient(to bottom, #22689f 0%,#154469 100%); /* W3C */
+        filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#22689f', endColorstr='#154469',GradientType=0 ); /* IE6-9 */
+        padding: 14px 36px;
+        -webkit-border-radius: 4px;
+		-moz-border-radius: 4px;
+		border-radius: 4px;
+    }
+    
+    @media( max-width: 1199px ){
+        #sliderMenu {
+            top: 12px;
+        }
+        
+        #full-width-slider2 .span4 {
+            height: 225px;
+        }
+        
+        #sliderMenu .rsTabs {
+            margin-top: -210px;
+        }
+        
+        #sliderMenu .rsTab {
+            padding: 3px;
+            width: 224px !important;
+        }
+        
+        #sliderMenu .rsNavSelected.rsTab *:before {
+            top: 10px;
+        }
+        
+        #SDNmaintemplate .royalSlider-sdn .heroSlider .rsOverflow, #SDNmaintemplate .royalSlider-sdn .royalSlider.heroSlider {
+            height: 220px !important;
+        }
+    }
+    
+    @media( max-width: 979px ){
+        
+        #sliderMenu {
+            top: 13px;
+        }
+        
+        #sliderMenu .rsTabs {
+            width: 222px;
+        }
+        
+        #sliderMenu .rsNavSelected.rsTab *:before {
+            top: 8px;
+        }
+
+        .sliderContainer .in-slider-content-block a h2 {
+            font-size: 20px;
+            line-height: 20px;
+        }
+        
+        .sliderContainer .in-slider-content-block a p {
+            font-size: 18px;
+            line-height: 18px;
+        }
+        
+        #SDNmaintemplate .royalSlider-sdn .logo-in-slider {
+            margin: 40px auto 0;
+        }
+        .royalSlider-sdn .rsTmb .copy {
+            padding-top: 4px;
+        }
+        
+        .royalSlider-sdn .in-slider-content-block {
+            text-align: center;
+        }
+        
+        .in-slider-content-block > div {
+           margin-top: 30px;
+        }
+    }
+    
+    @media( max-width: 767px ){
+    	td.homeSliderTextTable {
+    		height: 172px;
+		}
+        #full-width-slider2 .span4 {
+            height: 224px;
+        }
+        #sliderMenu {
+            position: inherit;
+            top: inherit;
+        }
+        #sliderMenu .container {
+            width: auto;
+        }
+        #sliderMenu .span8 {
+            display: none;
+        }
+        
+        #sliderMenu .rsTabs {
+            width: 100%;
+            margin-top: 6px;
+        }
+        
+        #sliderMenu .rsNavItem.rsTab.rsNavSelected {
+            background-color: inherit;
+		}
+        #sliderMenu .rsNavSelected.rsTab *:before {
+            display: none;
+        }
+    }
+    
+    /* iPhone + other phones */
+    @media screen and (max-device-width : 568px) {
+    	/*.royalSlider-sdn .in-slider-content-block {
+            text-align: center;
+        }*/
+    }
+    
+    
+	/* iPhone + other phones + desktop minnor resolution */
+    @media screen and (max-device-width : 568px), screen and (max-width: 979px) {
+        .rsSlide .span4:first-child {
+            display: none;
+        }
+        .rsSlide .span4 {
+            width: 100%;
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        #sliderMenu .rsTab {
+            background-color: inherit;
+    		margin-bottom: 6px;
+    		padding: 2px;
+        }
+        .navbar .container {
+            padding: 0;
+        }
+        
+        #SDNmaintemplate .royalSlider-sdn .heroSlider .rsOverflow, #SDNmaintemplate .royalSlider-sdn .royalSlider.heroSlider {
+            height: 284px !important;
+        }
+        
+        .royalSlider-sdn .rsOverflow {
+            border-bottom: 6px solid #0f9edd;
+        }
+        
+        #sliderMenu .span8 {
+            display: none;
+        }
+        #sliderMenu .span4 {
+            width: 100%;
+            margin-left: 0;
+        }
+        
+        #full-width-slider2 .rsImg.rsMainSlideImage {
+            height: 284px !important;
+            width: auto !important;
+        }
+        
+        .sliderContainer .in-slider-content-block a h2 {
+            font-size: 30px;
+            line-height: 30px;
+            font-family: 'ProximaNovaRegular' !important;
+        }
+        
+        .royalSlider-sdn .rsTmb .copy-with-img {
+            display: none;
+        }
+        
+        #full-width-slider2 .container {
+            padding: 0;
+        }
+        
+        #full-width-slider2 .row {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+        
+        #full-width-slider2 .span4 {
+            height: 216px;
+            margin-left: 0;
+            padding-left: 0px;
+        }
+        
+        .in-slider-content-block > div {
+            text-align: center;
+            /*margin-top: 48px;*/
+        }
+        
+        #sliderMenu {
+            margin-top: -84px;
+            position: absolute;
+            top: inherit;
+        }
+        
+        #sliderMenu .container {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+        }
+        
+        #sliderMenu .row {
+            margin: 0;
+        }
+        
+        #sliderMenu .rsTabs {
+            float: none;
+            margin-top: 0;
+            width: auto;
+            display: table;
+        }
+        
+        #sliderMenu .rsTab {
+            width: 40px !important;
+            display: inline-block;
+            margin-left: 5px;
+            padding: 8px;
+            margin-bottom: 0;
+            height: 40px !important;
+            border: 1px solid transparent;
+        }
+        
+        
+        #sliderMenu .rsNavItem.rsTab.rsNavSelected {
+            background-color: rgba(0, 0, 0, 0.3) !important;
+            border: 1px solid #d7dde2;
+        }
+        
+        #sliderMenu .span-menu {
+            background-color: rgba(200, 200, 200, 0.5);
+            padding: 20px 0 12px 0;
+        }
+        
+        #sliderMenu .rsNavSelected.rsTab *:before{
+        	width: 0;
+            height: 0;
+            border-style: solid;
+            border-width: 0 5px 6px 5px;
+            border-color: transparent transparent #ffffff transparent;
+            background: transparent;
+            top: -12px;
+            left: 22px;
+            margin-left: 0;
+            -ms-transform: rotate(0deg);
+            -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+            display: block;
+        }
+        
+        .sliderContainer .btn {
+            background: #fefefe; /* Old browsers */
+            background: -moz-linear-gradient(top, #fefefe 0%, #d4d4d4 100%); /* FF3.6+ */
+            background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#fefefe), color-stop(100%,#d4d4d4)); /* Chrome,Safari4+ */
+            background: -webkit-linear-gradient(top, #fefefe 0%,#d4d4d4 100%); /* Chrome10+,Safari5.1+ */
+            background: -o-linear-gradient(top, #fefefe 0%,#d4d4d4 100%); /* Opera 11.10+ */
+            background: -ms-linear-gradient(top, #fefefe 0%,#d4d4d4 100%); /* IE10+ */
+            background: linear-gradient(to bottom, #fefefe 0%,#d4d4d4 100%); /* W3C */
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#d4d4d4',GradientType=0 ); /* IE6-9 */
+            padding: 14px 36px;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+            color: #06223a !important;
+            font-family: ProximaNovaSemiBold;
+        }
+        
+        .royalSlider-sdn .rsTmb {
+            height: 100%;
+        }
+        
+        .royalSlider-sdn .rsTmb img {
+            float: none;
+            height: 100%;
+            width: 100%;
+            vertical-align: inherit;
+            -webkit-border-radius: 2px;
+            -moz-border-radius: 2px;
+            border-radius: 2px;
+    		-webkit-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.45);
+			-moz-box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.45);
+			box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.45);
+        }
+    }
+    
+    
+    /* iPhone Landscape */
+    @media screen and (min-device-width : 320px) and (max-device-width : 568px) and (orientation: landscape) {
+    	td.homeSliderTextTable {
+            vertical-align: top;
+            height: auto;
+        }
+        
+        #SDNmaintemplate .royalSlider-sdn .heroSlider .rsOverflow, #SDNmaintemplate .royalSlider-sdn .royalSlider.heroSlider {
+            height: 260px !important;
+        }
+    }
+    
+    
+    /* iPad */
+    @media all and (device-width: 768px) and (device-height: 1024px){
+    	.royalSlider-sdn .rsTmb .copy {
+            padding-top: 7px;
+        }
+    }
+
+
+</style>
+
+<script>
+    
+var isMobile = {
+    Android: function() {
+        return navigator.userAgent.match(/Android/i);
+    },
+    BlackBerry: function() {
+        return navigator.userAgent.match(/BlackBerry/i);
+    },
+    iOS: function() {
+        return navigator.userAgent.match(/iPhone|iPad|iPod/i);
+    },
+    Opera: function() {
+        return navigator.userAgent.match(/Opera Mini/i);
+    },
+    Windows: function() {
+        return navigator.userAgent.match(/IEMobile/i);
+    },
+    iPad: function(){
+    	return navigator.userAgent.match(/iPad/i);
+    },
+    any: function() {
+        return (isMobile.Android() || isMobile.BlackBerry() || isMobile.iOS() || isMobile.Opera() || isMobile.Windows());
+    }
+};
+
+    
+function makeTopSlider(){
+	if( (isMobile.any() && !isMobile.iPad()) || $('body').width() <= 979 ){
+		$("#full-width-slider2").royalSlider({
+            arrowsNav:0,
+            keyboardNavEnabled:0,
+            controlsInside:0,
+            imageScaleMode:"fill",
+            arrowsNavAutoHide:1,
+            autoScaleSlider:0,
+            autoScaleSliderWidth:960,
+            autoScaleSliderHeight:325,
+            controlNavigation:"tabs",
+            thumbs:{},
+            thumbsFitInViewport:1,
+            navigateByClick:0,
+            startSlideId:0,
+            autoPlay:0,
+            transitionType:"move",
+            globalCaption:0,
+            loop:1,
+            numImagesToPreload:4,
+            deeplinking:{enabled:0,change:1},
+            imgWidth:1024,
+            imgHeight:325,
+            slidesOrientation: 'horizontal',
+            sliderDrag:true,
+            sliderTouch: false
+        });
+    }else{
+        $("#full-width-slider2").royalSlider({
+            arrowsNav:0,
+            keyboardNavEnabled:0,
+            controlsInside:0,
+            imageScaleMode:"fill",
+            arrowsNavAutoHide:1,
+            autoScaleSlider:0,
+            autoScaleSliderWidth:960,
+            autoScaleSliderHeight:325,
+            controlNavigation:"tabs",
+            thumbs:{},
+            thumbsFitInViewport:1,
+            navigateByClick:0,
+            startSlideId:0,
+            autoPlay:0,
+            transitionType:"move",
+            globalCaption:0,
+            loop:1,
+            numImagesToPreload:4,
+            deeplinking:{enabled:0,change:1},
+            imgWidth:1024,
+            imgHeight:325,
+            slidesOrientation: 'vertical',
+            sliderDrag:false,
+            sliderTouch: false
+        });
+    }  
+}
+    
+makeTopSlider();
+    
+$(document).ready(function(){
+    $('#sliderMenu .span-menu').append($('#full-width-slider2 .rsTabs'));
+    
+    if( !isMobile.any() ){
+        $('#full-width-slider2 .rsSlide').each(function(){
+          var $slide = $(this);
+          var link = $('a.btn', $slide).attr('href');
+
+          $('.span4 .logo-in-slider', $slide).click(function(){
+            location.href = link;
+          });
+
+          $('.span4 .logo-in-slider', $slide).css({
+            cursor: 'pointer'
+          });
+        });
+    }
+    
+    $('.logo-in-slider').each(function(){
+        if( $(this).attr('src') == null || $(this).attr('src') == '' ){
+        	$(this).hide();
+        }
+    });
+    
+    $( window ).resize(function(){
+    	makeTopSlider();
+    });
+});
+</script>		</div>
+
+	</div>
+
+	<div>
+
+ <!--<dfc-footer>-->	<footer>
+
+		<div class="footer-top">
+
+			<div class="container">
+
+				<div class="row small">
+
+					<div class="footerCols1">
+
+						<h3>
+
+Export Process						</h3>
+
+						<ul class="unstyled">
+
+							<li>
+
+								<a href="/resources">
+
+Export Basics								</a>
+
+							</li>
+
+							<li>
+
+								<a href="/gettingstarted">
+
+Basic Guide to Exporting								</a>
+
+							</li>
+
+							<li>
+
+								<a href="/docs/atlas.en-us.articles.meta/articles/quickstart.htm">
+
+Readiness Assessment								</a>
+
+							</li>
+							<li>
+
+								<a href="/docs/atlas.en-us.articles.meta/articles/quickstart.htm">
+
+International Logistics								</a>
+
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="footerCols1">
+
+						<h3>
+
+Opportunities						</h3>
+
+						<ul class="unstyled">
+							<li>
+
+								<a href="/">
+
+Expand Into New Markets								</a>
+
+							</li>
+
+							<li>
+
+								<a href="http://devcenter.heroku.com/">
+
+Market Research								</a>
+
+							</li>
+
+							<li>
+
+								<a href="http://code.exacttarget.com/">
+
+Success Stories								</a>
+
+							</li>
+
+							<li>
+
+								<a href="http://dev.desk.com/">
+
+Learn Marketing Tactics								</a>
+
+							</li>
+
+							<li>
+
+								<a href="http://developer.pardot.com/">
+
+International Sales &amp; Marketing								</a>
+
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="footerCols1">
+
+						<h3>
+
+Financing						</h3>
+
+						<ul class="unstyled">
+
+							<li>
+
+								<a href="/mobile">
+
+Mobile Services								</a>
+
+							</li>
+
+							<li>
+
+								<a href="/docs?service=Force.com&amp;sort=title">
+
+Force.com Docs								</a>
+
+							</li>
+
+							<li>
+
+								<a href="/page/Tools">
+
+Force.com Downloads								</a>
+
+							</li>
+
+							<li>
+
+								<a href="/docs?service=Heroku">
+
+Heroku Docs								</a>
+
+							</li>
+
+							<li>
+
+								<a href="http://toolbelt.heroku.com/">
+
+Heroku Downloads								</a>
+
+							</li>
+
+							<li>
+
+								<a href="/trailhead?utm_campaign=trailhead&amp;utm_source=website&amp;utm_medium=dsc_footer">
+
+Learn Salesforce with Trailhead								</a>
+
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="footerCols1">
+
+						<h3>
+
+Trade Events						</h3>
+
+						<ul class="unstyled">
+
+							<li>
+
+								<a href="/forums">
+
+Developer Forums								</a>
+
+							</li>
+
+							<li>
+
+								<a href="/calendar">
+
+Salesforce Developer Events								</a>
+
+							</li>
+
+							<li>
+
+								<a href="/content/type/Webinar">
+
+Webinars								</a>
+
+							</li>
+
+						</ul>
+
+					</div>
+
+					<div class="footerCols1">
+
+						<h3>
+
+Contacts						</h3>
+
+						<ul class="unstyled">
+
+							<li>
+
+								<a href="//www.salesforce.com/partners/isv/">
+
+Salesforce AppExchange								</a>
+
+							</li>
+
+							<li>
+
+								<a href="//www.salesforce.com/platform/overview/">
+
+Salesforce Platform Overview								</a>
+
+							</li>
+
+							<li>
+
+								<a href="//help.salesforce.com/">
+
+Salesforce.com Help Portal								</a>
+
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="span9">
+
+<!--<dfc-footer-copyright>-->						<span class="footer-copyright">
+
+Export.gov is an official site of the U.S. Government					</span>
+
+<!--</dfc-footer-copyright>-->						<div class="footer-links small">
+
+							<a href="//www.salesforce.com/company/privacy.jsp">
+
+Submit Feedback							</a>
+
+							<a href="//www.salesforce.com/company/security.jsp">
+
+Contact Us							</a>
+
+							<a href="/files/tos/Developerforce_TOU_20101119.pdf">
+
+Disclaimer 							</a>
+
+							<a href="/files/tos/Developerforce_TOU_20101119.pdf">
+
+About Us							</a>
+
+							
+							<a href="/files/tos/Developerforce_TOU_20101119.pdf">
+
+USA.gov							</a>
+							<a href="/files/tos/Developerforce_TOU_20101119.pdf">
+
+FOIA							</a>
+							<a href="/files/tos/Developerforce_TOU_20101119.pdf">
+
+Information Quality							</a>
+							<a href="/files/tos/Developerforce_TOU_20101119.pdf">
+
+No Fear							</a>
+							<a href="/files/tos/Developerforce_TOU_20101119.pdf">
+
+Site Map							</a>
+							<a href="/files/tos/Developerforce_TOU_20101119.pdf">
+
+Download Adobe Reader						</a>
+
+						</div>
+
+					</div>
+
+					<div class="span3">
+
+						<ul class="social-icons unstyled">
+
+							<li>
+
+								<a href="https://www.facebook.com/salesforcedevs">
+
+<img src="//developer.salesforce.com/resource/images/facebook.png"/>								</a>
+
+							</li>
+
+							<li>
+
+								<a href="https://twitter.com/#!/salesforcedevs">
+
+<img src="//developer.salesforce.com/resource/images/twitter.png"/>								</a>
+
+							</li>
+
+							<li>
+
+								<a href="https://plus.google.com/118327959233932983591">
+
+<img src="//developer.salesforce.com/resource/images/g.png"/>								</a>
+
+							</li>
+
+							<li>
+
+								<a href="https://www.linkedin.com/groups/Developer-Force-Forcecom-Community-3774731">
+
+<img src="//developer.salesforce.com/resource/images/linkedIn.png"/>								</a>
+
+							</li>
+
+							<li>
+
+								<a href="https://www.youtube.com/user/DeveloperForce">
+
+<img src="//developer.salesforce.com/resource/images/youTube.png"/>								</a>
+
+							</li>
+
+						</ul>
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</footer>
+
+<script type="text/javascript" src="https://developer.salesforce.com/resource/javascripts/footerbottom.min.js"></script>
+<!--</dfc-footer>--><!--<dfc-metrics>-->
+<script src='https://developer.salesforce.com/resource/javascripts/metrics.min.js'type='text/javascript'></script>
+
+<!-- metrics -->
+<!-- omniture_analytics_code
+<div id='omniture'>
+<script src='//www.salesforce.com/common/assets/js/min/footer-dfc-min.js'type='text/javascript'></script>
+</div>  -->
+<!-- retargeting_code -->
+
+<!-- <img height='1'
+src='//d.adroll.com/ipixel/KHANGVX5FNHJFGIKX7U7K5/ZDMR3ICVVVCZPHFRE3X6IU'
+width='1' style="margin: 0;padding: 0px;height: 1px;width: 1px;display: block;margin-top:-1px;"> -->
+
+<script type="text/javascript">
+adroll_adv_id = "KHANGVX5FNHJFGIKX7U7K5";
+adroll_pix_id = "ZDMR3ICVVVCZPHFRE3X6IU";
+(function () {
+var oldonload = window.onload;
+window.onload = function(){
+   __adroll_loaded=true;
+   var scr = document.createElement("script");
+   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+   scr.setAttribute('async', 'true');
+   scr.type = "text/javascript";
+   scr.src = host + "/j/roundtrip.js";
+   ((document.getElementsByTagName('head') || [null])[0] ||
+    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+   if(oldonload){oldonload()}};
+}());
+</script>
+
+<!-- google_analytics_code -->
+<!-- Google Tag Manager - noscript iframe only, all else moved to head -->
+<noscript>
+<iframe height='0'
+src='//www.googletagmanager.com/ns.html?id=GTM-MWZCN8'
+style='display:none;visibility:hidden' width='0'></iframe>
+</noscript>
+<!-- End Google Tag Manager -->
+<!--</dfc-metrics>-->
+	</div>
+
+			<script type='text/javascript'>
+
+jQuery(document).ready(function() {
+
+
+
+jQuery('a[itemid="ebd396c9-3b7c-43bd-8223-419bc8a1cbeb"]').click(function() {  });
+
+
+
+jQuery('[itemid="3d802021-1bda-437a-a841-62ed06cf7679"]').click(function() { 
+                picassoRuntime.runScript('[itemid=""]', function(target) { O_LC() });
+             });
+
+});
+
+			</script>
+
+		</body>
+
+	</html>
+

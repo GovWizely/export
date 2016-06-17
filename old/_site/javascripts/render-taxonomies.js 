@@ -1,0 +1,24 @@
+<script>
+                                                $(document).ready(function() {
+                                                                get_results();
+                                                });
+                                                function get_results()
+                                                {
+                                                                $.getJSON('https://api.govwizely.com/v2/ita_taxonomies/search?api_key=-DgaM8IefU4280JDV36SHZC1&size=100', function(d)
+                                                                {
+                                                                                $("#results_container_taxonomies").empty();
+                                                                                for (x in d.results)
+                                                                                {
+                                                                                                row = '<div class="list-group" id="result_' + x + '"><a href="#" class="list-group-item"> <h4 class="result_name">' + d.results[x].name + '</h4><p class="result_parent_names">' + d.results[x].parent_names + '</p></a>'
+                                                                                                if (x < d.results.length-1)
+                                                                                                {
+                                                                                                                row = row ;
+                                                                                                }
+                                                                                                row = row + "</div>";
+                                                                                                $("#results_container_taxonomies").append(row);
+                                                                                                
+                                                                                }
+                                                                               
+                                                                });
+                                                }
+                                </script>

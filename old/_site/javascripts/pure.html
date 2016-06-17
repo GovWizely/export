@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if !IE]><!--> <html lang="en"> <!--<![endif]-->  
+<head>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="javascripts/pure.js"></script>
+</head>	
+
+<body>  
+
+<div class="articles">
+<dl class="article">
+	<dd class="id"></dd>
+	<dt>Name</dt>
+    <dd class="name"></dd>
+    <dt>Taxonomy</dt>
+    <dd class="taxonomy"></dd>         
+</dl>
+</div>
+
+<script>
+(function() {
+  var ready, renderData;
+  renderData = function(data) {
+    var articles, article, i, _i, _len, _results;
+    articles = data.results;
+    directive = {
+      '.article': {
+        'article <- articles': {
+          '.name': 'article.name',
+          '.taxonomy': 'article.taxonomy',
+          
+        }
+      }
+    };
+    rfn = $p('.articles').compile(directive);
+    return $p('.articles').render({ articles: articles }, directive);
+  };
+
+  ready = function() {
+    var url;
+    url = 'https://api.govwizely.com/v2/ita_taxonomies/search?api_key=-DgaM8IefU4280JDV36SHZC1&callback=?';
+    return $.getJSON(url, renderData);
+  };
+
+  $(document).ready(ready);
+
+  }).call(this);
+</script>
+
+</body>
+</html>
+

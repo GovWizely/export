@@ -1,0 +1,52 @@
+.jetta2015 {
+    height: 330px;
+    width: 100%;
+    background: #fff url('../images/hero.png') center top no-repeat;
+    text-align: center;
+    padding: 85px 0 0 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod='scale')";
+    font: 30px 'Book';
+    position: relative;
+}
+.jetta2015 h1 {
+    height: 108px;
+    width: 357px;
+    margin: 0 auto 22px;
+    background: url('/content/dam/vwcom/homepageHeroImages/vm-1204-jetta/all-new-2015-jetta.png') 0 0 no-repeat;
+    text-indent: -9999em;
+    position: relative;
+    left: -20px;
+}
+.jetta2015 .subtitle {
+font-family: 'Lato', sans-serif;
+font-style:italic;
+    color: #fff;
+    text-shadow: 0 0 40px #000;
+    position: relative;
+    left: 10px;
+}
+.jetta2015 .ctaContainer {
+    width: 100%;
+    position: absolute;
+    bottom: 40px;
+}
+.jetta2015 .cta {
+    text-align: center;
+    text-decoration: none;
+    margin: 0 auto;
+    color: #01b1ec;
+    padding: 5px 0 0 30px;
+    font: 16px 'Book';
+}
+.jetta2015 .cta.sharedButton.lightBlue {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 15px 0 13px;
+    max-width: 240px;
+    font: 18px 'Black';
+    margin-bottom: 25px;
+}
+
+.headerBar .fgAccent {
+    color: #fff;
+}

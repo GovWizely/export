@@ -1,0 +1,38 @@
+<!DOCTYPE HTML>
+<html>
+                <head>
+                                <title>ITA Taxonomies</title>
+                                <script src="http://code.jquery.com/jquery-latest.min.js"></script>
+                                <style>
+
+                                </style>
+                </head>
+                <body>
+                <div id="results_container" >
+                </div>
+                </body>
+                <script>
+                                                $(document).ready(function() {
+                                                                get_results();
+                                                });
+                                                function get_results()
+                                                {
+                                                                $.getJSON('https://api.govwizely.com/v2/ita_taxonomies/search?api_key=-DgaM8IefU4280JDV36SHZC1&size=100', function(d)
+                                                                {
+                                                                                $("#results_container").empty();
+                                                                                for (x in d.results)
+                                                                                {
+                                                                                                row = '<div id="result_' + x + '"><h1 class="result_name">' + d.results[x].name + '</h1><div class="result_parent_names">' + d.results[x].parent_names + '</div>'
+                                                                                                if (x < d.results.length-1)
+                                                                                                {
+                                                                                                                row = row ;
+                                                                                                }
+                                                                                                row = row + "</div>";
+                                                                                                $("#results_container").append(row);
+                                                                                                
+                                                                                }
+                                                                               
+                                                                });
+                                                }
+                                </script>
+</html>
