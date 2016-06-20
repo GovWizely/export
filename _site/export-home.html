@@ -1,0 +1,617 @@
+<!DOCTYPE HTML>
+
+<!--[if IE 9]> <html lang="en" class="ie9"> <![endif]-->
+<!--[if IE 8]> <html lang="en" class="ie8"> <![endif]-->
+
+<html lang="en"> 
+
+    <head>
+<script src="https://success.export.gov/static/111213/js/perf/stub.js" type="text/javascript"></script><script src="https://success.export.gov/jslibrary/1457334052000/ui-sfdc-javascript-impl/SfdcCore.js" type="text/javascript"></script><script src="https://success.export.gov/static/111213/js/picklist.js" type="text/javascript"></script><script src="https://success.export.gov/jslibrary/1458579276000/sfdc/VFState.js" type="text/javascript"></script><link class="user" href="https://success.export.gov/sCSS/37.0/sprites/1463597346000/Theme3/default/gc/zen-componentsCompatible.css" rel="stylesheet" type="text/css" /><link class="user" href="https://success.export.gov/sCSS/37.0/sprites/1463597346000/Theme3/default/gc/elements.css" rel="stylesheet" type="text/css" /><link class="user" href="https://success.export.gov/sCSS/37.0/sprites/1463597346000/Theme3/default/gc/common.css" rel="stylesheet" type="text/css" /><link class="user" href="https://success.export.gov/sCSS/37.0/sprites/1464283998000/Theme3/gc/dStandard.css" rel="stylesheet" type="text/css" /><link class="user" href="https://success.export.gov/sCSS/37.0/sprites/1464283998000/Theme3/00Dt0000000Gydl/005t0000000YIaC/gc/dCustom0.css" rel="stylesheet" type="text/css" /><link class="user" href="https://success.export.gov/sCSS/37.0/sprites/1464283998000/Theme3/00Dt0000000Gydl/005t0000000YIaC/gc/dCustom1.css" rel="stylesheet" type="text/css" /><link class="user" href="https://success.export.gov/sCSS/37.0/sprites/1463597346000/Theme3/default/gc/extended.css" rel="stylesheet" type="text/css" /><link class="user" href="https://success.export.gov/sCSS/37.0/sprites/1463597346000/Theme3/default/gc/setup.css" rel="stylesheet" type="text/css" /><link class="user" href="https://fonts.googleapis.com/css?family=Lato:400,300" rel="stylesheet" type="text/css" /><script src="https://success.export.gov/jslibrary/1458579276000/sfdc/NetworkTracking.js" type="text/javascript"></script><script>try{ NetworkTracking.init('/_ui/networks/tracking/NetworkTrackingServlet', 'network', '066t00000008PeN'); }catch(x){}try{ NetworkTracking.logPageView();}catch(x){}</script><meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+           
+        <meta charset="utf-8" />
+        
+        
+        <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+        
+        <link href="https://success.export.gov/resource/1461353502000/bootstrap/bootstrap/css/bootstrap.css" rel="stylesheet" />
+        
+        <link href="https://use.fontawesome.com/e6603bca54.css" rel="stylesheet" />
+        
+        
+        <link href="https://success.export.gov/resource/1461407596000/ITA2/skins/css/animations.css" rel="stylesheet" />
+        
+        
+          <link href="https://success.export.gov/resource/1461666798000/export" rel="stylesheet" />
+        
+        <link href="https://success.export.gov/resource/1461407596000/ITA2/skins/css/sfwidget.css" rel="stylesheet" />
+        
+        <link href="global.css" rel="stylesheet" />
+        
+        <link href="home.css" rel="stylesheet" />
+        
+        <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js" type="text/javascript"></script>
+        <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+        <!--[if lt IE 9]>
+            <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+            <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+        <![endif]-->
+        <script src="https://tinymce.cachefly.net/4.2/tinymce.min.js" type="text/javascript"></script>
+        
+        <link HREF="https://success.export.gov/resource/1464300023000/Favicons/Favicons/export.ico" rel="icon" />
+
+    </head>
+    <body class="front no-trans">
+        
+        
+        <div class="scrollToTop"><i class="fa fa-chevron-up fa-6"></i></div>
+
+        
+        
+        <div class="page-wrapper">
+<form id="j_id0:j_id1:headerForm" name="j_id0:j_id1:headerForm" method="post" action="/page?id=a10t0000000Cc1BAAS" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id0:j_id1:headerForm" value="j_id0:j_id1:headerForm" />
+
+            <div class="header-top" style="background:#fff;">
+                <div class="container" style="padding-top:20px;padding-bottom:15px;">
+                        <div class="col-xs-4  col-sm-6">
+
+                             <div class="logo" style="padding:0;margin:0;">
+                                    <a href="/"><img alt="export.gov logo" id="logo" src="navy2.png" width="230" title="export.gov logo" /></a>
+                                </div>
+                                
+                                 
+                                <div class=" site-slogan hidden-sm hidden-xs" style="font-size:12px;">
+                                    Helping U.S. Companies Export
+                                </div>
+                            
+                           
+                            
+
+                        </div>
+                        <div class="col-xs-8 col-sm-6">
+
+                            
+                            
+                            <div class="clearfix" id="header-top-second">
+
+                                
+                                
+                                <div class="header-top-dropdown"><span id="j_id0:j_id1:headerForm:j_id13">                                  
+                <div id="desktopSearch">
+                                     <div class="btn-group dropdown">
+                                        <form class="search-box" id="search-form" method="get" role="search">
+                                            <div class="searchbox">
+                                                <label class="visuallyhidden" for="search">Search: </label>
+                                                <input class="form-control searchboxformat" id="search" name="search" placeholder="Search" type="search" />
+                                            </div>
+                                                <div class="btn-group dropdown"> 
+                                        <button class="btn dropdown-toggle searchbtn" data-toggle="dropdown" id="search-button" type="submit"><i class="fa fa-search valignTop faAltHover"></i></button>
+                                           </div>
+                                        </form>
+                                    </div>
+                                    <script language="javascript" type="text/javascript">
+                                        $('#search-button').on('click', function(e){
+                                            var query, url;
+                                            e.preventDefault();
+                                            query = encodeURIComponent($('#search').val());
+                                            url = '/search#/search?q='+query;
+                                            return window.location.replace(url);
+                                        });
+                                    </script>
+                                   
+                </div>
+                <div id="mobileSearch">
+                                    <div class="btn-group dropdown">
+                                        <button class="btn dropdown-toggle" data-toggle="dropdown" type="button"><i class="fa fa-search"></i> Search</button>
+                                        <ul class="dropdown-menu dropdown-menu-right dropdown-animation">
+                                            <li>                 
+                                        <form class="search-box" id="search-form2" method="get" role="search">
+                                            <div class="searchbox">
+                                                    <label class="visuallyhidden" for="search2">Search: </label>
+                                                    <input class="form-control searchboxformat" id="search2" name="search" placeholder="Search" type="search" />
+                                            </div>
+                                                <div class="btn-group dropdown"> 
+                                        <button class="btn dropdown-toggle searchbtn" data-toggle="dropdown" id="search-button2" type="submit"><i class="fa fa-search valignTop faAltHover"></i></button>
+                                           </div>
+                                        </form>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <script language="javascript" type="text/javascript">
+                                        $('#search-button2').on('click', function(e){
+                                            var query, url;
+                                            e.preventDefault();
+                                            query = encodeURIComponent($('#search2').val());
+                                            url = '/search#/search?q='+query;
+                                            return window.location.replace(url);
+                                        });
+                                    </script>
+
+</div>
+
+<script type="text/javascript">
+togglemobile();
+window.onresize = function() {
+    togglemobile();
+}
+
+function togglemobile() {
+    if (window.innerWidth < 1199) {
+        document.getElementById('desktopSearch').style.display = 'none';
+        document.getElementById('mobileSearch').style.display = 'inline-block';        
+    }
+    else {
+        document.getElementById('desktopSearch').style.display = 'inline-block';
+        document.getElementById('mobileSearch').style.display = 'none';                
+    }    
+}
+</script></span><span id="j_id0:j_id1:headerForm:j_id23">
+                                    <div class="btn-group dropdown" rendered="true"> 
+                                        <button class="btn dropdown-toggle" data-toggle="dropdown" onClick="parent.location='/Registration'" type="button"> Sign Up</button>
+                                    </div>
+                                    <div class="btn-group dropdown" rendered="true"> 
+                                        <button class="btn dropdown-toggle" data-toggle="dropdown" onClick="parent.location='/CommunitiesLogin'" type="button"> Log In</button>
+                                    </div></span>
+                       
+                                </div>
+                                
+
+                            </div>
+                            
+
+                        </div>
+                </div>
+            </div><div id="j_id0:j_id1:headerForm:j_id132"></div>
+</form><span id="ajax-view-state-page-container" style="display: none"><span id="ajax-view-state" style="display: none"><input type="hidden"  id="com.salesforce.visualforce.ViewState" name="com.salesforce.visualforce.ViewState" value="i:mUdSorkex/es583q31E4poFXy1hDphFuron6kXBouDu/noJA+jVOKa5nk2Q7V8w3RlB+0wgXvk39RNhxCnXSgwM4njt3ueFfeJ53jyAjwHVz6JR8o/H5qa7QzZDsImIY+59gvWN3tzbWo+nk11myeyIoUQvQN17WKI9mI7JRrbSKvzqXcWAgbZS7PQsBlmYvw4SkEBzw7Be28VKaWesxMNXgh5yTrKwv3brxKJhVvFiNMyBbRUe0ZrfyOJI3mU+bMo+t1/9yp+lvUuiEvHsidJaUwXvkTxAG3cWhfXxqSW0mSpB5YLUkT8NVRFjqQeQUqnQtyNthi0u+mwW8FA5ntP+hC+mQYWtH4906T/AMFQ6+0MSJ4Q3AA7bybfCwM6XWU9hxOKSv3utzgfFqU7g6hb33f8OzUb7wWelPBsVOs+2MsDGl/63veDLfqz/SSuR/2XoYHUQKX4kZ+/sPhU/oj+H+3HJeQOo93XsiUro/0POZu/7Hh7je6ELLa/jFunkzPy1zLSYb4E57qMXB04q2SCyDNKgVdOf1ojiCJN5PGmISHHsaRrEAZ3SAT+t913DmyUWItXywu6XwO6coPcUFVYm9Xjdxrf5Dejf2BGe4DUsI7n/v9K5Vp5r+MEPDN8QifsKLvFjkZmiPgoPmoR0X2Fj1Y8QBy9TU+QAnqcGKztPIrpVBmuSHypLGWVitua1PfUqsee549pdZB4wkJP6/9VAdP5ZNuplCQ4gpIiEEiGfPzO57Wi7uz8VdzeZxB2xI3ShKDxPuOBrZ/F7NSCVRNpcS7wM1hwIRic7R1L7Avi5zXgH/HmwrXAGEMD6fFIrJjJKPy0sZuZbV42mZtoxByGsEjzqgr98xuTtR7upjHbFikQHiKSoBAtPzCiRjvT8GGYn4i78t0N1U/l2jC9slgEUwtHunbPkxUoyr+erRjrCsaK/MPKDLOvklrknPr0gB3txRiIM4Jck7jB2cVZnfcltJhHhhAepBCRwFTITl9k2P7Tl4MmygNCwmRFigZtCpvjom7T2OhZPAUIzINaGGb++AENE39Uu1I92smAi4q8GwkkviwL0rl4l63v3gqwTuj8r/47RFVv0l5rQKXNFpQliKGkTrzbG7Er79abWOanedxoP+bxyEOwFzsdN6jY7bv+tFy0GQLOgXxUdKam99n/l1CUhAp1vHageDaSNGFBvmv0egBpM9k3ymLa/CsXs9B9kM2nnkjQv5ds3hm3c/6NtC7X1LPqHWnwgRzMsqwNI346Ef4uiWlWO7aCNoXsGP1SFsS78T2/CoY08zveX4UzqLMYXNharrZvP8KnFSqHauaBLz1RUApqxlg8nhCaYYAdq84aSSajCaoE5h/QkyeLTIguhpT/ZTRxj7U211mccZEFdsQSRJfl6evnAuFnULw/aq04C/6C1cXurViUcUJ5yWHdabzP/A4pad+1GoJ939Xnma8aFb0eo+5SqfZypzldYNr1qAlxpjEGV35x/BTzx6ACPFBmDYUOy8gytVpsc+UXoC72xEhZshU/hhSBsaYw5/jKqCyLxWw4GVbkY5J+TwhDPOS64uJNC2IZi4czPhddDYYzchLBy5QKoippytmg1FZHY1gE4Y1ESCQBHxkatutIggx8BeUgZCiXLNwGmtwHa/UK5xOqexUSmfHSiwGofTeF3NBe+0mEcr03i0dmaBAsEvCJPViulxDFjriADfCdvTKi/v5MKd+wpZ+7B8dmmuFXiz1ARVpgzKkOoHBoR8VlKysKgqiwfFE5FyU7iwB3/DQMXZJyvG0pqqfnlGac/a/yvmQ0dFwtF/KauHdDv8r+G13HFIfjLLISpqgE/M7cLDnaN7AJsnoX55K7ag8OEGlz/xigpTdk8KoaZMzANEg0EM5RAnyCGHHnI+wG1dlTwf1gjGM9uARlsFF9RCykK2/cvE+WxwT055Lfgmnthf86mbgt0nt9LQa1Y4Pvi68ZuVn4tvXGHMFRO4XMAznWaOmt5fXoVpus2rVqBvgrPce8XTGKTiVPNLi2vBoB397NjedqZDEKMsVjkQWe/gUUHsIkfjdtiiGk1rCDwWDyWRMNlLc5Fw/2TcxatVEFp2js1EcCLbyqxnj5G4FmE7J81alWQooU/GoBqpVde41mO6dYodPe3ipuuP24DjkJNQqU0FRNyKjI2koqPi2xTvplNS4UHKGeOW+zOmK1DfNVlRxoqRnjPCssiNhUlXygegZLcXSVlI8QT7K6laAEvovXEyJB4/TAX0qo2WTDPjFJBbr13dK6ramn5IpdG8DwF8ExgBAoK89E2wqVTMhPIReih+hor189TMtq9WMzKe2jcriHkGOKhhaADW83jzA2nx86xNEDt425LYgZhgfzwo7ulfFuGnvKFbNq1MbKt/aas8aZc+npAvWqGm7WFd8YhG5Xh/CFe4gSBervmuPwobrzPUkV8YKswunOfjxvxFtW/7XgdvMa0KSnXRBZ4P6qcwMmlcspAa8eSrUjW20uFQRdUvqEhAOPZBBOZEhKV8rUV4WJoBTeewen/0gbh95s5GbOK3vPfLJ3KcsFpzDYsSX4QuGGi4TQqNUWkYB5lkJ4N96AxrsXA30Lj5XJSURsI2yTVef35Ce0BflNCAov07VccMXKj2Q4JhE18QV+DdMM7wWdtZ+mYZaN9kjHK5XptJsoF7lprc2M+pyUwmDCV+/p5tmcVzBL7N6T1K9AD7Ju6y/R+q//e6yDECrWez+Q3Q28Gmx0/e9v4NeDnhdVMwQJr9LfCL16pPjNMRaDT3fCMxHIwa8o+REWx9kQ0xKZY/olyjuksGpC2UcJaZ/840s62CjvWYEUdA+xTVYbj2gjbm58unGgxxbV2+PPSPq247z4DM/MDMZSgcFlyM5IU5wmoisDqhAk7SiFMYlteYW5qQHLppD2VDJ7Y7R0l7z/lHhBYMOku3LaWKQJwoV+UvJYsDOyOR9bORkbAUHewO6kBrJTsxJtFpbp5zoUaODtPsT0sBzwwNvTy8e4sPsFywu8+Z1picVsFVVdI3HV6OmY8IgMrV6cL3vFI9yVADQZIeJtJW8KHSFj4rN6fCozLqHjUX5RkcIZ165BpVUHml+Kxw1htOmDRmYN75Gs/BqChsbnBiFJomtRmCM056JA6eKB/dgVgCni1KDg9WxZ5qh1s/Zlo9Vj/GDDaHc7i8/VGLwo6jJcYYbxjIuIVzGIbD6aVeGncs1OSyTXKRb/0k2BhwO4/0iIn1Pnw0bv3ry5hdHAjsEQE4b39P7vl6sv8v/MRhtkAHSg4FF+p1Gn+fw0W+ZV1YsyZjxvuw4xBWPvOooyUa5v8C4MVwrrafM1BFUdciwBxNwhJV17JE1iRNFZvWJO1mAeLE2Ry8p4fiCunifDHhm1DJTu6BjYlvNzzW0NpZgAaQWnQugVjdM4B5KbaPuTYS6R70e5WZPl5F6r0fQubyONE4o/mKvN648eFjvuKVwZrv0Mb152IvrXlMN3dYH7LD9V++N59BIN/PWMTMO/iITd37KH1NBvnM8GBhuJ09t0O2AzmNXF/QwmBGR8fa7LW0RTbvthfyiF9ooOe/z+OuHoR8zl/R3GSiH2nbjDf9Yg0bwvPqWudSSJ83ZVDGW9ndHoXBfre9mMXZCuItBc4ECjp3rxxuqoRzR6eNsEup5Hx1VpJxOHUlUR1/ST4yHeLRyxa4npC8mkjQkEsm5EZ5Reg4IJg//TtxP6oSjLCagn622dngmKiUxtg1bI7JXxWylSvvSKtJ2TKATvfEKvXYLhQOXzwrX3rfNu7ythZKDPtZXAp2INFQiiuDjBjnH7r+cK1bl5JJnzozmd4gDvblIrh2xRxyaZ9VJyqUuKMc9TmFo6lX8MEX7D8jYBo2fKE8vzJ/MYNgT+q7C0WQd5E1OuFf8hpCpfjOWvPLz18sMdBLDfDcfHvcI+biY4cRxWkDCQMhbBsFr3MTi938boBeI/MI5qO6pPoE2Xx7XFnz6KHPM7plLtnijve8P1PT+dJzbhUrcFltELb9bQFv0T1dTusvCkEaSHz214Sy0RSz1Q11uL/r/4/tKC4zeIlNZ5GptSPCfbKdp+B89pP66VPR2ZXw3eJyXms+WtT4EgSF7nLuxPbZFZvaD90Cl4PCH1AUxfM/jl9Ez9yuSDtIJOibOacjjuM+WVwaY5rMyS5Dt7B2yxrFwdie6b67zixn3YF7Uq3w9BFzdn/1tnlxN3LVfbrhn9HAAwZlnaV5VVlCgcl9i3qdg5J6JEmAFGPRREaVZ/+vqg0dRmQiX2kDgab4w40ILgcOZxhlKlsVcE4MM34O/bt/4TbjLRC/Q9xpSl8Jt7l1sAhwdR7q6OvcFtBK5cTK3fS/bKSm8OYi32UhD3w2JmHxYdWfuTJHOJrWIiEb4If29LnJCOPuSxa06ZFLJWMpMtOkKWe4sPMhdLgKa+IP5HgtyK36bsssLrnEz8JDwVOb56sp7Jx5pdl7+G9clqhFu+Xk1tDrlcFFnc4MXq5MKSCKYc/Uidk2qzRwU6Jx6R5A4jiCM4djxnmt4kbj+wDGZs/LvSWTs9P5Haz5vifqQ6d/MrnF+89rX/oLi0mDq/pH5UiOsyKtglQl6DEdHPFS/wqFFHv9bIDj9hxXQ3h4HRezHktQ51yU0nwWdSmz0TGJMnto/fqhYbra6MIXbgB6rPrWH1cTgSqAD4/Xpp7o7m4HW3yeM01tBWrk1QejSPPI9TArATa/8i0N20wWJ0U/vBe/O20fRlP7lWLCgtfOXqGlKwQb4mYKyLwmX3cVEsiMJU3csrsn/oBRrVj0PYY+cIw+Q7NTQlWSRJFm0e2ul1FzyokkwRvzNpc6zrf7Z32SRXExBHDIpo8kotahMSF0ndxCS0bBClray9tJnKmyIp97A5eGNR/OvLsG0j9LtKSVpRujrry1gIr1anwnpVGwAwey3rBgyHaQQfq3egt6I8CsT6bi+YGHFEvnZZqlgTZfp0FqdmsWv9fAPdshpe8xyO8FIEZcLusrjh/+qLVPN9U8BeYwXhqZ32BGgoYSjlTCgNnmQQbhtkuHR07ytkUFStg0+egxMfenZD/WX7718GwZRFGWe/gr62KqoE3lLcZHPK9MZEdueJPqQawva3W++T8l9Sd5VwfYOCX+VcVZMP7sBLg9jHtnJ2fvf2WNAaxu5y+eKXZQY0hC5xcVbxLc7zS/pFaLGbknRA/D+E+zZT7j6IRDSA1uq6MnMhGdddl5QkjSDvx/NarVxnS6oR2FdvCuRLejdXYM6k11YR5e4WFu4GEkAibjnrJstfQZL+BAK4jn1L8sTcLt9JkMK6xjtqHKqkD26UUIe+k/Vp9TL5udl0SVEUlD/7V928D8H6CR4i18pCV+GdUuKKEx+/BXYevkLNjWOwYXhHH0aJu1aGs3Bybo+uFHOPzHYYmH+V1d+k704fYDcaOtA7cGawvm4xi+YSxoPSU0iZYS8dgy4kKDSXUwwQerJIQbWEuRNCMTwK+yujjByOGsLW+5H3lz697TdC/ZY7v46dRkvgUgtjg9/gPPmEcDDXcBuRlvv0oz8g2VzbdKHlANT0bVPvBfJ5pnHMYkhZe3c93m9kvIZ6aKK98uWGPuYKBYNSuWqjMJ1BK8wusNfCBzag6FX4KegTr2XXAXKxH2CI1yMNlnBgQihU0zVYw+FLbAu7LzdJgiPcRCDN3HOmWITml55aIYv2Vd9aPUmMWgPfxxedGclwEefPVYPG4H8SYQfDJGpBbWijOrOi76rFOcUxYtixuwb8zRaBDnzVcRs4AR3f6gZcVQBV56OXuL2esjV8vWEGod/IDBrHvSFrZZCjzsI7wU6YRqH9pxiFWK11hF6HyffKX79khMnY2umnMughxcsJv6dwyBuEMydoq8vTAdL2SolqLvMnBbOw4/dggQw5CPe1GZnIp7nNhqSbweHSE01kYAT3W1iymEmwUq9I2bNYZqsECG87puSt4I/kooDmd+/E2wZBVXEwDqoYLEhemhn3dkC3/OXW+2WzuWN6IDWMifxD9XbO/M05UkxNl9SyrZ7/xK/NJWEta3yTpjaEkAcggZxvmrCLiUzXulpw7nFUCdf+6AkJQg1YJKbpHKdlpc+Iz9y/phpz8a27Y800bMnWSq+Vjpscmzf4Vrx+/NdjikwYvzlX7X3z5GLJYi163QUASL6hxGj9eDpBuH2XNmxqxWh4E/9BfVB0WS+SWCZPPLlluPkL+/+B/hMM5bkpBN9mrPJuj2QRDq4bI8xCOviYjQgn4LYSt2xpwyZXI7WvuO/IC9bQoH77H61OHnxdXLxt0cklFdFvSLIiU9YI6noSgholY+TrOMSSHKyW07LVOfHIP3NQ7W8YmqQ79GMH1+6s7PXepCwEiz4FV/AUZOTdKZIvzG44bLULl1gm1ZtSVVGZTHtGOBwGCJ5xflcI2jlKyDBdi6WvUR0E/QedJ+JG/0Lo3dsODv5X1BhGiFjY4v+o0d41xXPWsxsQSy4QFQkf43BMfytEAlooNJa2/YLZhyMalKT1VoYE9/3iSlCrsKUrEe+9V+l7vhW+eKZn4hoI3yLIv7vUEU1RoqtwzrmNwNj9ZKPGt4fOePXBpP1Rrs0F9RuGGvJSDkE52HJdPNtURa9SroJU4WGxgrInk+J3GYszDqHoRsfOhm6fvpAkzPIPGbxmv0d3qelKDIsmrVnJMB5J1aZKOIFesQAYnMp20N5biO7vRQ6Gpx9zl/pVaB4b3il4rDl3FQQbkQAUIic3NaGDFCI0bFcceC7tCoXttW9nh5ljmAuVh7LInDk7zigLL6q4QUZ6oUpZfjyt/U1pOR49L2J7v9aSe6CPY+c4Ac1BsyGt5oyC0UXosZdvO6fX4USmqJrLs7/w89+8dg5qFKDEi+QQV2oH5rpQ9n5LwP8DVSWh112Zd9rAeyzMW1X6EtI0naIHQqpTNdgXiHqEHPo7RngxMABnMLNKxAN3syOJl68YUmHDS205N82OM9NEf3J1HLGh6oOoR+RXgDnuo3eUqMVxKNpAou/IAlePvqXFlSCp0SVS1zH7SHc7Nq+vlc/FKZXLV0WFc1HzzSvqAsjuArIQBcq/dvxBbzX75jmQAFl1WO8JM2aHYJ1i//zMfXyshxHxXnCfMemFO6gYJ6ipfH0mtErZJdVghAlVRv8Em6QMTdRAkYYvjex2oXNMpJMv4AxmB7FM7A1zGHoVQwWhkBhbIw7vyAYmEDxj0lvbUoQVEVgW8qZQnl+zNQdFU9NQdIOHXo5R3I5DXP91z3Tktyt6pV5rfwF2cGIVN1mMlvF4ebk9m0J9caZABsqHqaL0/Rsh9qCflmXcjiJo4uKp+ksS+9Cj0YIybyYl28W5PmnnaK327h/GAusiH3251zd5HBAa27WgYfz5/uGS2P1PsWQYM91qRMa20umBc0QjHn3zXsswlSER5DiWaLmtrS5/McG58fWG0IN3e0XfPd6dqmXxRQSHNShdTODTRyS7HvBGn1BxRouDDEkfuvipMurIrsW1OjtzSU2ORne/oYbOC5gOoKrtgyFkaqHDyRUBKgpS/6MZcW7D3LSER0GCA7MGHgfj6hQy2suI56ionGb9l2IlelCwrPbXIFYEca/wsIHkeAtDrCMjtKdgXLEdiahWtn2H9ZiRC3B9XCBeSNFvMNH97Z14Hqotpv4UyoShfwIMpwXVfYJXA+bSBYXUFe7+O3pmFF53ErPf8OHW7S1LKRqDQCH/bssq8sUL+z4L+E6VMaxNtO+0ISQjjOOutaQCypOjAnrzM83VcF5qUzoq1qleosoR+zHpZklPLV/fTvj37RvNakyWk6VlUzzKZjK8GYSKi1OcgGVL8FYmr6v7vVCv+mt647t58KHunk9E/I+YMYyOkx5WOPDVw4hFTwBSL9aCZp1ncWg9rpFxz5zaw4Zw8lxyuZi356SDDYvjv6e+V05ACtlsfdNLGK5hm3mWh76TI++f+JZjhcHApYr91T3CmQhrcePosk5rqQViBo9KffYCHLLZCJAgW9Sri9qpwpXV5pFke7i8W47AcXLNg82d1XGlwhbsIwpYvMSBo57oJnBbPWHKT3fI4tWs9uVQsqD+McWNQkCP8tWNjH2/DebQ9aDk7MdloQeCe40/fgzYHawjDydShURSsZNKCJiOYjUExIbxbtcc+zwSqzz/RmU/I2zVLLTbDDxk3bQvLBXOHloDOddUHrEhMuwWm3BfVqOW1URdSnSyHZYtKHiiI/3lYU1Bn/Yg/o9qG5aXHHD5wYgsnnxfet6FITHH2+EvJ1cbjWxbKhANfydaT3byKZn8RCyaKRFSdwOPED444v3r9h9QhZeERRIMf5CnEAu0ZZVs0jusoH/FutJHqAxr1VB4p7KwbSQI6/vUZuoDXwt+NAFfuQqvS4OxtLZcNpefyG/al2deJEex0BAgHEbw9q0iNGEElw7il8CmcPhiH7KtJ5n9nwlCo2tl2wbGo5tdY59eeHfPsu3Vr6RhTm5u5iHt7fidKO3emtSunJMU+NnGvQOpQzy20bhXEEwHTEN2QaGXGYJg7S4Rdwe8ZzRGFI9Bk8dwmTCaYTj7CX54Vo4apENWRVgyCmt27rJfz4dbQ5C998kFSlr7CiQqNuipECnLAG84UAa7+aKnvwAodU6zJsSJXYYhn5uJ1x/4b87h+5EQ7ufbVpB03SrjwFhmrnGChx8tAgIWZ20d9cfpc+4ImtRb+XLZ+7myF0HRt4oj1E8YlVI7GpP3AEFX3lPz3F6jXtqwtsJsNiCdozj0QW7dgq6UKe065LDxdz24p9bUGpVYVIHMCzgGqFEKI9uL3vf/L0eqrCuWzrMQkdw4sI4GMFVNrSBbImi4ODP5PE76GhD9Zcmbcrv3p4ioCHNHvFLKJNoVeEXHpq6FF+MvuiFJCZZGgSnElPfVO8Eyw0At2L3ZZoIqwHsakcNnFRBmjbvdB4L6TTX2KmcGNzqZovz7PQCSbw1AulwETcypB4MGv22W/Iqshmo0kmwgQMepcA2ikVP++B3vwD5Eu0mWmP3ACZ+qX6tUiGxgYh0FoMewZKpn6jLDbTYOpUWyrz/1lq1Q7N8MZKP/bDrK/zjM6FfmcNAkv8CrNI5ErQoH4lJxQhOEaIUDbBK5Kem9Hmu7gzCCC9ZOiafh9bBVBXDjHV7o1cUzCnfFXzlswAuGBF/d4SlOuOpZ5NUWWJnihBsqjKmvqY2iEvWpKrf2SxlR6IwrwvoI0fZo2Ewy/qLx6aETdp3h+kSRhFgwAU396GcolkXUM2aRHXMfUUTcDZagpEeqzVaUgTGNj67JqIUDKjHPrU6C5qS3+pnLAVpoWn2beLulw+fiCnaSdIheRgVoMEjXBrOcujbQa974solcqM+Pi8rhX/9kXZ74vfjLoSF78N5UF4p1pmiOuwf7Zn1ZAwb81cOTXOj0E4aGcXXP/YUuO7i9nNv3kMnPz8lfNcr+43DCQFXlBWgYSIfphnnOCgr+BXS5O8McmY+auh+5cXF2bK/2g4tXbjHNw+keVhJ3RzHQ62Z4aYcSrf8N0LvAyTYru6yWRQMwOJiMebSdlYQ+P2qgP2W0PqjVgxdz5aBK3ToQbwl0gX9szCoe9TeE59RyyAWZWuU/v+YrT716349owPhU+NBQC2EWxTas8e9WmISp1Mjeu8JtOoVgBq1UbqGYs87nmueQv6MxEPzigeU/3i8/esB6JcP6A5oeeLAbDDbpldwnH4EIgmTIJZnmv31pg+pzCWyeeIsgNyXVI8lIQ/pHatBrUJaMT34cwuQYJP/jlNvAq1ieZXWn7JSkkad207OMnwo3r0/BvbwQPEAr3FnSge6yPYTdG9xualndLft/K0dibzq/iLSOqIId0ArPnWNwttCIfZRx49JDlBRyGZjlwDJOCOGG/LiAOL6KTkXzn+mMM6UEJc/syhAenpcW1vjh7AcwSQRe6eYFNg9JBMkdVHxPh32KDyTp4Ha01bV0i/lAvugQ3QqQUN1NmIeseWcchv3Y7DgBiVkrIdd0yL+Cq0DcuZKbevXIuUtKtRJ/3nfaNIV+Y9jchzDRX2E8x55FB1lXTe86wSy5KykC+PBUzbsYZByxib6pzQpgQQTN5WcKlRy3reLyDf1bNkVI7EHq1J3KhPpNn+y+mNHxIpvLEc99KcAQM9UltOMgd4PPai95pMaf5vuLLuYGrGp77b3lwL1C7v3S5I6y/jKZoJvAnYbh1CWqyTL2OGz4uNoQ2fV2/ARXnJBccf9HzC00Hgv6RR8QG3v6sAnXvI2HItbfMmw/GJsvSeVOrSi+fVmCHtfnj1eqBrRxm2wE/7qm2qZ/1oG9iVvhFI0YPg9oNzEXMz7HPZzz95+bqlDY50IwqQVgjZUYnBzBm8ASyoXK7VQAe8O+n7JlC09UqYBpUotEiE+CpgcenQgYZsdkaTGjiU4k/OiwvC53KuGmxKPtDCIOocie8oVVA0M05TL9hRgv4CmaOWEhvgt0UgoAh6XRT5Saxbnjo+OEmlqSL4zDMPa/uX1s+yqz45coRH51Hy1Fy3RhSSWj0wrgCf9jX82mufGBxw4uBFXgiCFvB9CBMwqHaXP5tKhc7K88aidzUfEnyRlHN7ANQR/3NTkYrn7+QVtTYvXH/JIoyDCRVD2YOB65TavqLXvcO2DmzT6o8NnpvNsIU5r0Ww1TdakASFdNkC4BVqFQ1je5yy+nArRcD7hhAZAIUZ6TeuXLSPTxxMlaSifcTOUYbQheJhoWIBMcNoyJMWfU0+pqphK0cu/3hDYH6hLM8q74vA8rildG6NlUEwS/Icnp5eApuBJtcjDNj2l+XTT3bBQbpHYVubHd2A/ZeZVG+AdMER/G2VTp/RHVUvEOLkBPqJGKdCne5sDXzv1r2SfCUbuHnMw/Y9RAnHJ6LUPp6pUhCy+iE/lShZFbCuhu7/gQ3mmltkdyj6zf/SZWPsoGvljecRx4YkQQgEPGx5BQOX+jUZrtklS4SpLqbRb/lpxcnWy1dFZ12BMFId617btVW8fNdx5Vi4kwVBFWLsYHDexEve+/vwnGyNtrBJirUp9KBpTnXVEyK0CznzhegpDYu/YJnxaY9V9VLOV7KJER9v2IB+tfbJmNRiZra4ALq0DUtQrBhHZLTK7H7ISxFddbdK/CPR1/IEFTOPZyvCZeqOXj68Cwqw3EVNhVy12T62X8RlMIkQTXhiuGomOghVxBn4zyMTfYzD0kfw3F7j2rvLe7X/Hf1hiSby18PboJ3fT+PRlsn07BHKo9ngzucf8h0H3mBEZ/AvOfIkSOO5RJUBN01cKuXA1Nljj+jsopHfRzNyTJlrfJN6zQPxvfeA2OfwtR3oQCFm8jsIeTggwIKL4Radj77k1Lfv5sx5zYKVSDxATAWb3HMeTs7koh719BqiY61IZTL16t/+Xdd0VuH641Sp/p0pvbcN6HAmMvKF7TLbykpwC3c8hdSEyIQBymht5SYDMgyAlme4UpSqTQ6j7PrgVvjPPy5WhCOyjUT3cfibw3tc2f9/issaCOhtZzlh5eAMzR1edtD+z9RoQ6cPFPrK9Uv+OLTkf6wpZF1RU8gvjahmWNhDNlcpCaLYKJrF8hUK2Kv2+toZ8t3Ez1ubOsTOHiRhGCpWMayTzgvh2qa32p5wjXRLGJS05FUX14xd+nEvAKzXy1BJyCStEeVbe8csV4E2P/WJNZoGjwGGytalWvB9bNaXOEhIhPS1G5Cs5tcoHyPWTOeBO35eaAYcDONBIlRBCqwA3atBrmtBOiKDVKAH/e6fyDRJ4qdfRmGKSSiQuZblvYU0jb9wGDfB5cigV3HlAdzKophR4QPd4QeQy6UGS62COwCLSoSFZHqmvPc1Boon053Qkkxr6L3xbx1iLR5F5bVxEzzcMQpiD0eM8afSvVaWku2FNJJMU3+Tk5EiJ5T0KhVSAFQ1tZR5V3TGJV1iGYixGJ6e4vERliP/bu02aH9EnRpwpaxd63AHhMN31UTNltnRBnjBAYvgZW21d136W8kXy2V2kre3QxSjBdofEcwD9LX0qer/YxPoV4WMx3mNNr++7uaL7m5C4mExr1Ig+kwqiYkxkRjnKg8UM/mktTCwiTOm9zDGEVMycGyrbFW9ObueWmDPMj/rQR5/XNuKI1oSE/aAQzXb5TGOrt29IfPhQtXYLsfBMjcJf7uU9ud77tv+EeK1fXpxu0uiZdmdDi0F6KKLFtXArsZxT5mtYPxD8BwCgYfa9F7TBkRMGuRBCy1LhXVT8njt6gyqTvZRAZnGt8J+r4q6kDgcBn9tHTGOuchonBDQgdI1zxUl0uleUa5ZiWPVSOrm/WaUwjdyn8Tbje/w8Fh2vMXWCq957Lk9Y0WcY2iWOKH7usMgY/FfwgQK1ewuFRgu5/mlW/7TmRoGSM1j11+brEua3ArHcCO6RTS1Fm+huu3y7taXBUpT0C795ogNuM0JX1PmC86TK2mCiQII03uNDy/H9UHtURillgnZ7bz0vumCg6FllNRCuOnmZLv4pfi6Fxn52fQhqKsHGg7a7+7bhT+YOjZe8Vemzjqy6eBQShNI44him82rfDX+P21dP4iG3Gg9dEkxWyT88sihS6wUTbRLnnetp/QoriXmXqvZRftgRPaQ8h44st//UK6mn5wzYELSCuFkgm7HMbbuKr/Qg0PRhMpXvFjeSRpLmUAA1NRWMx/vBKN3LXBG/LtUImnfD2ckw53fHt2VSThVCC1UeMDQXIy1zxPkBJKHUJTphK25f0Rkw7YvCdebQpitGXhcCxUqpJDlqY988iP3Da/0geQlj0siUmOUSWCsrPoQ02l8zvSprToO2GMpqQp1pN/a8srb96mNkCUuik3eySLJwmIG/LSuxzPxqpUJWeLHvYU8i/LB8R/Z6fGir9IUlZUJRfyxFjyOq/ijP8xZbEER/jyisF5xO9N6uY+GuErAJ/FclgXNTPDK5MASzXElTj9/P67mlXSaR/eZ+kaET69U/fBJE/3GJfDNu4jiRR1aa33YVXrIHH78ZZedKFP1CQTMqZFNBq/0C3qmMp3suI5Fbr0KqKaNS2Jy2vvjJCGd9smOHyTbwkPzanywvzU7vvfxU4atQRyIqxnT0orCcE9FpiitlX/UDCFdZJ/veJa42UahA/PlcFKNzpvSOZADVHn7bE9kCbXWwDCFx0Mgg+fZyIiJuuvtr9BJcrNt/r19JNjRLY66iOnvwCbS/EccpsBiTMbQclFrHL/zzAUtQrIMSOTb9QYgZYk2f8xDpgYd6nZQlnhj/8iU3p+LUJuFPPTwByMmYMfwMOp6z8SLkIZvEv46A+vPgmeo+/WiOapZxLFHsy5cZly9A5PcAghVHcTTfI4l+2H95imRmmd/sLQwV7kea/i8I0IholtZ/+9Gro20osBUN3KxGoQDLeXZv8uLS4+fBcJNa67LjRNuiyFulohAczPuozkoLd18r+8mFk3txfUH3J9ELj5RgmOYA9xhMpPl1aA1AvDqTeqCJcDiCNk/wZZ+AwIjYGGaDssr2PZdqWP9XLnjdlrmL5o++JM4WnWdQqk5sHMzael8AhSTB3gBnxxrqxV4j32Aerkwal5xUSLix+TwAx5FHzLcjqnL7xXU9h+JDelA5msRAtPn9AWdvDNr8VIOJd2+nqPfgj9X5SxLzp7YFzu3vYuU/z037I5GPPsVwVF2x2c0yomzb3OiA5W1ktg/OyJWDBkqAz7gtBYvoAlg854KBdT23o0bQo8Zzjg+KbR7u5r4QAaQG4ZJ/xUnVW3lb2haiaiGDVufPD343vJfQ77ncrTN8u/ujPaYDjGSgXRxWWxbipxY5qs2b+ChKrVGyj3iVe34lAfinHa0miPHUBxrSOTkZVz1bNiXWfBaus8sCMEaKbNs5ePv0zTv8GaEgves3sQsBdh/grtOm5KdJMjfo6WMNq+kII+0X02Ci8TO9pFoxfnuMaCXL9glxpZfqSyzTjri7/zt9CXCF4cMOLFWoZI7xPVtzFWTwYvBNzYHCIOi1bYX/SpzpALfGnMYC5PCGlW1IL0RnAoYAxsiJQHFlyPoXmf/7H0hOlwxA5qZUv+4jVgvWy7JVv2YC1Qlg6ho3K+sVKL95thuhM/Q2xG56B92o2Fp3yOrOzPlqek2cd//3UAxsKdP8y+IVrt1UnU69vSLMM5Lw/yeiwfai+PykFcJZwgT6wOkwv+arijTMntjJsITEEnePGil6HQZctGrqAHmJIYC3HdfL7HPMVxw+rceURqqGwDu6MbZx1UppOxelEe2UTLx6Tcz3a6YfQdIMFJ/GYuMWqcMpEBAveEEN0GMSPz9ZZ6UZZU1rphBOwTxFgydaPZdXq2R/b1QqmBFwL/lnAJC3gzXLnzKH9M8hpOA/o/KK7QTG70JgSDs+iQUI0XgKvIC835gRQa+Ob1HcVJs3GH9N4e8xo9hcUTtHo2k1VUHx5jkWb4MA0tjP9RFtXQxtw8DEJHNJ8WSsIrOlxiRtsza0LNXK51or5/pX34pKn7ICmdXGUcY3oYtwyr+0P+7M26hEo9Cr7F2hl+c5E0o6XMD/+9QWZHQyxOkZSc1leQbRmGLFBcam0VxnXoIZBm6x/0qc25wOu2yxzU/byLHVi0xCfQYZ+DKqar4pQhEAs5VLSoTV3wxd2Z3gE7tKpENDdf5LBu5KblSluw+I1e4rrrZdlIFYh/f+LpdfX4rEPToN1KsYRAz9clBzU+0hOLrDKRC/4qyoG+Q0Y7v5MIXqQlSQNsgcOGECm8F+HcvM5hre93+bnkJF/iagibIH63vJgjIOFgYw6WyPu2myBtsWaXHsEQ30xdaLbBoVEAh0BilCgduWoU98twRKS8fKdFZ2byWU0RAPcODOsCyGXCPwcqDhzxoJ9M6oa9Xnt4sAEmUOG1EHZlNUM1+gxPnEyQeeTCxGlegTMO7pUGYIRlXD8vpGLfzg7rvPmU22EGf/xTNgZKau3Uov8Mpbg8MUdrVAS+aVgGEjV+/OqatdmviZEggbbga2JItGcoE5tm8oFsDTfBQxo7Xd51ssCZjDsxhCxJY5XBT2u1x5nViY1OaBlCWKHSWBoixDWVqNWsdKeU24mmkFIC1otAtqZJYhhWKW/SRI9id7gPRwQH+McofBDQEAfNIZfZiGhpQkQAJsgrXhoJgJYs2JQPs9r4OfcZA67/wYAtC80fWwihj4QrM8Rf/6haLuwnLq3+n9veTKihdpmMbJSO2Y/Zaf8dhxF1am0obTIAdW6iHUy3S2Ndg6im0pBnI9W2eBUzTQ/VDulewNU3UXvnHsXTmMpmXtB0VZ1kv6dnoNlSPi5nICplBBXZ4n9IQg+6L4Q2om45cScOmQ0PoP1eGpsZ+ctGvYlVvofMurO6TLSa5DV+m12mMm0fsrerSbrAY6RQyPAf14wDE0YNKa3VFNhrKpUleA3FeGl3RcSIjQMdUwI4eGLWVJUEElso9tlVOwY7Bw68t/wLrBkTG9s7D8QJ3PC49PtmHMhueJMNh+QN+CPqOVvw8StTaqTcp2rkGbcf+oI6g59D7TcMbditlQpdX3te10jqRl6IiuhEv5HRiN/1fR1araNrPLCsaiV7W+/UlFbUgQILc6k1oENl/vzPObz8NAZ4ulS1argFkXIjjsuL8X+CEW5kgpFNIh9vA95ouLzx9LufXXH7O1zbYMZtxtww6n8MxUy0jkrJsR7lY4RCTZ0ywwTs8INoTBGwL5eWrqYrfL8r1c6u7TORPF7TylMaXXNi7REob2KdFvDX1kPsv+F2l5wzINS2V6H8cIlaz5KwbOb78GLvZ0QRTly3FXcBmIwlEON6IqOKDvhnMuzu0pxfK97Pa8ld6V+3aemD8oMVx2cr2OT+AdxkXDYfSMpQf0xVjaWdu9TVsx3/VBHU95W4Y6hYWhcJ9dodbPlmo7AYcyToL/fCxIBXVf7bEPd/B2c/VOlAD7GRECtVt+9aPS7RapWgYkF6+m8uuAbdcW2sJQRQax+rVSdkXG1ss0mLDVSVvEtKXrdU5VcJdNccyRxYG+gnsNWhVVa5VwlbKf8mGnLiwwayd1m4jmXgPx4olRFmWrcBzYXVf/rztLKdb/rsrcFInNaMwdLa/xxR7y6pdBzdVKEFT/dMz6tFJgxnCPzyfrM8MCShRjyehEl7QoKVsTfbuEmyAVzSi3O54ll9Wmfq0PVTl4tN0fuF0+7AnUFNl+mWbfoxThpn9NU6I3r8/ak7ZKCInySEYGfcrTs0vIwl9owb7QolZkb2wwTsk2EngS9ZUC/IGsx3d5fdtKCYF3+vcmhrjePpG7+AMHrpDuOMvEWw0AlYoHLEboLi5bUBYcn9TQ7P8xG7KY6CIbPAddQPYfc+aIEF9Q29hLKEGyE2Zi/oMb7PGH650P10J4X9V6YK17dLUwIQbAIDFzI4LqElNRiK+KCZaggYY+azQhj62HXTp1pKFIwoEVoat5vv4V7JVajOl/q5O9IJrN0i2NW7N2irmmJXJzKu1hztvFjY8uROAoAZu5qLTXIYOFUiFqnhu40sMUg5vyrEeD4rozMfSXFAxFdBUWDzyQndBrt49pu4WJlw7jhGKRsVTzUL/COgig+Re9v9M0h020rBepf3qwRTzSKB9UavYdGnHgoq/fzAkPmMFw/oPud1jUSNGw6J3cG2YKSZMAAo/eTDHqnLuSxxu1y99wgHZVNlJyAmAGt6EIoEerTICEUwtu9jGshYDuUszW6AfJLUG8LsxlbKLboYmev2H3/O9BOJc4M4nXWGaECjvhVazpqVOTgiMbBn61NN4OD8vFdoEpIRvwzBv/nMx/82CNCHDQgEuUKwYe22MlIy19YtR3E7ekU31UzljfCbS+MBsJ8ZZmR3dGsxQt2rQ1OGqa6n3/Hc7ysC4Pk60UFAl0H1BV5JMt5LISUqGGgq3PWsX34+U4TV/xvESEBuB1QFvQXyF5lxbYg/QU0MYJ/DcfwXJ7xlN1m/Qbf2+UV3tvu2cImOxb1NK9COQ9vk0NRGBIXsmZKFO3Y6U5/ClFKHZcms683V/wPbWLTJHxdYHaH/O/fkVuLjVPRp3m4841hJtZ5Jv/hUTT3McsvzT3600wjO9q0sgywev87J+zcFJVSkv1lGFn/wsj8KznP56tj+U9s4nGAzpWwnFJhcAdVMPwc2ekDvKLVbPzgE/fKmTdzG8NXsaYivO2i9bNU8limZXhtJVIqyp1YX7IUlUj7UzHTzj+Z9155UFbRij4VYzeqX6605kuAgT3YRwvSqBNlzAi4MmaK/3pxvJbnHYXCS0bdnEcGkpMBVdLvJMTKMIKKSbdtJ3L37coOK3HQ79lXYF8XTaiBUWHbo7s6LFE/0DlUjJJNOO9fOpC16zw9YTMKSLQVXrqq4Ns58RpmUaXQ81PeT7bt2G5Qe5V8ICUXkWiqH38glV4F2b6tMVWARMG02W7dQDIRES7K2WfhsmAFd87E5P8YEFL2mutCrlT6x2ZorqS/PwHstEnTxxupVk/r26erClZBGN/9K62eq2Z0Z5lI83Be2ZDk9vPcZ/GyO/hgLw9MlYutiz57Lffkqo2IsIJrFpwJeYtYZMv/mh9U4rLZ3kDqTkdDP282XQQEG2cuO/BmKcJW9UD3teZGolSgZmW6g/531DG994QEWOxC6gXA/AQIQY45Z5xRFEsF7gIXclrig3TivhFt9ntDrDhqFcMnODuDcW7SNOHfy5eLxnzU87QldTEy4TP7DLWF3EVv87XPaQBmZrmBjT152jU5F3YsAwy5U387Ha8vv/mEG84hAL8zIdkPt2QIhGZtVCRhDoWsTJMaux88kf3vuunaEgaa/xj57kMD2YKLGOMo2AbAq1v3Bm0twLufY9moP9UK10U/vgKwTIsz7V6TurwzOxf40e/Eztx+Mk1Hhpi+7HlQrcdOTNy0q7/lkUrFPBbUO6PU+pwlWtfmaUxF0azJy0tRFu46rW3rb/2aQz+I6B/052gHyZxx00XCmVKaQzjidYT7lUnqNvajdgE/xlPopMFelWTEsfCe2ENvCmuRHwGNZAofE=" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateVersion" name="com.salesforce.visualforce.ViewStateVersion" value="201606172351470929" /><input type="hidden"  id="com.salesforce.visualforce.ViewStateMAC" name="com.salesforce.visualforce.ViewStateMAC" value="AIEireWV0skLnekyW2bYmv0AAAFVbS3c3PNwvBX3QXdKzxoSfUZ0UUM3KT6KoAQ1S1VC5KEDVz39" /></span></span>
+            
+
+            
+                    <header class="header clearfix" style="background: #eaeef2;padding-top:0; padding-bottom:0;">
+                <div class="container">
+  
+                
+      <nav class="navbar navbar-default">
+        <div class="container-fluid" style="padding-left:0;padding-right:0;">
+          <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" class="navbar-toggle collapsed" data-target="#navbar" data-toggle="collapse" type="button">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+             
+                               
+            
+          </div>
+          <div class="navbar-collapse collapse" id="navbar" style="margin:0;">
+           
+            <ul class="nav navbar-nav navbar" >
+            		<li class="dropdown">
+                        <a class="dropdown-toggle" href="/">Home</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="#">How to Export</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/Export-Education">Export Education</a>
+                                <a href="/Finding-Foreign-Markets">Finding Foreign Markets</a>
+                                <a href="/Legal-Considerations">Legal Considerations</a>
+                                <a href="/Logistics-10">Logistics &amp; Ecommerce</a>
+                                <a href="/Financial-Considerations">Financial Considerations</a>
+                                <a href="/Product-Preparation">Product Preparation</a>
+                           </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="/services">Customized Services</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/services">Services for U.S. Exporters</a>
+                                <a href="/Plan-and-Assess">Plan and Assess</a>
+                                <a href="/Promote-and-Expand">Promote and Expand</a>
+                                <a href="/locations">Locations</a>
+                           </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="/Market-Research">Market Research</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/Market-Research">Find Market Intelligence</a>
+                                <a href="/Export-Guides">Export Guides</a>
+                                <a href="/Trade-Leads">Trade Leads</a>
+                                <a href="/Trade-Data-and-Analysis">Trade Data &amp; Analysis</a>
+                                <a href="/Trans-Pacific-Partnership-TPP">Trans-Pacific Partnership (TPP)</a>
+                           </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="/Events">Events</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/Events">Events and Trade Missions</a>
+                                <a href="/webinars">Webinars</a>
+                           </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="/Help-with-Trade-Problems">Trade Problems</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/Help-with-Trade-Problems">Get Help with Trade Problems</a>
+                                <a href="/Report-a-Trade-Barrier">Report a Foreign Trade Barrier</a>
+                                <a href="/Foreign-Trade-Remedies">Foreign Trade Remedies</a>
+                                <a href="/Foreign-Safeguard-Actions">Foreign Safeguard Activity Involving U.S. Exports</a>
+                                <a href="/Foreign-Anti-Dumping-Actions">U.S. Products Subject to AD/CVD Measures</a>
+                           </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="/Export-FAQs">FAQs</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="/Boards">Boards</a>
+                    </li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" href="/About-Us">About Us</a>
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="/ITA">International Trade Administration</a>
+                                <a href="/Federal-Partners">Federal Trade Partners</a>
+                                <a href="/Programs-for-Trade-Promotion-Partners">Programs for Trade Promotion Partners</a>
+                                <a href="/Trade-Initiatives">Trade Initiatives</a>
+                                <a href="/Contact-Us">Contact Us</a>
+                                <a href="/Social-Media">Social Media</a>
+                           </li>
+                        </ul>
+                    </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+
+                </div>
+            </header>
+    <style>
+        #chatterWidget {background: #fff; border: solid 1px #4cae4c; padding: 10px;}
+    </style>
+    <head>
+<meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
+<meta HTTP-EQUIV="Expires" content="Mon, 01 Jan 1990 12:00:00 GMT" />
+
+        
+        <meta charset="utf-8" />
+        <title>Export.gov - Helping Businesses Export</title>
+        <meta content="" name="description" />
+    </head>
+            <div class="main">
+            <div style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?format=auto&auto=compress&dpr=2&crop=entropy&fit=crop&w=1266&h=844&q=80'); background-repeat:no-repeat; background-size: cover;">
+                <div class="section clearfix primary-bg-ita-img" style="padding:0;">
+                <div>
+                    <div class="row content">
+                         <div class="containerInternal ignoreHeight" id="a17t0000000CpAnAAK">
+                                    <div class="col-md-12" id="a17t0000000CpAnAAK_a0zt0000000CeAxAAK">  
+                                        <div class=""><h1 class="text-center herobox-title" style="font-size:40px">Take Your Business Global</h1>
+                                        <p class="text-center lead" style="font-size:20px">Developed by international trade experts and economists, Export.gov provides trusted market intelligence, practical advice and business tools to help U.S. companies expand in global markets.<br> </p>
+                                        </div>
+                                    </div>
+                                                          
+                                    <div class="col-md-12">
+                                        <form id="a0zt0000000Ce91AAC" method="get" style="text-align: center;margin-bottom: 38px;">
+                                            <input class="bodySrchBox bodySrchBoxprimary-bg-ita-img" id="a0zt0000000Ce91AAC_search" placeholder="search market and export knowledge" type="text" />
+                                            <button class="bodySrchBtn bodySrchBtnprimary-bg-ita-img" id="a0zt0000000Ce91AAC_btn" onclick="window.location.replace('/search#/search?q='+$('#a0zt0000000Ce91AAC_search').val());" type="submit" value="Search"><i class="fa fa-search"></i></button>
+                                        </form>
+                                    </div>
+                                    
+                                    <script language="javascript" type="text/javascript">
+                                        $('#a0zt0000000Ce91AAC_btn').on('click', function(e){
+                                            var query, url;
+                                            e.preventDefault();
+                                            url = '/search#/search?q='+$('#a0zt0000000Ce91AAC_search').val();
+                                            return window.location.replace(url);
+                                        });
+                                    </script>
+                                    <div class="col-md-1" id="a17t0000000CpAnAAK_a0zt0000000CeAdAAK">  
+                                        <div class="">
+                                        <p class="text-center lead"></p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;margin-bottom: 10px;">
+                                        <a class="icon-text" href="/Export-Guides" target="_self"><i alt="Export Guides" class="fa fa-file-text-o fa-3x icon-text" style="margin-bottom:8px;"></i><br /><h4 class="icon-text">Export Guides</h4>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;margin-bottom: 10px;">
+                                        <a class="icon-text" href="search#/search/articles?&amp;_k=b86gej" target="_self"><i alt="Market Intelligence" class="fa fa-globe fa-3x icon-text" style="margin-bottom:8px;"></i><br /><h4 class="icon-text">Market Intelligence</h4>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;margin-bottom: 10px;">
+                                        <a class="icon-text" href="/Export-FAQs" target="_self"><i alt="FAQs" class="fa fa-comments-o fa-3x icon-text" style="margin-bottom:8px;"></i><br /><h4 class="icon-text">FAQs</h4>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;margin-bottom: 10px;">
+                                        <a class="icon-text" href="/Events" target="_self"><i alt="Events" class="fa fa-calendar fa-3x icon-text" style="margin-bottom:8px;"></i><br /><h4 class="icon-text">Events</h4>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;margin-bottom: 10px;">
+                                        <a class="icon-text" href="/Trade-Leads" target="_self"><i alt="Leads" class="fa fa-bullseye fa-3x icon-text" style="margin-bottom:8px;"></i><br /><h4 class="icon-text">Leads</h4>
+                                        </a>
+                                    </div>
+                                    <div class="col-md-1" id="a17t0000000CpAnAAK_a0zt0000000CeAiAAK">  
+                                        <div class="">
+                                        <p class="text-center lead"></p>
+                                        </div>
+                                    </div> 
+                        
+                        </div>   
+                    </div>
+                </div>
+                </div>
+            </div>
+            
+<!-- section start -->
+			<!-- ================ -->
+			<div class="section clearfix object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
+
+				<div class="container">
+					<div class="row" style="padding-top:25px;padding-bottom:25px;">
+						<div class="col-md-12">
+						
+						<h4 class="text-center" style="font-style:italic;">Follow a guided path to exporting</h4></br>
+						
+
+							<!-- isotope filters start -->
+							<div class="filters margin-bottom-clear" style="width: 50%;margin: 0 auto;">
+								<ul class="nav nav-pills">
+									<li style="border-radius: 4px;width:175px;border-style: solid;border-width: 1px;border-color:#f1f1f1;" class="active text-center"><a href="#" data-filter=".module">Modules</a></li>
+									<li style="border-radius: 4px;width:175px;border-style: solid;border-width: 1px;border-color:#f1f1f1;" class="text-center"><a href="#" data-filter=".hub">Hubs</a></li>
+								</ul>
+							</div>
+							<!-- isotope filters end -->
+
+							<!-- portfolio items start -->
+							<div class="isotope-container row ">
+								
+								
+<ol class="breadcrumb col-sm-3 isotope-item module" style="margin:10px 10px;border-radius:10px;padding:20px;">
+  <span style="font-size:16px;"><a href="#">How to Export</a></span></br>
+  <p class="active" style="font-size:12px;">Our global network of trade experts have hand selected the most up-to-date global trade information for your U.S. business. </p>
+</ol>
+<ol class="breadcrumb col-sm-3 isotope-item hub" style="margin:10px 10px;border-radius:10px;padding:20px;">
+  <span style="font-size:16px;"><a href="#">Finding Foreign Markets</a></span></br>
+  <p class="active" style="font-size:12px;">Determine which overseas market is best for your product or service. Exporting in response to...</p>
+</ol>
+<ol class="breadcrumb col-sm-3 isotope-item hub" style="margin:10px 10px;border-radius:10px;padding:20px;">
+  <span style="font-size:16px;"><a href="#">Legal Considerations</a></span></br>
+  <p class="active" style="font-size:12px;">Be aware of legal considerations as you engage your business with new partners or overseas markets.</p>
+</ol>
+<ol class="breadcrumb col-sm-3 isotope-item hub" style="margin:10px 10px;border-radius:10px;padding:20px;">
+  <span style="font-size:16px;"><a href="#">Logistics</a></span></br>
+  <p class="active" style="font-size:12px;">Understand the logistics of shipping, including the distribution changes driven by eCommerce.</p>
+</ol>
+								
+							</div>
+							<!-- portfolio items end -->
+
+						</div>
+					</div>
+				</div>
+
+			</div>
+			<!-- section end -->
+			
+			
+			
+        
+        
+        <script language="javascript" type="text/javascript">
+function parseD(t){
+        var output = '';
+        var d = new Date(t);
+        output = (d.getMonth() + 1)+"/"+d.getDate()+'/'+d.getFullYear();
+        return output;
+}        
+
+function processPage(){
+    $('img').not(".carouselimg, #logo").css('width', 'auto');
+    $('img').not(".carouselimg, #logo").css('height', 'auto');
+
+
+    $.each($('.enforceHeight'), function( ind, val ) {
+
+    if ($(window).width() > 768) {
+        var h = 0;
+        $.each($(val).children('[class*="col-md"]'), function(i, v){
+            if($(v).height() > h){
+                h = $(v).height();
+            }
+        });
+        $.each($(val).children('[class*="col-md"]').not(".col-md-12"), function(i, v){
+            $(v).height(h);
+        });
+    }else{
+        $.each($(val).children('[class*="col-md"]').not(".col-md-12"), function(i, v){
+            $(v).height('auto');
+        });
+    }
+    });
+}
+
+$(window).resize(function() {processPage();});
+$(window).load(function() {processPage();});
+
+        </script>
+    <body>
+         
+        <script src="" type="text/javascript"></script> 
+         
+    </body>
+            
+          
+            </div>
+
+
+
+            
+            
+            <footer class="light" id="footer">
+
+                
+                
+                <div class="footer">
+                    <div class="container">
+                        <div class="row nopad" style="font-size:12px;">
+                            
+                          <div class="space-bottom hidden-lg hidden-xs"></div>
+                              <div class="col-sm-6 col-md-2">
+                                 <div class="footer-content">
+                                     
+                                        <h5><a class="footer-links" href="#" style="font-size:12px;"><strong>How to Export</strong></a></h5>
+                                         <ul class="nav-stacked">
+                                                <li><a href="/Export-Education">Export Education</a></li>
+                                                <li><a href="/Finding-Foreign-Markets">Finding Foreign Markets</a></li>
+                                                <li><a href="/Legal-Considerations">Legal Considerations</a></li>
+                                                <li><a href="/Logistics-10">Logistics &amp; Ecommerce</a></li>
+                                                <li><a href="/Financial-Considerations">Financial Considerations</a></li>
+                                                <li><a href="/Product-Preparation">Product Preparation</a></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                          <div class="space-bottom hidden-lg hidden-xs"></div>
+                              <div class="col-sm-6 col-md-2">
+                                 <div class="footer-content">
+                                     
+                                        <h5><a class="footer-links" href="#" style="font-size:12px;"><strong>Customized Services</strong></a></h5>
+                                         <ul class="nav-stacked">
+                                                <li><a href="/services">Services for U.S. Exporters</a></li>
+                                                <li><a href="/Plan-and-Assess">Plan and Assess</a></li>
+                                                <li><a href="/Promote-and-Expand">Promote and Expand</a></li>
+                                                <li><a href="/locations">Locations</a></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                          <div class="space-bottom hidden-lg hidden-xs"></div>
+                              <div class="col-sm-6 col-md-2">
+                                 <div class="footer-content">
+                                     
+                                        <h5><a class="footer-links" href="#" style="font-size:12px;"><strong>Market Research</strong></a></h5>
+                                         <ul class="nav-stacked">
+                                                <li><a href="/Market-Research">Find Market Intelligence</a></li>
+                                                <li><a href="/Export-Guides">Export Guides</a></li>
+                                                <li><a href="/Trade-Leads">Trade Leads</a></li>
+                                                <li><a href="/Trade-Data-and-Analysis">Trade Data &amp; Analysis</a></li>
+                                                <li><a href="/Trans-Pacific-Partnership-TPP">Trans-Pacific Partnership (TPP)</a></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                          <div class="space-bottom hidden-lg hidden-xs"></div>
+                              <div class="col-sm-6 col-md-2">
+                                 <div class="footer-content">
+                                     
+                                        <h5><a class="footer-links" href="#" style="font-size:12px;"><strong>Events</strong></a></h5>
+                                         <ul class="nav-stacked">
+                                                <li><a href="/Events">Events and Trade Missions</a></li>
+                                                <li><a href="/webinars">Webinars</a></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                          <div class="space-bottom hidden-lg hidden-xs"></div>
+                              <div class="col-sm-6 col-md-2">
+                                 <div class="footer-content">
+                                     
+                                        <h5><a class="footer-links" href="#" style="font-size:12px;"><strong>Trade Problems</strong></a></h5>
+                                         <ul class="nav-stacked">
+                                                <li><a href="/Help-with-Trade-Problems">Get Help with Trade Problems</a></li>
+                                                <li><a href="/Report-a-Trade-Barrier">Report a Foreign Trade Barrier</a></li>
+                                                <li><a href="/Foreign-Trade-Remedies">Foreign Trade Remedies</a></li>
+                                                <li><a href="/Foreign-Safeguard-Actions">Foreign Safeguard Activity Involving U.S. Exports</a></li>
+                                                <li><a href="/Foreign-Anti-Dumping-Actions">U.S. Products Subject to AD/CVD Measures</a></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                          <div class="space-bottom hidden-lg hidden-xs"></div>
+                              <div class="col-sm-6 col-md-2">
+                                 <div class="footer-content">
+                                     
+                                        <h5><a class="footer-links" href="#" style="font-size:12px;"><strong>FAQs</strong></a></h5>
+                                         <ul class="nav-stacked">
+                                            </ul>
+                                    </div>
+                                </div>
+                          <div class="space-bottom hidden-lg hidden-xs"></div>
+                              <div class="col-sm-6 col-md-2">
+                                 <div class="footer-content">
+                                     
+                                        <h5><a class="footer-links" href="#" style="font-size:12px;"><strong>Boards</strong></a></h5>
+                                         <ul class="nav-stacked">
+                                            </ul>
+                                    </div>
+                                </div>
+                          <div class="space-bottom hidden-lg hidden-xs"></div>
+                              <div class="col-sm-6 col-md-2">
+                                 <div class="footer-content">
+                                     
+                                        <h5><a class="footer-links" href="#" style="font-size:12px;"><strong>About Us</strong></a></h5>
+                                         <ul class="nav-stacked">
+                                                <li><a href="/ITA">International Trade Administration</a></li>
+                                                <li><a href="/Federal-Partners">Federal Trade Partners</a></li>
+                                                <li><a href="/Programs-for-Trade-Promotion-Partners">Programs for Trade Promotion Partners</a></li>
+                                                <li><a href="/Trade-Initiatives">Trade Initiatives</a></li>
+                                                <li><a href="/Contact-Us">Contact Us</a></li>
+                                                <li><a href="/Social-Media">Social Media</a></li>
+                                            </ul>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="space-bottom hidden-lg hidden-xs"></div>
+                    </div>
+                </div>
+                
+
+                
+                
+                <div class="subfooter">
+                    <div class="container">
+
+                            <div class="col-md-12">
+                                 <p class="footer2"><div style="text-align: center;"><a href="/contact-us" target="_blank">Website Feedback</a>  |  <a href="/Website-Privacy-Policy" target="_blank">Privacy Policy</a>  |  <a href="/Website-Disclaimer" target="_blank">Disclaimer</a>  |  <a href="/FOIA" target="_blank">FOIA</a>  |  <a href="/No-Fear-Act" target="_blank">No Fear Act</a>  |  <a href="http://USA.gov" target="_blank">USA.gov</a><br><br>The <a href="http://www.trade.gov" target="_blank">International Trade Administration</a> (ITA), <a href="http://www.commerce.gov" target="_blank">U.S. Department of Commerce</a>, manages Export.gov to assist U.S. businesses plan their international sales strategies and succeed in today’s global marketplace. External links to other Internet sites should not be construed as an endorsement of the views or privacy policies contained therein. This site contains PDF documents. A <a href="https://get.adobe.com/reader/" target="_blank">PDF Reader</a> is available from Adobe Systems Incorporated.</div>
+    
+        
+  </p>
+
+                        </div>
+                    </div>
+                </div>
+                
+
+            </footer>
+            
+
+        </div>
+        
+
+        
+        
+        
+        <script src="https://success.export.gov/resource/1461407596000/ITA2/skins/js/bootstrap.min.js" type="text/javascript"></script>
+        
+        <script src="https://success.export.gov/resource/1461407596000/ITA2/skins/js/modernizr.js" type="text/javascript"></script>
+        
+        <script src="https://success.export.gov/resource/1461407596000/ITA2/skins/js/template.js" type="text/javascript"></script>
+        <script src="https://success.export.gov/resource/1461407596000/ITA2/skins/js/bootstrap-select.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+    $(function() {
+        $(".dropdown").hover(
+            function(){ $(this).addClass('open') },
+            function(){ $(this).removeClass('open') }
+        );
+    });
+</script>
+
+		<script type="text/javascript" src="http://htmlcoder.me/preview/idea/v.1.2.1/html/plugins/isotope/isotope.pkgd.min.js"></script>
+
+		<script type="text/javascript" src="http://htmlcoder.me/preview/idea/v.1.2.1/html/plugins/jquery.appear.js"></script>

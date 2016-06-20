@@ -1,0 +1,15 @@
+@import url(https://fonts.googleapis.com/css?family=Sriracha);
+
+.herobox-title {
+font-family: 'Sriracha', cursive;
+font-weight:700;
+
+text-transform: none;
+}
+.btn-white {
+    background-color: transparent;
+    color: #cd3c2e;
+    border: 1px solid #e84c3d;
+}
+
+
