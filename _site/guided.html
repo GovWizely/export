@@ -31,9 +31,14 @@
         
         <link href="home.css" rel="stylesheet" />
         
+        <link href="data:text/css;charset=utf-8," data-href=http://getbootstrap.com/dist/css/bootstrap-theme.min.css rel=stylesheet id=bs-theme-stylesheet>  
+ 		<link href="docs.min.css" rel=stylesheet> 
+        
         <script src="https://code.jquery.com/jquery-1.10.2.js" type="text/javascript"></script>
         <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js" type="text/javascript"></script>
         <link href="https://code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css" rel="stylesheet" />
+        <script src="http://afeld.github.io/bootstrap-toc/bootstrap-toc.js" charset="utf-8"></script>
+        
         <!--[if lt IE 9]>
             <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
             <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -278,6 +283,14 @@ function togglemobile() {
             </header>
     <style>
         #chatterWidget {background: #fff; border: solid 1px #4cae4c; padding: 10px;}
+        h2 {
+            color: #3c4542;
+            font-size: 20px;
+            margin: 20px 0px 10px 0px; 
+        }
+        .lead {
+        font-size:18px;
+        }
     </style>
     <head>
 <meta HTTP-EQUIV="PRAGMA" CONTENT="NO-CACHE" />
@@ -288,120 +301,56 @@ function togglemobile() {
         <title>Export.gov - Helping Businesses Export</title>
         <meta content="" name="description" />
     </head>
-            <div class="main">
-            <div style="background-image: url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?format=auto&auto=compress&dpr=2&crop=entropy&fit=crop&w=1266&h=844&q=80'); background-repeat:no-repeat; background-size: cover;">
-                <div class="section clearfix primary-bg-ita-img" style="padding:0;">
-                <div>
-                    <div class="row content">
-                         <div class="containerInternal ignoreHeight" id="a17t0000000CpAnAAK">
-                                    <div class="col-md-12" id="a17t0000000CpAnAAK_a0zt0000000CeAxAAK">  
-                                        <div class=""><h1 class="text-center herobox-title" style="font-size:40px">Take Your Business Global</h1>
-                                        <p class="text-center lead" style="font-size:20px;line-height: 28px;">Developed by international trade experts and economists, Export.gov provides trusted market intelligence, practical advice and business tools to help U.S. companies expand in global markets.<br> </p>
-                                        </div>
-                                    </div>
-                                                          
-                                    <div class="col-md-12">
-                                        <form id="a0zt0000000Ce91AAC" method="get" style="text-align: center;margin-bottom: 38px;">
-                                            <input class="bodySrchBox bodySrchBoxprimary-bg-ita-img" id="a0zt0000000Ce91AAC_search" placeholder="search market and export knowledge" type="text" />
-                                            <button class="bodySrchBtn bodySrchBtnprimary-bg-ita-img" id="a0zt0000000Ce91AAC_btn" onclick="window.location.replace('/search#/search?q='+$('#a0zt0000000Ce91AAC_search').val());" type="submit" value="Search"><i class="fa fa-search"></i></button>
-                                        </form>
-                                    </div>
-                                    
-                                    <script language="javascript" type="text/javascript">
-                                        $('#a0zt0000000Ce91AAC_btn').on('click', function(e){
-                                            var query, url;
-                                            e.preventDefault();
-                                            url = '/search#/search?q='+$('#a0zt0000000Ce91AAC_search').val();
-                                            return window.location.replace(url);
-                                        });
-                                    </script>
-                                    <div class="col-md-1" id="a17t0000000CpAnAAK_a0zt0000000CeAdAAK">  
-                                        <div class="">
-                                        <p class="text-center lead"></p>
-                                        </div>
-                                    </div>
-                                    <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;margin-bottom: 10px;">
-                                        <a class="icon-text" href="/Export-Guides" target="_self"><i alt="Export Guides" class="fa fa-file-text-o fa-3x icon-text" style="font-size: 2.7em;margin-bottom:8px;"></i><br /><h4 class="icon-text">Export Guides</h4>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;margin-bottom: 10px;">
-                                        <a class="icon-text" href="search#/search/articles?&amp;_k=b86gej" target="_self"><i alt="Market Intelligence" class="fa fa-globe fa-3x icon-text" style="font-size: 2.7em;margin-bottom:8px;"></i><br /><h4 class="icon-text">Market Intelligence</h4>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;margin-bottom: 10px;">
-                                        <a class="icon-text" href="/Export-FAQs" target="_self"><i alt="FAQs" class="fa fa-comments-o fa-3x icon-text" style="font-size: 2.7em;margin-bottom:8px;"></i><br /><h4 class="icon-text">FAQs</h4>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;margin-bottom: 10px;">
-                                        <a class="icon-text" href="/Events" target="_self"><i alt="Events" class="fa fa-calendar fa-3x icon-text" style="font-size: 2.7em;margin-bottom:8px;"></i><br /><h4 class="icon-text">Events</h4>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-2 col-sm-6 col-xs-6" style="text-align: center;margin-bottom: 10px;">
-                                        <a class="icon-text" href="/Trade-Leads" target="_self"><i alt="Leads" class="fa fa-bullseye fa-3x icon-text" style="font-size: 2.7em;margin-bottom:8px;"></i><br /><h4 class="icon-text">Leads</h4>
-                                        </a>
-                                    </div>
-                                    <div class="col-md-1" id="a17t0000000CpAnAAK_a0zt0000000CeAiAAK">  
-                                        <div class="">
-                                        <p class="text-center lead"></p>
-                                        </div>
-                                    </div> 
-                        
-                        </div>   
-                    </div>
-                </div>
-                </div>
-            </div>
+    
+   
+   
+   
+   
+   
+   
+   
+   <body> <a id=skippy class="sr-only sr-only-focusable" href=#content><div class=container></div></a>   
+  
+  
+    <div class=bs-docs-header id=content tabindex=-1> 
+  
+  
+  <div class=container> 
+  <p class="text-center">Legal Considerations</p>
+  <h1 class="text-center" style="font-size:30px;">Intellectual Property</h1>  
+  
+  </div></div>
+  
+  
+  <div class="container bs-docs-container"> <div class=row> <div class=col-md-9 role=main> <div class=bs-docs-section> <h1 id="privacy_sheild" class="page-header">Privacy Shield</h1><h2 id=ps-summary class=nt>A brief summary of the U.S. - EU Data Protection Privacy Shield.</h2> <p class=lead>On October 6, 2015, the European Court of Justice issued a judgment declaring as “invalid” the European Commission’s Decision 2000/520/EC of 26 July 2000 “on the adequacy of the protection provided by the safe harbor privacy principles and related frequently asked questions issued by the US Department of Commerce.”</p> <p>Last Published: 5/6/2016</p> <h4>Tags:</h4> <div class=bs-glyphicons> <ul class=bs-glyphicons-list> <li>  <span class=glyphicon-class>Privacy Shield</span> </li> <li>  <span class=glyphicon-class>EU</span> </li> </ul> </div> 
+  </div> 
+  
+  
+    
+  
+  
+  
+  
+  <div class=bs-docs-section> <h1 id=stop_fakes class=page-header>StopFakes</h1> <h2 id=ipr-info class=nt>Government Resource for IPR Information and assistance</h2> <p class=lead>STOPfakes.gov was launched to serve as a one-stop shop for U.S. government tools and resources on intellectual property rights (IPR). The federal agencies behind STOPfakes.gov have developed a number of resources to educate and assist businesses, particularly small and medium-sized enterprises (SMEs), as well as consumers, government officials, and the general public.</p> <p class="lead">The federal agencies behind STOPfakes.gov have developed a number of resources to educate and assist businesses, particularly small and medium-sized enterprises.</p> <p>Last Published: 5/6/2016</p> <h4>Tags:</h4> <div class=bs-glyphicons> <ul class=bs-glyphicons-list>  <li>  <span class=glyphicon-class>Legal</span> </li> </ul> </div> 
+  
+
+  </div>  </div> <div class=col-md-3 role=complementary> 
+
+
+<nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm"> 
+<ul class="nav bs-docs-sidenav"> 
+<li> <a href=#privacy_sheild>Privacy Shield</a> <ul class=nav> <li><a href=#ps-summary>About</a></li>  <li><a href=#tags>Tags</a></li> </ul> </li> 
+<li> <a href=#stop_fakes>StopFakes</a> <ul class=nav> <li><a href=#ipr-info>About</a></li> <li><a href=#tags-1>Tags</a></li>  </ul> </li> 
+<a class=back-to-top href=#top> Back to top </a>  
+</nav> </div> </div> </div>  
+
+    
+    
+    
+
+    
+    
             
-<!-- section start -->
-			<!-- ================ -->
-			<div class="section clearfix object-non-visible" data-animation-effect="fadeInUpSmall" data-effect-delay="300">
-
-				<div class="container">
-					<div class="row" style="padding-top:25px;padding-bottom:25px;">
-						<div class="col-md-12">
-						
-						<h4 class="text-center" style="font-style:italic;">Follow a guided path to exporting</h4></br>
-						
-
-							<!-- isotope filters start -->
-							<div class="filters margin-bottom-clear" style="width: 100%;margin: 0 auto;">
-								<ul class="nav nav-pills">
-									<li style="border-radius: 4px;width:175px;border-style: solid;border-width: 1px;border-color:#f1f1f1;" class="active text-center"><a href="#" data-filter=".module">Hubs</a></li>
-									<li style="border-radius: 4px;width:175px;border-style: solid;border-width: 1px;border-color:#f1f1f1;" class="text-center"><a href="#" data-filter=".hub">Modules</a></li>
-								</ul>
-							</div>
-							<!-- isotope filters end -->
-
-							<!-- portfolio items start -->
-							<div class="isotope-container row ">
-								
-								
-<ol class="breadcrumb col-sm-3 isotope-item module" style="margin:10px 10px;border-radius:10px;padding:20px;">
-  <span style="font-size:16px;"><a href="#">How to Export</a></span></br>
-  <p class="active" style="font-size:12px;">Our global network of trade experts have hand selected the most up-to-date global trade information for your U.S. business. </p>
-</ol>
-<ol class="breadcrumb col-sm-3 isotope-item hub" style="margin:10px 10px;border-radius:10px;padding:20px;">
-  <span style="font-size:16px;"><a href="#">Finding Foreign Markets</a></span></br>
-  <p class="active" style="font-size:12px;">Determine which overseas market is best for your product or service. Exporting in response to...</p>
-</ol>
-<ol class="breadcrumb col-sm-3 isotope-item hub" style="margin:10px 10px;border-radius:10px;padding:20px;">
-  <span style="font-size:16px;"><a href="#">Legal Considerations</a></span></br>
-  <p class="active" style="font-size:12px;">Be aware of legal considerations as you engage your business with new partners or overseas markets.</p>
-</ol>
-<ol class="breadcrumb col-sm-3 isotope-item hub" style="margin:10px 10px;border-radius:10px;padding:20px;">
-  <span style="font-size:16px;"><a href="#">Logistics</a></span></br>
-  <p class="active" style="font-size:12px;">Understand the logistics of shipping, including the distribution changes driven by eCommerce.</p>
-</ol>
-								
-							</div>
-							<!-- portfolio items end -->
-
-						</div>
-					</div>
-				</div>
-
-			</div>
-			<!-- section end -->
 			
 			
 			
@@ -444,11 +393,11 @@ $(window).resize(function() {processPage();});
 $(window).load(function() {processPage();});
 
         </script>
-    <body>
+  
          
         <script src="" type="text/javascript"></script> 
          
-    </body>
+   
             
           
             </div>
@@ -611,7 +560,9 @@ $(window).load(function() {processPage();});
         );
     });
 </script>
-
-		<script type="text/javascript" src="http://htmlcoder.me/preview/idea/v.1.2.1/html/plugins/isotope/isotope.pkgd.min.js"></script>
-
-		<script type="text/javascript" src="http://htmlcoder.me/preview/idea/v.1.2.1/html/plugins/jquery.appear.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+ <script src="http://getbootstrap.com/dist/js/bootstrap.min.js"></script>
+<script src="http://getbootstrap.com/assets/js/docs.min.js"></script>
+		
+		  </body>
+		  </html>
